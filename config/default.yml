@@ -1,0 +1,8 @@
+nxmarket:
+  baseUrl: 'http://localhost:8082'
+  login:
+    email: ''
+    password: ''
+    code: ''
+  withdrawal:
+    address: ''
