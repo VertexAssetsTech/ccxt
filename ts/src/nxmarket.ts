@@ -61,8 +61,8 @@ export default class nxmarket extends Exchange {
                     'public':  'http://localhost:8082/v1',
                     'private': 'http://localhost:8082/v1',
                 },
-                'www': 'https://nxmarket.vn',
-                'doc': 'https://nxmarket.vn/docs',
+                'www': 'https://nxmarket.com',
+                'doc': 'https://nxmarket.com/docs',
             },
             'api': {
                 'public': {
@@ -122,10 +122,10 @@ export default class nxmarket extends Exchange {
                         'takeProfitPrice': false,
                         'attachedStopLossTakeProfit': undefined,
                         'timeInForce': {
-                            'IOC': false,
+                            'IOC': true,
                             'FOK': false,
                             'PO': false,
-                            'GTD': false,
+                            'GTD': true,
                         },
                         'hedged': false,
                         'trailing': false,
