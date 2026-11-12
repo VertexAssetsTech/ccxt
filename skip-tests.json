@@ -2173,6 +2173,9 @@
     },
     "nxmarket": {
         "skipMethods": {
+            "fetchOHLCV": {
+                "compareAmountToZero": "dev and staging return no candles; the structure of any candle returned is still checked"
+            },
             "watchOHLCV": "the server pushes candles only when it has some, and dev and staging return none",
             "watchTrades": "the test waits for a trade newer than the first push, and staging markets rarely trade",
             "watchOrders": "the server pushes open orders only, and the test account keeps none between runs",
