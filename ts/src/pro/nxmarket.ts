@@ -824,8 +824,10 @@ export default class nxmarket extends nxmarketRest {
 
     handleErrorMessage (client: Client, message: Dict): Bool {
         //
-        //     { "id": 2, "error": { "code": 401, "message": "Authentication required" } }
-        //     { "id": 3, "error": { "code": 400, "message": "'symbol' required for orderbook" } }
+        //     { "id": 2, "error": { "code": "AUTHENTICATION_REQUIRED", "message": "Authentication required" } }
+        //     { "id": 3, "error": { "code": "BAD_REQUEST", "message": "'symbol' required for orderbook" } }
+        //
+        // code is one of the REST error codes (ec-api#506); a server older than those sends 400/401/500
         //
         const error = this.safeDict (message, 'error');
         if (error === undefined) {
@@ -835,6 +837,7 @@ export default class nxmarket extends nxmarketRest {
         const errorMessage = this.safeString (error, 'message', '');
         const feedback = this.id + ' ' + this.json (message);
         try {
+            this.throwExactlyMatchedException (this.exceptions['exact'], code, feedback);
             this.throwExactlyMatchedException (this.exceptions['exact'], errorMessage, feedback);
             this.throwBroadlyMatchedException (this.exceptions['broad'], errorMessage, feedback);
             if (code === '401') {
