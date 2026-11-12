@@ -212,6 +212,7 @@ import mudrexPro from  './src/pro/mudrex.js'
 import myokxPro from  './src/pro/myokx.js'
 import nadoPro from  './src/pro/nado.js'
 import ndaxPro from  './src/pro/ndax.js'
+import nxmarketPro from  './src/pro/nxmarket.js'
 import okxPro from  './src/pro/okx.js'
 import okxusPro from  './src/pro/okxus.js'
 import onetradingPro from  './src/pro/onetrading.js'
@@ -406,6 +407,7 @@ const pro = {
     'myokx':                  myokxPro,
     'nado':                   nadoPro,
     'ndax':                   ndaxPro,
+    'nxmarket':               nxmarketPro,
     'okx':                    okxPro,
     'okxus':                  okxusPro,
     'onetrading':             onetradingPro,

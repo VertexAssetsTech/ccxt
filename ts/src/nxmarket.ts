@@ -21,7 +21,7 @@ export default class nxmarket extends Exchange {
             'version': 'v1',
             'rateLimit': 100,
             'certified': false,
-            'pro': false,
+            'pro': true,
             'has': {
                 'CORS': true,
                 'spot': true,
