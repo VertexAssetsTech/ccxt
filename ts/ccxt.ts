@@ -128,6 +128,7 @@ import mudrex from  './src/mudrex.js'
 import myokx from  './src/myokx.js'
 import nado from  './src/nado.js'
 import ndax from  './src/ndax.js'
+import nxmarket from  './src/nxmarket.js'
 import okx from  './src/okx.js'
 import okxus from  './src/okxus.js'
 import onetrading from  './src/onetrading.js'
@@ -321,6 +322,7 @@ const exchanges = {
     'myokx':                  myokx,
     'nado':                   nado,
     'ndax':                   ndax,
+    'nxmarket':               nxmarket,
     'okx':                    okx,
     'okxus':                  okxus,
     'onetrading':             onetrading,
@@ -694,6 +696,7 @@ export {
     myokx,
     nado,
     ndax,
+    nxmarket,
     okx,
     okxus,
     onetrading,
