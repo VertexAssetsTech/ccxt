@@ -1,0 +1,1208 @@
+{
+    "BTC": {
+        "info": {
+            "id": "btc",
+            "code": "BTC",
+            "name": "Bitcoin",
+            "active": true,
+            "deposit": false,
+            "withdraw": false,
+            "fee": 0.00004,
+            "precision": 9,
+            "limits": {
+                "amount": {
+                    "min": null,
+                    "max": null
+                },
+                "deposit": {
+                    "min": null,
+                    "max": null
+                },
+                "withdraw": {
+                    "min": null,
+                    "max": null
+                }
+            },
+            "networks": {
+                "bitcoin_mainnet": {
+                    "id": "native::btc",
+                    "network": "mainnet",
+                    "name": "Bitcoin",
+                    "active": true,
+                    "deposit": false,
+                    "withdraw": false,
+                    "fee": 0.00004,
+                    "precision": 9,
+                    "limits": {
+                        "amount": {
+                            "min": null,
+                            "max": null
+                        },
+                        "deposit": {
+                            "min": 0.000006,
+                            "max": null
+                        },
+                        "withdraw": {
+                            "min": 0.002,
+                            "max": null
+                        }
+                    },
+                    "info": {
+                        "blockchain": "bitcoin",
+                        "network": "mainnet",
+                        "address": "native::btc",
+                        "depositable": false,
+                        "withdrawable": false
+                    }
+                },
+                "bitcoin_testnet": {
+                    "id": "native::btc",
+                    "network": "testnet",
+                    "name": "Bitcoin",
+                    "active": true,
+                    "deposit": false,
+                    "withdraw": false,
+                    "fee": null,
+                    "precision": 9,
+                    "limits": {
+                        "amount": {
+                            "min": null,
+                            "max": null
+                        },
+                        "deposit": {
+                            "min": null,
+                            "max": null
+                        },
+                        "withdraw": {
+                            "min": null,
+                            "max": null
+                        }
+                    },
+                    "info": {
+                        "blockchain": "bitcoin",
+                        "network": "testnet",
+                        "address": "native::btc",
+                        "depositable": false,
+                        "withdrawable": false
+                    }
+                },
+                "bitcoin_testnet4": {
+                    "id": "native::btc",
+                    "network": "testnet4",
+                    "name": "Bitcoin",
+                    "active": true,
+                    "deposit": false,
+                    "withdraw": false,
+                    "fee": 0.00004,
+                    "precision": 9,
+                    "limits": {
+                        "amount": {
+                            "min": null,
+                            "max": null
+                        },
+                        "deposit": {
+                            "min": 0.000006,
+                            "max": null
+                        },
+                        "withdraw": {
+                            "min": 0.002,
+                            "max": null
+                        }
+                    },
+                    "info": {
+                        "blockchain": "bitcoin",
+                        "network": "testnet4",
+                        "address": "native::btc",
+                        "depositable": false,
+                        "withdrawable": false
+                    }
+                }
+            },
+            "info": {
+                "id": 2,
+                "type": "CRYPTO",
+                "provider": "Safeheron",
+                "isUtxo": true,
+                "transferable": true,
+                "renderScale": 5
+            }
+        },
+        "id": "btc",
+        "numericId": null,
+        "code": "BTC",
+        "precision": 1e-9,
+        "type": "crypto",
+        "name": "Bitcoin",
+        "active": true,
+        "deposit": false,
+        "withdraw": false,
+        "fee": 0.00004,
+        "fees": {},
+        "networks": {
+            "bitcoin_mainnet": {
+                "id": "bitcoin_mainnet",
+                "network": "bitcoin_mainnet",
+                "active": true,
+                "deposit": false,
+                "withdraw": false,
+                "fee": 0.00004,
+                "precision": 1e-9,
+                "limits": {
+                    "deposit": {
+                        "min": 0.000006,
+                        "max": null
+                    },
+                    "withdraw": {
+                        "min": 0.002,
+                        "max": null
+                    }
+                },
+                "info": {
+                    "id": "native::btc",
+                    "network": "mainnet",
+                    "name": "Bitcoin",
+                    "active": true,
+                    "deposit": false,
+                    "withdraw": false,
+                    "fee": 0.00004,
+                    "precision": 9,
+                    "limits": {
+                        "amount": {
+                            "min": null,
+                            "max": null
+                        },
+                        "deposit": {
+                            "min": 0.000006,
+                            "max": null
+                        },
+                        "withdraw": {
+                            "min": 0.002,
+                            "max": null
+                        }
+                    },
+                    "info": {
+                        "blockchain": "bitcoin",
+                        "network": "mainnet",
+                        "address": "native::btc",
+                        "depositable": false,
+                        "withdrawable": false
+                    }
+                }
+            },
+            "bitcoin_testnet": {
+                "id": "bitcoin_testnet",
+                "network": "bitcoin_testnet",
+                "active": true,
+                "deposit": false,
+                "withdraw": false,
+                "fee": null,
+                "precision": 1e-9,
+                "limits": {
+                    "deposit": {
+                        "min": null,
+                        "max": null
+                    },
+                    "withdraw": {
+                        "min": null,
+                        "max": null
+                    }
+                },
+                "info": {
+                    "id": "native::btc",
+                    "network": "testnet",
+                    "name": "Bitcoin",
+                    "active": true,
+                    "deposit": false,
+                    "withdraw": false,
+                    "fee": null,
+                    "precision": 9,
+                    "limits": {
+                        "amount": {
+                            "min": null,
+                            "max": null
+                        },
+                        "deposit": {
+                            "min": null,
+                            "max": null
+                        },
+                        "withdraw": {
+                            "min": null,
+                            "max": null
+                        }
+                    },
+                    "info": {
+                        "blockchain": "bitcoin",
+                        "network": "testnet",
+                        "address": "native::btc",
+                        "depositable": false,
+                        "withdrawable": false
+                    }
+                }
+            },
+            "bitcoin_testnet4": {
+                "id": "bitcoin_testnet4",
+                "network": "bitcoin_testnet4",
+                "active": true,
+                "deposit": false,
+                "withdraw": false,
+                "fee": 0.00004,
+                "precision": 1e-9,
+                "limits": {
+                    "deposit": {
+                        "min": 0.000006,
+                        "max": null
+                    },
+                    "withdraw": {
+                        "min": 0.002,
+                        "max": null
+                    }
+                },
+                "info": {
+                    "id": "native::btc",
+                    "network": "testnet4",
+                    "name": "Bitcoin",
+                    "active": true,
+                    "deposit": false,
+                    "withdraw": false,
+                    "fee": 0.00004,
+                    "precision": 9,
+                    "limits": {
+                        "amount": {
+                            "min": null,
+                            "max": null
+                        },
+                        "deposit": {
+                            "min": 0.000006,
+                            "max": null
+                        },
+                        "withdraw": {
+                            "min": 0.002,
+                            "max": null
+                        }
+                    },
+                    "info": {
+                        "blockchain": "bitcoin",
+                        "network": "testnet4",
+                        "address": "native::btc",
+                        "depositable": false,
+                        "withdrawable": false
+                    }
+                }
+            }
+        },
+        "limits": {
+            "deposit": {
+                "min": 0.000006,
+                "max": null
+            },
+            "withdraw": {
+                "min": 0.002,
+                "max": null
+            }
+        }
+    },
+    "USDT": {
+        "info": {
+            "id": "usdt",
+            "code": "USDT",
+            "name": "Tether USDt",
+            "active": true,
+            "deposit": false,
+            "withdraw": true,
+            "fee": 1,
+            "precision": 9,
+            "limits": {
+                "amount": {
+                    "min": null,
+                    "max": null
+                },
+                "deposit": {
+                    "min": null,
+                    "max": null
+                },
+                "withdraw": {
+                    "min": 10,
+                    "max": null
+                }
+            },
+            "networks": {
+                "binance_smart_chain_testnet": {
+                    "id": "0x337610d27c682e347c9cd60bd4b3b107c9d34ddd",
+                    "network": "testnet",
+                    "name": "Tether USDt",
+                    "active": true,
+                    "deposit": false,
+                    "withdraw": true,
+                    "fee": 1,
+                    "precision": 9,
+                    "limits": {
+                        "amount": {
+                            "min": null,
+                            "max": null
+                        },
+                        "deposit": {
+                            "min": 1,
+                            "max": null
+                        },
+                        "withdraw": {
+                            "min": 10,
+                            "max": null
+                        }
+                    },
+                    "info": {
+                        "blockchain": "binance_smart_chain",
+                        "network": "testnet",
+                        "address": "0x337610d27c682e347c9cd60bd4b3b107c9d34ddd",
+                        "depositable": false,
+                        "withdrawable": true
+                    }
+                },
+                "tron_mainnet": {
+                    "id": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+                    "network": "mainnet",
+                    "name": "Tether USDt",
+                    "active": true,
+                    "deposit": false,
+                    "withdraw": true,
+                    "fee": 1,
+                    "precision": 9,
+                    "limits": {
+                        "amount": {
+                            "min": null,
+                            "max": null
+                        },
+                        "deposit": {
+                            "min": 1,
+                            "max": null
+                        },
+                        "withdraw": {
+                            "min": 10,
+                            "max": null
+                        }
+                    },
+                    "info": {
+                        "blockchain": "tron",
+                        "network": "mainnet",
+                        "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+                        "depositable": false,
+                        "withdrawable": true
+                    }
+                },
+                "ethereum_mainnet": {
+                    "id": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+                    "network": "mainnet",
+                    "name": "Tether USDt",
+                    "active": true,
+                    "deposit": false,
+                    "withdraw": true,
+                    "fee": 4,
+                    "precision": 9,
+                    "limits": {
+                        "amount": {
+                            "min": null,
+                            "max": null
+                        },
+                        "deposit": {
+                            "min": 1,
+                            "max": null
+                        },
+                        "withdraw": {
+                            "min": 50,
+                            "max": null
+                        }
+                    },
+                    "info": {
+                        "blockchain": "ethereum",
+                        "network": "mainnet",
+                        "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+                        "depositable": false,
+                        "withdrawable": true
+                    }
+                },
+                "ethereum_sepolia": {
+                    "id": "0x30fA2FbE15c1EaDfbEF28C188b7B8dbd3c1Ff2eB",
+                    "network": "sepolia",
+                    "name": "Tether USDt",
+                    "active": true,
+                    "deposit": false,
+                    "withdraw": true,
+                    "fee": 4,
+                    "precision": 9,
+                    "limits": {
+                        "amount": {
+                            "min": null,
+                            "max": null
+                        },
+                        "deposit": {
+                            "min": 1,
+                            "max": null
+                        },
+                        "withdraw": {
+                            "min": 50,
+                            "max": null
+                        }
+                    },
+                    "info": {
+                        "blockchain": "ethereum",
+                        "network": "sepolia",
+                        "address": "0x30fA2FbE15c1EaDfbEF28C188b7B8dbd3c1Ff2eB",
+                        "depositable": false,
+                        "withdrawable": true
+                    }
+                },
+                "solana_mainnet": {
+                    "id": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                    "network": "mainnet",
+                    "name": "Tether USDt",
+                    "active": true,
+                    "deposit": false,
+                    "withdraw": true,
+                    "fee": 1,
+                    "precision": 9,
+                    "limits": {
+                        "amount": {
+                            "min": null,
+                            "max": null
+                        },
+                        "deposit": {
+                            "min": 1,
+                            "max": null
+                        },
+                        "withdraw": {
+                            "min": 10,
+                            "max": null
+                        }
+                    },
+                    "info": {
+                        "blockchain": "solana",
+                        "network": "mainnet",
+                        "address": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                        "depositable": false,
+                        "withdrawable": true
+                    }
+                },
+                "binance_smart_chain_mainnet": {
+                    "id": "0x55d398326f99059fF775485246999027B3197955",
+                    "network": "mainnet",
+                    "name": "Tether USDt",
+                    "active": true,
+                    "deposit": false,
+                    "withdraw": true,
+                    "fee": 1,
+                    "precision": 9,
+                    "limits": {
+                        "amount": {
+                            "min": null,
+                            "max": null
+                        },
+                        "deposit": {
+                            "min": 1,
+                            "max": null
+                        },
+                        "withdraw": {
+                            "min": 10,
+                            "max": null
+                        }
+                    },
+                    "info": {
+                        "blockchain": "binance_smart_chain",
+                        "network": "mainnet",
+                        "address": "0x55d398326f99059fF775485246999027B3197955",
+                        "depositable": false,
+                        "withdrawable": true
+                    }
+                },
+                "tron_shasta": {
+                    "id": "TG3XXyExBkPp9nzdajDZsozEu4BkaSJozs",
+                    "network": "shasta",
+                    "name": "Tether USDt",
+                    "active": true,
+                    "deposit": false,
+                    "withdraw": true,
+                    "fee": 1,
+                    "precision": 9,
+                    "limits": {
+                        "amount": {
+                            "min": null,
+                            "max": null
+                        },
+                        "deposit": {
+                            "min": 1,
+                            "max": null
+                        },
+                        "withdraw": {
+                            "min": 10,
+                            "max": null
+                        }
+                    },
+                    "info": {
+                        "blockchain": "tron",
+                        "network": "shasta",
+                        "address": "TG3XXyExBkPp9nzdajDZsozEu4BkaSJozs",
+                        "depositable": false,
+                        "withdrawable": true
+                    }
+                }
+            },
+            "info": {
+                "id": 1,
+                "type": "CRYPTO",
+                "provider": "Safeheron",
+                "isUtxo": false,
+                "transferable": true,
+                "renderScale": 2
+            }
+        },
+        "id": "usdt",
+        "numericId": null,
+        "code": "USDT",
+        "precision": 1e-9,
+        "type": "crypto",
+        "name": "Tether USDt",
+        "active": true,
+        "deposit": false,
+        "withdraw": true,
+        "fee": 1,
+        "fees": {},
+        "networks": {
+            "binance_smart_chain_testnet": {
+                "id": "binance_smart_chain_testnet",
+                "network": "binance_smart_chain_testnet",
+                "active": true,
+                "deposit": false,
+                "withdraw": true,
+                "fee": 1,
+                "precision": 1e-9,
+                "limits": {
+                    "deposit": {
+                        "min": 1,
+                        "max": null
+                    },
+                    "withdraw": {
+                        "min": 10,
+                        "max": null
+                    }
+                },
+                "info": {
+                    "id": "0x337610d27c682e347c9cd60bd4b3b107c9d34ddd",
+                    "network": "testnet",
+                    "name": "Tether USDt",
+                    "active": true,
+                    "deposit": false,
+                    "withdraw": true,
+                    "fee": 1,
+                    "precision": 9,
+                    "limits": {
+                        "amount": {
+                            "min": null,
+                            "max": null
+                        },
+                        "deposit": {
+                            "min": 1,
+                            "max": null
+                        },
+                        "withdraw": {
+                            "min": 10,
+                            "max": null
+                        }
+                    },
+                    "info": {
+                        "blockchain": "binance_smart_chain",
+                        "network": "testnet",
+                        "address": "0x337610d27c682e347c9cd60bd4b3b107c9d34ddd",
+                        "depositable": false,
+                        "withdrawable": true
+                    }
+                }
+            },
+            "tron_mainnet": {
+                "id": "tron_mainnet",
+                "network": "tron_mainnet",
+                "active": true,
+                "deposit": false,
+                "withdraw": true,
+                "fee": 1,
+                "precision": 1e-9,
+                "limits": {
+                    "deposit": {
+                        "min": 1,
+                        "max": null
+                    },
+                    "withdraw": {
+                        "min": 10,
+                        "max": null
+                    }
+                },
+                "info": {
+                    "id": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+                    "network": "mainnet",
+                    "name": "Tether USDt",
+                    "active": true,
+                    "deposit": false,
+                    "withdraw": true,
+                    "fee": 1,
+                    "precision": 9,
+                    "limits": {
+                        "amount": {
+                            "min": null,
+                            "max": null
+                        },
+                        "deposit": {
+                            "min": 1,
+                            "max": null
+                        },
+                        "withdraw": {
+                            "min": 10,
+                            "max": null
+                        }
+                    },
+                    "info": {
+                        "blockchain": "tron",
+                        "network": "mainnet",
+                        "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+                        "depositable": false,
+                        "withdrawable": true
+                    }
+                }
+            },
+            "ethereum_mainnet": {
+                "id": "ethereum_mainnet",
+                "network": "ethereum_mainnet",
+                "active": true,
+                "deposit": false,
+                "withdraw": true,
+                "fee": 4,
+                "precision": 1e-9,
+                "limits": {
+                    "deposit": {
+                        "min": 1,
+                        "max": null
+                    },
+                    "withdraw": {
+                        "min": 50,
+                        "max": null
+                    }
+                },
+                "info": {
+                    "id": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+                    "network": "mainnet",
+                    "name": "Tether USDt",
+                    "active": true,
+                    "deposit": false,
+                    "withdraw": true,
+                    "fee": 4,
+                    "precision": 9,
+                    "limits": {
+                        "amount": {
+                            "min": null,
+                            "max": null
+                        },
+                        "deposit": {
+                            "min": 1,
+                            "max": null
+                        },
+                        "withdraw": {
+                            "min": 50,
+                            "max": null
+                        }
+                    },
+                    "info": {
+                        "blockchain": "ethereum",
+                        "network": "mainnet",
+                        "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+                        "depositable": false,
+                        "withdrawable": true
+                    }
+                }
+            },
+            "ethereum_sepolia": {
+                "id": "ethereum_sepolia",
+                "network": "ethereum_sepolia",
+                "active": true,
+                "deposit": false,
+                "withdraw": true,
+                "fee": 4,
+                "precision": 1e-9,
+                "limits": {
+                    "deposit": {
+                        "min": 1,
+                        "max": null
+                    },
+                    "withdraw": {
+                        "min": 50,
+                        "max": null
+                    }
+                },
+                "info": {
+                    "id": "0x30fA2FbE15c1EaDfbEF28C188b7B8dbd3c1Ff2eB",
+                    "network": "sepolia",
+                    "name": "Tether USDt",
+                    "active": true,
+                    "deposit": false,
+                    "withdraw": true,
+                    "fee": 4,
+                    "precision": 9,
+                    "limits": {
+                        "amount": {
+                            "min": null,
+                            "max": null
+                        },
+                        "deposit": {
+                            "min": 1,
+                            "max": null
+                        },
+                        "withdraw": {
+                            "min": 50,
+                            "max": null
+                        }
+                    },
+                    "info": {
+                        "blockchain": "ethereum",
+                        "network": "sepolia",
+                        "address": "0x30fA2FbE15c1EaDfbEF28C188b7B8dbd3c1Ff2eB",
+                        "depositable": false,
+                        "withdrawable": true
+                    }
+                }
+            },
+            "solana_mainnet": {
+                "id": "solana_mainnet",
+                "network": "solana_mainnet",
+                "active": true,
+                "deposit": false,
+                "withdraw": true,
+                "fee": 1,
+                "precision": 1e-9,
+                "limits": {
+                    "deposit": {
+                        "min": 1,
+                        "max": null
+                    },
+                    "withdraw": {
+                        "min": 10,
+                        "max": null
+                    }
+                },
+                "info": {
+                    "id": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                    "network": "mainnet",
+                    "name": "Tether USDt",
+                    "active": true,
+                    "deposit": false,
+                    "withdraw": true,
+                    "fee": 1,
+                    "precision": 9,
+                    "limits": {
+                        "amount": {
+                            "min": null,
+                            "max": null
+                        },
+                        "deposit": {
+                            "min": 1,
+                            "max": null
+                        },
+                        "withdraw": {
+                            "min": 10,
+                            "max": null
+                        }
+                    },
+                    "info": {
+                        "blockchain": "solana",
+                        "network": "mainnet",
+                        "address": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                        "depositable": false,
+                        "withdrawable": true
+                    }
+                }
+            },
+            "binance_smart_chain_mainnet": {
+                "id": "binance_smart_chain_mainnet",
+                "network": "binance_smart_chain_mainnet",
+                "active": true,
+                "deposit": false,
+                "withdraw": true,
+                "fee": 1,
+                "precision": 1e-9,
+                "limits": {
+                    "deposit": {
+                        "min": 1,
+                        "max": null
+                    },
+                    "withdraw": {
+                        "min": 10,
+                        "max": null
+                    }
+                },
+                "info": {
+                    "id": "0x55d398326f99059fF775485246999027B3197955",
+                    "network": "mainnet",
+                    "name": "Tether USDt",
+                    "active": true,
+                    "deposit": false,
+                    "withdraw": true,
+                    "fee": 1,
+                    "precision": 9,
+                    "limits": {
+                        "amount": {
+                            "min": null,
+                            "max": null
+                        },
+                        "deposit": {
+                            "min": 1,
+                            "max": null
+                        },
+                        "withdraw": {
+                            "min": 10,
+                            "max": null
+                        }
+                    },
+                    "info": {
+                        "blockchain": "binance_smart_chain",
+                        "network": "mainnet",
+                        "address": "0x55d398326f99059fF775485246999027B3197955",
+                        "depositable": false,
+                        "withdrawable": true
+                    }
+                }
+            },
+            "tron_shasta": {
+                "id": "tron_shasta",
+                "network": "tron_shasta",
+                "active": true,
+                "deposit": false,
+                "withdraw": true,
+                "fee": 1,
+                "precision": 1e-9,
+                "limits": {
+                    "deposit": {
+                        "min": 1,
+                        "max": null
+                    },
+                    "withdraw": {
+                        "min": 10,
+                        "max": null
+                    }
+                },
+                "info": {
+                    "id": "TG3XXyExBkPp9nzdajDZsozEu4BkaSJozs",
+                    "network": "shasta",
+                    "name": "Tether USDt",
+                    "active": true,
+                    "deposit": false,
+                    "withdraw": true,
+                    "fee": 1,
+                    "precision": 9,
+                    "limits": {
+                        "amount": {
+                            "min": null,
+                            "max": null
+                        },
+                        "deposit": {
+                            "min": 1,
+                            "max": null
+                        },
+                        "withdraw": {
+                            "min": 10,
+                            "max": null
+                        }
+                    },
+                    "info": {
+                        "blockchain": "tron",
+                        "network": "shasta",
+                        "address": "TG3XXyExBkPp9nzdajDZsozEu4BkaSJozs",
+                        "depositable": false,
+                        "withdrawable": true
+                    }
+                }
+            }
+        },
+        "limits": {
+            "deposit": {
+                "min": 1,
+                "max": null
+            },
+            "withdraw": {
+                "min": 10,
+                "max": null
+            }
+        }
+    },
+    "ETH": {
+        "info": {
+            "id": "eth",
+            "code": "ETH",
+            "name": "Ethereum",
+            "active": true,
+            "deposit": false,
+            "withdraw": false,
+            "fee": 0.00004,
+            "precision": 9,
+            "limits": {
+                "amount": {
+                    "min": null,
+                    "max": null
+                },
+                "deposit": {
+                    "min": null,
+                    "max": null
+                },
+                "withdraw": {
+                    "min": null,
+                    "max": null
+                }
+            },
+            "networks": {
+                "ethereum_mainnet": {
+                    "id": "native::eth",
+                    "network": "mainnet",
+                    "name": "Ethereum",
+                    "active": true,
+                    "deposit": false,
+                    "withdraw": false,
+                    "fee": 0.00004,
+                    "precision": 9,
+                    "limits": {
+                        "amount": {
+                            "min": null,
+                            "max": null
+                        },
+                        "deposit": {
+                            "min": 3e-7,
+                            "max": null
+                        },
+                        "withdraw": {
+                            "min": 0.0001,
+                            "max": null
+                        }
+                    },
+                    "info": {
+                        "blockchain": "ethereum",
+                        "network": "mainnet",
+                        "address": "native::eth",
+                        "depositable": false,
+                        "withdrawable": false
+                    }
+                },
+                "ethereum_sepolia": {
+                    "id": "native::eth",
+                    "network": "sepolia",
+                    "name": "Ethereum",
+                    "active": true,
+                    "deposit": false,
+                    "withdraw": false,
+                    "fee": 0.00004,
+                    "precision": 9,
+                    "limits": {
+                        "amount": {
+                            "min": null,
+                            "max": null
+                        },
+                        "deposit": {
+                            "min": 3e-7,
+                            "max": null
+                        },
+                        "withdraw": {
+                            "min": 0.0001,
+                            "max": null
+                        }
+                    },
+                    "info": {
+                        "blockchain": "ethereum",
+                        "network": "sepolia",
+                        "address": "native::eth",
+                        "depositable": false,
+                        "withdrawable": false
+                    }
+                }
+            },
+            "info": {
+                "id": 3,
+                "type": "CRYPTO",
+                "provider": "Safeheron",
+                "isUtxo": false,
+                "transferable": true,
+                "renderScale": 4
+            }
+        },
+        "id": "eth",
+        "numericId": null,
+        "code": "ETH",
+        "precision": 1e-9,
+        "type": "crypto",
+        "name": "Ethereum",
+        "active": true,
+        "deposit": false,
+        "withdraw": false,
+        "fee": 0.00004,
+        "fees": {},
+        "networks": {
+            "ethereum_mainnet": {
+                "id": "ethereum_mainnet",
+                "network": "ethereum_mainnet",
+                "active": true,
+                "deposit": false,
+                "withdraw": false,
+                "fee": 0.00004,
+                "precision": 1e-9,
+                "limits": {
+                    "deposit": {
+                        "min": 3e-7,
+                        "max": null
+                    },
+                    "withdraw": {
+                        "min": 0.0001,
+                        "max": null
+                    }
+                },
+                "info": {
+                    "id": "native::eth",
+                    "network": "mainnet",
+                    "name": "Ethereum",
+                    "active": true,
+                    "deposit": false,
+                    "withdraw": false,
+                    "fee": 0.00004,
+                    "precision": 9,
+                    "limits": {
+                        "amount": {
+                            "min": null,
+                            "max": null
+                        },
+                        "deposit": {
+                            "min": 3e-7,
+                            "max": null
+                        },
+                        "withdraw": {
+                            "min": 0.0001,
+                            "max": null
+                        }
+                    },
+                    "info": {
+                        "blockchain": "ethereum",
+                        "network": "mainnet",
+                        "address": "native::eth",
+                        "depositable": false,
+                        "withdrawable": false
+                    }
+                }
+            },
+            "ethereum_sepolia": {
+                "id": "ethereum_sepolia",
+                "network": "ethereum_sepolia",
+                "active": true,
+                "deposit": false,
+                "withdraw": false,
+                "fee": 0.00004,
+                "precision": 1e-9,
+                "limits": {
+                    "deposit": {
+                        "min": 3e-7,
+                        "max": null
+                    },
+                    "withdraw": {
+                        "min": 0.0001,
+                        "max": null
+                    }
+                },
+                "info": {
+                    "id": "native::eth",
+                    "network": "sepolia",
+                    "name": "Ethereum",
+                    "active": true,
+                    "deposit": false,
+                    "withdraw": false,
+                    "fee": 0.00004,
+                    "precision": 9,
+                    "limits": {
+                        "amount": {
+                            "min": null,
+                            "max": null
+                        },
+                        "deposit": {
+                            "min": 3e-7,
+                            "max": null
+                        },
+                        "withdraw": {
+                            "min": 0.0001,
+                            "max": null
+                        }
+                    },
+                    "info": {
+                        "blockchain": "ethereum",
+                        "network": "sepolia",
+                        "address": "native::eth",
+                        "depositable": false,
+                        "withdrawable": false
+                    }
+                }
+            }
+        },
+        "limits": {
+            "deposit": {
+                "min": 3e-7,
+                "max": null
+            },
+            "withdraw": {
+                "min": 0.0001,
+                "max": null
+            }
+        }
+    },
+    "RAAPL": {
+        "info": {
+            "id": "raapl",
+            "code": "RAAPL",
+            "name": "Apple Reality Token",
+            "active": true,
+            "deposit": false,
+            "withdraw": false,
+            "fee": null,
+            "precision": 9,
+            "limits": {
+                "amount": {
+                    "min": null,
+                    "max": null
+                },
+                "deposit": {
+                    "min": null,
+                    "max": null
+                },
+                "withdraw": {
+                    "min": null,
+                    "max": null
+                }
+            },
+            "networks": null,
+            "info": {
+                "id": 24,
+                "type": "CRYPTO",
+                "provider": "Safeheron",
+                "isUtxo": false,
+                "transferable": true,
+                "renderScale": 4
+            }
+        },
+        "id": "raapl",
+        "numericId": null,
+        "code": "RAAPL",
+        "precision": 1e-9,
+        "type": "crypto",
+        "name": "Apple Reality Token",
+        "active": true,
+        "deposit": false,
+        "withdraw": false,
+        "fee": null,
+        "fees": {},
+        "networks": {},
+        "limits": {
+            "deposit": {
+                "min": null,
+                "max": null
+            },
+            "withdraw": {
+                "min": null,
+                "max": null
+            }
+        }
+    }
+}
