@@ -1,8 +1,8 @@
 name: nxmarket
 
 # Offline checks for the nxmarket exchange only: lint, build, and ccxt's static
-# request/response tests in JS and Python, plus transpile + compile for PHP, Go
-# and C#. Runs on GitHub-hosted runners; the upstream language workflows need
+# request/response/WebSocket tests in JS and Python, plus transpile + compile for
+# PHP, Go and C#. Runs on GitHub-hosted runners; the upstream language workflows need
 # ccxt's self-hosted runners and do not run in this fork.
 
 on:
@@ -14,6 +14,7 @@ on:
       - 'ts/src/pro/nxmarket.ts'
       - 'ts/src/test/static/**/nxmarket.json'
       - 'ts/ccxt.ts'
+      - 'skip-tests.json'
       - '.github/workflows/nxmarket.yml'
   push:
     branches: [ 'feat/ccxt-developer-api' ]
@@ -23,6 +24,7 @@ on:
       - 'ts/src/pro/nxmarket.ts'
       - 'ts/src/test/static/**/nxmarket.json'
       - 'ts/ccxt.ts'
+      - 'skip-tests.json'
       - '.github/workflows/nxmarket.yml'
   workflow_dispatch:
 
@@ -57,7 +59,7 @@ jobs:
       - name: Committed abstract and registration are current
         run: git diff --exit-code -- ts/src/abstract/nxmarket.ts ts/ccxt.ts
       - name: Lint
-        run: npm run eslint -- ts/src/nxmarket.ts
+        run: npm run eslint -- ts/src/nxmarket.ts ts/src/pro/nxmarket.ts
       - name: Build JS (tsc)
         run: npm run tsBuild
       - name: JS id tests
@@ -66,14 +68,18 @@ jobs:
         run: npm run request-js -- nxmarket
       - name: JS static response tests
         run: npm run response-js -- nxmarket
+      - name: JS static WebSocket tests
+        run: npm run ws-tests-js -- nxmarket
       - name: Transpile to Python and PHP
-        run: npx tsx build/transpile.ts nxmarket
+        run: npx tsx build/transpile.ts nxmarket && npx tsx build/transpileWS.ts nxmarket
       - name: Python static request tests
         run: npm run request-py-async -- nxmarket
       - name: Python static response tests
         run: npm run response-py-async -- nxmarket
+      - name: Python static WebSocket tests
+        run: npm run ws-tests-py -- nxmarket
       - name: PHP syntax
-        run: php -l php/nxmarket.php && php -l php/async/nxmarket.php && php -l php/abstract/nxmarket.php
+        run: php -l php/nxmarket.php && php -l php/async/nxmarket.php && php -l php/abstract/nxmarket.php && php -l php/pro/nxmarket.php
 
   go:
     runs-on: ubuntu-latest
@@ -95,7 +101,7 @@ jobs:
       - name: Transpile nxmarket to Go
         run: npm run go-build-single -- nxmarket
       - name: Build Go
-        run: go build -C go ./v4
+        run: go build -C go ./v4 && go build -C go ./v4/pro
 
   csharp:
     runs-on: ubuntu-latest
@@ -114,6 +120,6 @@ jobs:
       - name: Register the exchange and emit the implicit api
         run: npm run export-exchanges && npm run emitAPI
       - name: Transpile nxmarket to C#
-        run: npm run transpileCsSingle -- nxmarket
+        run: npm run transpileCsSingle -- nxmarket && npm run transpileCsSingle -- --ws nxmarket
       - name: Build C#
         run: dotnet build cs/ccxt/ccxt.csproj

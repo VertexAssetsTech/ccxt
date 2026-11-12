@@ -1,0 +1,1374 @@
+{
+    "exchange": "nxmarket",
+    "skipKeys": [],
+    "options": {},
+    "methods": {
+        "watchTicker": [
+            {
+                "description": "ticker push",
+                "input": [
+                    "BTC/USDT"
+                ],
+                "url": "wss://ccxt.nxmarket.com/v1/ws",
+                "messages": [
+                    {
+                        "id": 1,
+                        "result": {
+                            "status": "ok",
+                            "channel": "ticker",
+                            "symbol": "BTC/USDT"
+                        }
+                    },
+                    {
+                        "channel": "ticker",
+                        "symbol": "BTC/USDT",
+                        "data": {
+                            "symbol": "BTC/USDT",
+                            "timestamp": 1731400000000,
+                            "datetime": "2024-11-12T08:26:40Z",
+                            "high": 50500,
+                            "low": 49500,
+                            "bid": 49990,
+                            "bidVolume": 0.5,
+                            "ask": 50010,
+                            "askVolume": 0.3,
+                            "open": 49800,
+                            "close": 50000,
+                            "last": 50000,
+                            "change": 200,
+                            "percentage": 0.4,
+                            "baseVolume": 12.5,
+                            "quoteVolume": 625000
+                        }
+                    }
+                ],
+                "sentMessages": [
+                    {
+                        "id": 1,
+                        "method": "subscribe",
+                        "params": {
+                            "channel": "ticker",
+                            "symbol": "BTC/USDT"
+                        }
+                    }
+                ],
+                "parsedResponse": {
+                    "symbol": "BTC/USDT",
+                    "timestamp": 1731400000000,
+                    "datetime": "2024-11-12T08:26:40.000Z",
+                    "high": 50500,
+                    "low": 49500,
+                    "bid": 49990,
+                    "bidVolume": 0.5,
+                    "ask": 50010,
+                    "askVolume": 0.3,
+                    "vwap": 50000,
+                    "open": 49800,
+                    "close": 50000,
+                    "last": 50000,
+                    "previousClose": null,
+                    "change": 200,
+                    "percentage": 0.4,
+                    "average": 49900,
+                    "baseVolume": 12.5,
+                    "quoteVolume": 625000,
+                    "info": {
+                        "symbol": "BTC/USDT",
+                        "timestamp": 1731400000000,
+                        "datetime": "2024-11-12T08:26:40Z",
+                        "high": 50500,
+                        "low": 49500,
+                        "bid": 49990,
+                        "bidVolume": 0.5,
+                        "ask": 50010,
+                        "askVolume": 0.3,
+                        "open": 49800,
+                        "close": 50000,
+                        "last": 50000,
+                        "change": 200,
+                        "percentage": 0.4,
+                        "baseVolume": 12.5,
+                        "quoteVolume": 625000
+                    },
+                    "indexPrice": null,
+                    "markPrice": null
+                }
+            }
+        ],
+        "watchTickers": [
+            {
+                "description": "tickers push for two symbols",
+                "input": [
+                    [
+                        "BTC/USDT",
+                        "ETH/USDT"
+                    ]
+                ],
+                "url": "wss://ccxt.nxmarket.com/v1/ws",
+                "messages": [
+                    {
+                        "id": 1,
+                        "result": {
+                            "status": "ok",
+                            "channel": "tickers"
+                        }
+                    },
+                    {
+                        "channel": "tickers",
+                        "data": {
+                            "BTC/USDT": {
+                                "symbol": "BTC/USDT",
+                                "timestamp": 1731400000000,
+                                "datetime": "2024-11-12T08:26:40Z",
+                                "high": 50500,
+                                "low": 49500,
+                                "bid": 49990,
+                                "bidVolume": 0.5,
+                                "ask": 50010,
+                                "askVolume": 0.3,
+                                "open": 49800,
+                                "close": 50000,
+                                "last": 50000,
+                                "change": 200,
+                                "percentage": 0.4,
+                                "baseVolume": 12.5,
+                                "quoteVolume": 625000
+                            },
+                            "ETH/USDT": {
+                                "symbol": "ETH/USDT",
+                                "timestamp": 1731400000000,
+                                "datetime": "2024-11-12T08:26:40Z",
+                                "high": 3030,
+                                "low": 2970,
+                                "bid": 2990,
+                                "bidVolume": 0.5,
+                                "ask": 3010,
+                                "askVolume": 0.3,
+                                "open": 2800,
+                                "close": 3000,
+                                "last": 3000,
+                                "change": 200,
+                                "percentage": 0.4,
+                                "baseVolume": 12.5,
+                                "quoteVolume": 37500
+                            }
+                        }
+                    }
+                ],
+                "sentMessages": [
+                    {
+                        "id": 1,
+                        "method": "subscribe",
+                        "params": {
+                            "channel": "tickers",
+                            "symbols": [
+                                "BTC/USDT",
+                                "ETH/USDT"
+                            ]
+                        }
+                    }
+                ],
+                "parsedResponse": {
+                    "BTC/USDT": {
+                        "symbol": "BTC/USDT",
+                        "timestamp": 1731400000000,
+                        "datetime": "2024-11-12T08:26:40.000Z",
+                        "high": 50500,
+                        "low": 49500,
+                        "bid": 49990,
+                        "bidVolume": 0.5,
+                        "ask": 50010,
+                        "askVolume": 0.3,
+                        "vwap": 50000,
+                        "open": 49800,
+                        "close": 50000,
+                        "last": 50000,
+                        "previousClose": null,
+                        "change": 200,
+                        "percentage": 0.4,
+                        "average": 49900,
+                        "baseVolume": 12.5,
+                        "quoteVolume": 625000,
+                        "info": {
+                            "symbol": "BTC/USDT",
+                            "timestamp": 1731400000000,
+                            "datetime": "2024-11-12T08:26:40Z",
+                            "high": 50500,
+                            "low": 49500,
+                            "bid": 49990,
+                            "bidVolume": 0.5,
+                            "ask": 50010,
+                            "askVolume": 0.3,
+                            "open": 49800,
+                            "close": 50000,
+                            "last": 50000,
+                            "change": 200,
+                            "percentage": 0.4,
+                            "baseVolume": 12.5,
+                            "quoteVolume": 625000
+                        },
+                        "indexPrice": null,
+                        "markPrice": null
+                    },
+                    "ETH/USDT": {
+                        "symbol": "ETH/USDT",
+                        "timestamp": 1731400000000,
+                        "datetime": "2024-11-12T08:26:40.000Z",
+                        "high": 3030,
+                        "low": 2970,
+                        "bid": 2990,
+                        "bidVolume": 0.5,
+                        "ask": 3010,
+                        "askVolume": 0.3,
+                        "vwap": 3000,
+                        "open": 2800,
+                        "close": 3000,
+                        "last": 3000,
+                        "previousClose": null,
+                        "change": 200,
+                        "percentage": 0.4,
+                        "average": 2900,
+                        "baseVolume": 12.5,
+                        "quoteVolume": 37500,
+                        "info": {
+                            "symbol": "ETH/USDT",
+                            "timestamp": 1731400000000,
+                            "datetime": "2024-11-12T08:26:40Z",
+                            "high": 3030,
+                            "low": 2970,
+                            "bid": 2990,
+                            "bidVolume": 0.5,
+                            "ask": 3010,
+                            "askVolume": 0.3,
+                            "open": 2800,
+                            "close": 3000,
+                            "last": 3000,
+                            "change": 200,
+                            "percentage": 0.4,
+                            "baseVolume": 12.5,
+                            "quoteVolume": 37500
+                        },
+                        "indexPrice": null,
+                        "markPrice": null
+                    }
+                }
+            }
+        ],
+        "watchBidsAsks": [
+            {
+                "description": "best bid and ask push",
+                "input": [
+                    [
+                        "BTC/USDT"
+                    ]
+                ],
+                "url": "wss://ccxt.nxmarket.com/v1/ws",
+                "messages": [
+                    {
+                        "id": 1,
+                        "result": {
+                            "status": "ok",
+                            "channel": "bidsAsks"
+                        }
+                    },
+                    {
+                        "channel": "bidsAsks",
+                        "data": {
+                            "BTC/USDT": {
+                                "symbol": "BTC/USDT",
+                                "timestamp": 1731400000000,
+                                "datetime": "2024-11-12T08:26:40Z",
+                                "bid": 49990,
+                                "bidVolume": 0.5,
+                                "ask": 50010,
+                                "askVolume": 0.3
+                            }
+                        }
+                    }
+                ],
+                "sentMessages": [
+                    {
+                        "id": 1,
+                        "method": "subscribe",
+                        "params": {
+                            "channel": "bidsAsks",
+                            "symbols": [
+                                "BTC/USDT"
+                            ]
+                        }
+                    }
+                ],
+                "parsedResponse": {
+                    "BTC/USDT": {
+                        "symbol": "BTC/USDT",
+                        "timestamp": 1731400000000,
+                        "datetime": "2024-11-12T08:26:40.000Z",
+                        "bid": 49990,
+                        "bidVolume": 0.5,
+                        "ask": 50010,
+                        "askVolume": 0.3,
+                        "info": {
+                            "symbol": "BTC/USDT",
+                            "timestamp": 1731400000000,
+                            "datetime": "2024-11-12T08:26:40Z",
+                            "bid": 49990,
+                            "bidVolume": 0.5,
+                            "ask": 50010,
+                            "askVolume": 0.3
+                        },
+                        "high": null,
+                        "low": null,
+                        "open": null,
+                        "close": null,
+                        "last": null,
+                        "change": null,
+                        "percentage": null,
+                        "average": null,
+                        "vwap": null,
+                        "baseVolume": null,
+                        "quoteVolume": null,
+                        "previousClose": null,
+                        "indexPrice": null,
+                        "markPrice": null
+                    }
+                }
+            }
+        ],
+        "watchOrderBook": [
+            {
+                "description": "each push is a full snapshot that replaces the book",
+                "input": [
+                    "BTC/USDT"
+                ],
+                "url": "wss://ccxt.nxmarket.com/v1/ws",
+                "messages": [
+                    {
+                        "id": 1,
+                        "result": {
+                            "status": "ok",
+                            "channel": "orderbook",
+                            "symbol": "BTC/USDT"
+                        }
+                    },
+                    {
+                        "channel": "orderbook",
+                        "symbol": "BTC/USDT",
+                        "data": {
+                            "symbol": "BTC/USDT",
+                            "timestamp": 1731400000000,
+                            "datetime": "2024-11-12T08:26:40Z",
+                            "nonce": 1731400000000,
+                            "bids": [
+                                [
+                                    50000,
+                                    0.5
+                                ],
+                                [
+                                    49990,
+                                    1.2
+                                ]
+                            ],
+                            "asks": [
+                                [
+                                    50010,
+                                    0.3
+                                ],
+                                [
+                                    50020,
+                                    0.8
+                                ]
+                            ]
+                        }
+                    },
+                    {
+                        "channel": "orderbook",
+                        "symbol": "BTC/USDT",
+                        "data": {
+                            "symbol": "BTC/USDT",
+                            "timestamp": 1731400000500,
+                            "datetime": "2024-11-12T08:26:40.500Z",
+                            "nonce": 1731400000500,
+                            "bids": [
+                                [
+                                    50005,
+                                    0.1
+                                ]
+                            ],
+                            "asks": [
+                                [
+                                    50015,
+                                    0.4
+                                ],
+                                [
+                                    50030,
+                                    2
+                                ]
+                            ]
+                        }
+                    }
+                ],
+                "sentMessages": [
+                    {
+                        "id": 1,
+                        "method": "subscribe",
+                        "params": {
+                            "channel": "orderbook",
+                            "symbol": "BTC/USDT"
+                        }
+                    }
+                ],
+                "parsedResponse": {
+                    "bids": [
+                        [
+                            50005,
+                            0.1
+                        ]
+                    ],
+                    "asks": [
+                        [
+                            50015,
+                            0.4
+                        ],
+                        [
+                            50030,
+                            2
+                        ]
+                    ],
+                    "timestamp": 1731400000500,
+                    "datetime": "2024-11-12T08:26:40.500Z",
+                    "nonce": 1731400000500,
+                    "symbol": "BTC/USDT"
+                }
+            }
+        ],
+        "watchOrderBookForSymbols": [
+            {
+                "description": "one push per symbol, the book of the pushed symbol is returned",
+                "input": [
+                    [
+                        "BTC/USDT",
+                        "ETH/USDT"
+                    ]
+                ],
+                "url": "wss://ccxt.nxmarket.com/v1/ws",
+                "messages": [
+                    {
+                        "id": 1,
+                        "result": {
+                            "status": "ok",
+                            "channel": "orderbookForSymbols"
+                        }
+                    },
+                    {
+                        "channel": "orderbookForSymbols",
+                        "symbol": "ETH/USDT",
+                        "data": {
+                            "symbol": "ETH/USDT",
+                            "timestamp": 1731400000000,
+                            "datetime": "2024-11-12T08:26:40Z",
+                            "nonce": 1731400000000,
+                            "bids": [
+                                [
+                                    3000,
+                                    2
+                                ]
+                            ],
+                            "asks": [
+                                [
+                                    3001,
+                                    1.5
+                                ]
+                            ]
+                        }
+                    }
+                ],
+                "sentMessages": [
+                    {
+                        "id": 1,
+                        "method": "subscribe",
+                        "params": {
+                            "channel": "orderbookForSymbols",
+                            "symbols": [
+                                "BTC/USDT",
+                                "ETH/USDT"
+                            ]
+                        }
+                    }
+                ],
+                "parsedResponse": {
+                    "bids": [
+                        [
+                            3000,
+                            2
+                        ]
+                    ],
+                    "asks": [
+                        [
+                            3001,
+                            1.5
+                        ]
+                    ],
+                    "timestamp": 1731400000000,
+                    "datetime": "2024-11-12T08:26:40.000Z",
+                    "nonce": 1731400000000,
+                    "symbol": "ETH/USDT"
+                }
+            }
+        ],
+        "watchTrades": [
+            {
+                "description": "repeated pushes of the latest trades return only the new ones",
+                "input": [
+                    "BTC/USDT"
+                ],
+                "url": "wss://ccxt.nxmarket.com/v1/ws",
+                "messages": [
+                    {
+                        "id": 1,
+                        "result": {
+                            "status": "ok",
+                            "channel": "trades",
+                            "symbol": "BTC/USDT"
+                        }
+                    },
+                    {
+                        "channel": "trades",
+                        "symbol": "BTC/USDT",
+                        "data": [
+                            {
+                                "info": {
+                                    "id": 2
+                                },
+                                "id": "2",
+                                "timestamp": 1731400001000,
+                                "datetime": null,
+                                "symbol": "BTC/USDT",
+                                "order": "5002",
+                                "type": "limit",
+                                "side": "sell",
+                                "takerOrMaker": "taker",
+                                "price": 50010,
+                                "amount": 0.01,
+                                "cost": 500.1,
+                                "fee": null,
+                                "fees": []
+                            },
+                            {
+                                "info": {
+                                    "id": 1
+                                },
+                                "id": "1",
+                                "timestamp": 1731400000000,
+                                "datetime": null,
+                                "symbol": "BTC/USDT",
+                                "order": "5001",
+                                "type": "limit",
+                                "side": "buy",
+                                "takerOrMaker": "taker",
+                                "price": 50000,
+                                "amount": 0.01,
+                                "cost": 500,
+                                "fee": null,
+                                "fees": []
+                            }
+                        ]
+                    },
+                    {
+                        "channel": "trades",
+                        "symbol": "BTC/USDT",
+                        "data": [
+                            {
+                                "info": {
+                                    "id": 3
+                                },
+                                "id": "3",
+                                "timestamp": 1731400002000,
+                                "datetime": null,
+                                "symbol": "BTC/USDT",
+                                "order": "5003",
+                                "type": "limit",
+                                "side": "buy",
+                                "takerOrMaker": "taker",
+                                "price": 50020,
+                                "amount": 0.01,
+                                "cost": 500.2,
+                                "fee": null,
+                                "fees": []
+                            },
+                            {
+                                "info": {
+                                    "id": 2
+                                },
+                                "id": "2",
+                                "timestamp": 1731400001000,
+                                "datetime": null,
+                                "symbol": "BTC/USDT",
+                                "order": "5002",
+                                "type": "limit",
+                                "side": "sell",
+                                "takerOrMaker": "taker",
+                                "price": 50010,
+                                "amount": 0.01,
+                                "cost": 500.1,
+                                "fee": null,
+                                "fees": []
+                            },
+                            {
+                                "info": {
+                                    "id": 1
+                                },
+                                "id": "1",
+                                "timestamp": 1731400000000,
+                                "datetime": null,
+                                "symbol": "BTC/USDT",
+                                "order": "5001",
+                                "type": "limit",
+                                "side": "buy",
+                                "takerOrMaker": "taker",
+                                "price": 50000,
+                                "amount": 0.01,
+                                "cost": 500,
+                                "fee": null,
+                                "fees": []
+                            }
+                        ]
+                    }
+                ],
+                "sentMessages": [
+                    {
+                        "id": 1,
+                        "method": "subscribe",
+                        "params": {
+                            "channel": "trades",
+                            "symbol": "BTC/USDT"
+                        }
+                    }
+                ],
+                "parsedResponses": [
+                    [
+                        {
+                            "info": {
+                                "info": {
+                                    "id": 1
+                                },
+                                "id": "1",
+                                "timestamp": 1731400000000,
+                                "datetime": null,
+                                "symbol": "BTC/USDT",
+                                "order": "5001",
+                                "type": "limit",
+                                "side": "buy",
+                                "takerOrMaker": "taker",
+                                "price": 50000,
+                                "amount": 0.01,
+                                "cost": 500,
+                                "fee": null,
+                                "fees": []
+                            },
+                            "id": "1",
+                            "timestamp": 1731400000000,
+                            "datetime": "2024-11-12T08:26:40.000Z",
+                            "symbol": "BTC/USDT",
+                            "order": "5001",
+                            "type": "limit",
+                            "side": "buy",
+                            "takerOrMaker": "taker",
+                            "price": 50000,
+                            "amount": 0.01,
+                            "cost": 500,
+                            "fee": {
+                                "cost": null,
+                                "currency": null
+                            },
+                            "fees": []
+                        },
+                        {
+                            "info": {
+                                "info": {
+                                    "id": 2
+                                },
+                                "id": "2",
+                                "timestamp": 1731400001000,
+                                "datetime": null,
+                                "symbol": "BTC/USDT",
+                                "order": "5002",
+                                "type": "limit",
+                                "side": "sell",
+                                "takerOrMaker": "taker",
+                                "price": 50010,
+                                "amount": 0.01,
+                                "cost": 500.1,
+                                "fee": null,
+                                "fees": []
+                            },
+                            "id": "2",
+                            "timestamp": 1731400001000,
+                            "datetime": "2024-11-12T08:26:41.000Z",
+                            "symbol": "BTC/USDT",
+                            "order": "5002",
+                            "type": "limit",
+                            "side": "sell",
+                            "takerOrMaker": "taker",
+                            "price": 50010,
+                            "amount": 0.01,
+                            "cost": 500.1,
+                            "fee": {
+                                "cost": null,
+                                "currency": null
+                            },
+                            "fees": []
+                        }
+                    ],
+                    [
+                        {
+                            "info": {
+                                "info": {
+                                    "id": 3
+                                },
+                                "id": "3",
+                                "timestamp": 1731400002000,
+                                "datetime": null,
+                                "symbol": "BTC/USDT",
+                                "order": "5003",
+                                "type": "limit",
+                                "side": "buy",
+                                "takerOrMaker": "taker",
+                                "price": 50020,
+                                "amount": 0.01,
+                                "cost": 500.2,
+                                "fee": null,
+                                "fees": []
+                            },
+                            "id": "3",
+                            "timestamp": 1731400002000,
+                            "datetime": "2024-11-12T08:26:42.000Z",
+                            "symbol": "BTC/USDT",
+                            "order": "5003",
+                            "type": "limit",
+                            "side": "buy",
+                            "takerOrMaker": "taker",
+                            "price": 50020,
+                            "amount": 0.01,
+                            "cost": 500.2,
+                            "fee": {
+                                "cost": null,
+                                "currency": null
+                            },
+                            "fees": []
+                        }
+                    ]
+                ]
+            }
+        ],
+        "watchOHLCV": [
+            {
+                "description": "repeated candle pushes update candles by timestamp",
+                "input": [
+                    "BTC/USDT",
+                    "1m"
+                ],
+                "url": "wss://ccxt.nxmarket.com/v1/ws",
+                "messages": [
+                    {
+                        "id": 1,
+                        "result": {
+                            "status": "ok",
+                            "channel": "ohlcv",
+                            "symbol": "BTC/USDT"
+                        }
+                    },
+                    {
+                        "channel": "ohlcv",
+                        "symbol": "BTC/USDT",
+                        "data": [
+                            [
+                                1731400000000,
+                                50000,
+                                50050,
+                                49990,
+                                50020,
+                                1.5
+                            ],
+                            [
+                                1731400060000,
+                                50020,
+                                50030,
+                                50000,
+                                50010,
+                                0.5
+                            ]
+                        ]
+                    },
+                    {
+                        "channel": "ohlcv",
+                        "symbol": "BTC/USDT",
+                        "data": [
+                            [
+                                1731400060000,
+                                50020,
+                                50080,
+                                50000,
+                                50070,
+                                0.9
+                            ],
+                            [
+                                1731400120000,
+                                50070,
+                                50100,
+                                50060,
+                                50090,
+                                0.2
+                            ]
+                        ]
+                    }
+                ],
+                "sentMessages": [
+                    {
+                        "id": 1,
+                        "method": "subscribe",
+                        "params": {
+                            "channel": "ohlcv",
+                            "symbol": "BTC/USDT",
+                            "timeframe": "1m"
+                        }
+                    }
+                ],
+                "parsedResponses": [
+                    [
+                        [
+                            1731400000000,
+                            50000,
+                            50050,
+                            49990,
+                            50020,
+                            1.5
+                        ],
+                        [
+                            1731400060000,
+                            50020,
+                            50030,
+                            50000,
+                            50010,
+                            0.5
+                        ]
+                    ],
+                    [
+                        [
+                            1731400060000,
+                            50020,
+                            50080,
+                            50000,
+                            50070,
+                            0.9
+                        ],
+                        [
+                            1731400120000,
+                            50070,
+                            50100,
+                            50060,
+                            50090,
+                            0.2
+                        ]
+                    ]
+                ]
+            }
+        ],
+        "watchBalance": [
+            {
+                "apiKey": "testkey",
+                "secret": "testsecret",
+                "sentSkipKeys": [
+                    "sign",
+                    "timestamp"
+                ],
+                "description": "authenticates, then the balance push",
+                "input": [],
+                "url": "wss://ccxt.nxmarket.com/v1/ws",
+                "messages": [
+                    {
+                        "id": 1,
+                        "result": {
+                            "status": "ok",
+                            "userId": 7
+                        }
+                    },
+                    {
+                        "id": 2,
+                        "result": {
+                            "status": "ok",
+                            "channel": "balance"
+                        }
+                    },
+                    {
+                        "channel": "balance",
+                        "data": {
+                            "free": {
+                                "BTC": 0.5,
+                                "USDT": 1000
+                            },
+                            "used": {
+                                "BTC": 0,
+                                "USDT": 50
+                            },
+                            "total": {
+                                "BTC": 0.5,
+                                "USDT": 1050
+                            },
+                            "info": {},
+                            "timestamp": 1731400000000,
+                            "datetime": "2024-11-12T08:26:40Z",
+                            "BTC": {
+                                "free": 0.5,
+                                "used": 0,
+                                "total": 0.5
+                            },
+                            "USDT": {
+                                "free": 1000,
+                                "used": 50,
+                                "total": 1050
+                            }
+                        }
+                    }
+                ],
+                "sentMessages": [
+                    {
+                        "id": 1,
+                        "method": "auth",
+                        "params": {
+                            "key": "testkey",
+                            "sign": "x",
+                            "timestamp": 0
+                        }
+                    },
+                    {
+                        "id": 2,
+                        "method": "subscribe",
+                        "params": {
+                            "channel": "balance"
+                        }
+                    }
+                ],
+                "parsedResponse": {
+                    "info": {
+                        "free": {
+                            "BTC": 0.5,
+                            "USDT": 1000
+                        },
+                        "used": {
+                            "BTC": 0,
+                            "USDT": 50
+                        },
+                        "total": {
+                            "BTC": 0.5,
+                            "USDT": 1050
+                        },
+                        "info": {},
+                        "timestamp": 1731400000000,
+                        "datetime": "2024-11-12T08:26:40Z",
+                        "BTC": {
+                            "free": 0.5,
+                            "used": 0,
+                            "total": 0.5
+                        },
+                        "USDT": {
+                            "free": 1000,
+                            "used": 50,
+                            "total": 1050
+                        }
+                    },
+                    "timestamp": 1731400000000,
+                    "datetime": "2024-11-12T08:26:40.000Z",
+                    "BTC": {
+                        "free": 0.5,
+                        "used": 0,
+                        "total": 0.5
+                    },
+                    "USDT": {
+                        "free": 1000,
+                        "used": 50,
+                        "total": 1050
+                    },
+                    "free": {
+                        "BTC": 0.5,
+                        "USDT": 1000
+                    },
+                    "used": {
+                        "BTC": 0,
+                        "USDT": 50
+                    },
+                    "total": {
+                        "BTC": 0.5,
+                        "USDT": 1050
+                    }
+                }
+            }
+        ],
+        "watchOrders": [
+            {
+                "apiKey": "testkey",
+                "secret": "testsecret",
+                "sentSkipKeys": [
+                    "sign",
+                    "timestamp"
+                ],
+                "description": "an unchanged open order pushed again is not an update, a fill is",
+                "input": [
+                    "BTC/USDT"
+                ],
+                "url": "wss://ccxt.nxmarket.com/v1/ws",
+                "messages": [
+                    {
+                        "id": 1,
+                        "result": {
+                            "status": "ok",
+                            "userId": 7
+                        }
+                    },
+                    {
+                        "id": 2,
+                        "result": {
+                            "status": "ok",
+                            "channel": "orders",
+                            "symbol": "BTC/USDT"
+                        }
+                    },
+                    {
+                        "channel": "orders",
+                        "symbol": "BTC/USDT",
+                        "data": {
+                            "id": "123",
+                            "clientOrderId": null,
+                            "timestamp": 1731400000000,
+                            "datetime": "2024-11-12T08:26:40Z",
+                            "lastTradeTimestamp": null,
+                            "status": "open",
+                            "symbol": "BTC/USDT",
+                            "type": "limit",
+                            "timeInForce": "GTC",
+                            "side": "buy",
+                            "price": 50000,
+                            "average": null,
+                            "amount": 0.001,
+                            "filled": 0,
+                            "remaining": 0.001,
+                            "cost": 0,
+                            "trades": [],
+                            "fee": null,
+                            "fees": [],
+                            "info": {
+                                "id": 123
+                            }
+                        }
+                    },
+                    {
+                        "channel": "orders",
+                        "symbol": "BTC/USDT",
+                        "data": {
+                            "id": "123",
+                            "clientOrderId": null,
+                            "timestamp": 1731400000000,
+                            "datetime": "2024-11-12T08:26:40Z",
+                            "lastTradeTimestamp": null,
+                            "status": "open",
+                            "symbol": "BTC/USDT",
+                            "type": "limit",
+                            "timeInForce": "GTC",
+                            "side": "buy",
+                            "price": 50000,
+                            "average": null,
+                            "amount": 0.001,
+                            "filled": 0,
+                            "remaining": 0.001,
+                            "cost": 0,
+                            "trades": [],
+                            "fee": null,
+                            "fees": [],
+                            "info": {
+                                "id": 123
+                            }
+                        }
+                    },
+                    {
+                        "channel": "orders",
+                        "symbol": "BTC/USDT",
+                        "data": {
+                            "id": "123",
+                            "clientOrderId": null,
+                            "timestamp": 1731400000000,
+                            "datetime": "2024-11-12T08:26:40Z",
+                            "lastTradeTimestamp": null,
+                            "status": "closed",
+                            "symbol": "BTC/USDT",
+                            "type": "limit",
+                            "timeInForce": "GTC",
+                            "side": "buy",
+                            "price": 50000,
+                            "average": 50000,
+                            "amount": 0.001,
+                            "filled": 0.001,
+                            "remaining": 0,
+                            "cost": 50,
+                            "trades": [],
+                            "fee": null,
+                            "fees": [],
+                            "info": {
+                                "id": 123
+                            }
+                        }
+                    }
+                ],
+                "sentMessages": [
+                    {
+                        "id": 1,
+                        "method": "auth",
+                        "params": {
+                            "key": "testkey",
+                            "sign": "x",
+                            "timestamp": 0
+                        }
+                    },
+                    {
+                        "id": 2,
+                        "method": "subscribe",
+                        "params": {
+                            "channel": "orders",
+                            "symbol": "BTC/USDT"
+                        }
+                    }
+                ],
+                "parsedResponses": [
+                    [
+                        {
+                            "info": {
+                                "id": "123",
+                                "clientOrderId": null,
+                                "timestamp": 1731400000000,
+                                "datetime": "2024-11-12T08:26:40Z",
+                                "lastTradeTimestamp": null,
+                                "status": "open",
+                                "symbol": "BTC/USDT",
+                                "type": "limit",
+                                "timeInForce": "GTC",
+                                "side": "buy",
+                                "price": 50000,
+                                "average": null,
+                                "amount": 0.001,
+                                "filled": 0,
+                                "remaining": 0.001,
+                                "cost": 0,
+                                "trades": [],
+                                "fee": null,
+                                "fees": [],
+                                "info": {
+                                    "id": 123
+                                }
+                            },
+                            "id": "123",
+                            "clientOrderId": null,
+                            "timestamp": 1731400000000,
+                            "datetime": "2024-11-12T08:26:40.000Z",
+                            "lastTradeTimestamp": null,
+                            "status": "open",
+                            "symbol": "BTC/USDT",
+                            "type": "limit",
+                            "timeInForce": "GTC",
+                            "postOnly": false,
+                            "reduceOnly": null,
+                            "side": "buy",
+                            "price": 50000,
+                            "triggerPrice": null,
+                            "average": null,
+                            "amount": 0.001,
+                            "filled": 0,
+                            "remaining": 0.001,
+                            "cost": 0,
+                            "trades": [],
+                            "fee": null,
+                            "fees": [],
+                            "lastUpdateTimestamp": null,
+                            "stopPrice": null,
+                            "takeProfitPrice": null,
+                            "stopLossPrice": null
+                        }
+                    ],
+                    [
+                        {
+                            "info": {
+                                "id": "123",
+                                "clientOrderId": null,
+                                "timestamp": 1731400000000,
+                                "datetime": "2024-11-12T08:26:40Z",
+                                "lastTradeTimestamp": null,
+                                "status": "closed",
+                                "symbol": "BTC/USDT",
+                                "type": "limit",
+                                "timeInForce": "GTC",
+                                "side": "buy",
+                                "price": 50000,
+                                "average": 50000,
+                                "amount": 0.001,
+                                "filled": 0.001,
+                                "remaining": 0,
+                                "cost": 50,
+                                "trades": [],
+                                "fee": null,
+                                "fees": [],
+                                "info": {
+                                    "id": 123
+                                }
+                            },
+                            "id": "123",
+                            "clientOrderId": null,
+                            "timestamp": 1731400000000,
+                            "datetime": "2024-11-12T08:26:40.000Z",
+                            "lastTradeTimestamp": null,
+                            "status": "closed",
+                            "symbol": "BTC/USDT",
+                            "type": "limit",
+                            "timeInForce": "GTC",
+                            "postOnly": false,
+                            "reduceOnly": null,
+                            "side": "buy",
+                            "price": 50000,
+                            "triggerPrice": null,
+                            "average": 50000,
+                            "amount": 0.001,
+                            "filled": 0.001,
+                            "remaining": 0,
+                            "cost": 50,
+                            "trades": [],
+                            "fee": null,
+                            "fees": [],
+                            "lastUpdateTimestamp": null,
+                            "stopPrice": null,
+                            "takeProfitPrice": null,
+                            "stopLossPrice": null
+                        }
+                    ]
+                ]
+            }
+        ],
+        "watchMyTrades": [
+            {
+                "apiKey": "testkey",
+                "secret": "testsecret",
+                "sentSkipKeys": [
+                    "sign",
+                    "timestamp"
+                ],
+                "description": "own trade push",
+                "input": [],
+                "url": "wss://ccxt.nxmarket.com/v1/ws",
+                "messages": [
+                    {
+                        "id": 1,
+                        "result": {
+                            "status": "ok",
+                            "userId": 7
+                        }
+                    },
+                    {
+                        "id": 2,
+                        "result": {
+                            "status": "ok",
+                            "channel": "myTrades"
+                        }
+                    },
+                    {
+                        "channel": "myTrades",
+                        "symbol": "BTC/USDT",
+                        "data": {
+                            "info": {
+                                "id": 9001
+                            },
+                            "id": "9001",
+                            "timestamp": 1731400001000,
+                            "datetime": null,
+                            "symbol": "BTC/USDT",
+                            "order": "14001",
+                            "type": "limit",
+                            "side": "buy",
+                            "takerOrMaker": "taker",
+                            "price": 50010,
+                            "amount": 0.01,
+                            "cost": 500.1,
+                            "fee": {
+                                "cost": 0.0005001,
+                                "currency": "USDT",
+                                "rate": 0.001
+                            },
+                            "fees": []
+                        }
+                    }
+                ],
+                "sentMessages": [
+                    {
+                        "id": 1,
+                        "method": "auth",
+                        "params": {
+                            "key": "testkey",
+                            "sign": "x",
+                            "timestamp": 0
+                        }
+                    },
+                    {
+                        "id": 2,
+                        "method": "subscribe",
+                        "params": {
+                            "channel": "myTrades"
+                        }
+                    }
+                ],
+                "parsedResponse": [
+                    {
+                        "info": {
+                            "info": {
+                                "id": 9001
+                            },
+                            "id": "9001",
+                            "timestamp": 1731400001000,
+                            "datetime": null,
+                            "symbol": "BTC/USDT",
+                            "order": "14001",
+                            "type": "limit",
+                            "side": "buy",
+                            "takerOrMaker": "taker",
+                            "price": 50010,
+                            "amount": 0.01,
+                            "cost": 500.1,
+                            "fee": {
+                                "cost": 0.0005001,
+                                "currency": "USDT",
+                                "rate": 0.001
+                            },
+                            "fees": []
+                        },
+                        "id": "9001",
+                        "timestamp": 1731400001000,
+                        "datetime": "2024-11-12T08:26:41.000Z",
+                        "symbol": "BTC/USDT",
+                        "order": "14001",
+                        "type": "limit",
+                        "side": "buy",
+                        "takerOrMaker": "taker",
+                        "price": 50010,
+                        "amount": 0.01,
+                        "cost": 500.1,
+                        "fee": {
+                            "currency": "USDT",
+                            "cost": 0.0005001,
+                            "rate": 0.001
+                        },
+                        "fees": [
+                            {
+                                "currency": "USDT",
+                                "cost": 0.0005001,
+                                "rate": 0.001
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

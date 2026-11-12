@@ -2085,6 +2085,18 @@
             }
         }
     },
+    "nxmarket": {
+        "skipMethods": {
+            "watchOHLCV": "the server pushes candles only when it has some, and dev and staging return none",
+            "watchTrades": "the test waits for a trade newer than the first push, and staging markets rarely trade",
+            "watchOrders": "the server pushes open orders only, and the test account keeps none between runs",
+            "watchMyTrades": "the server pushes new own trades only, and the test account does not trade during a run",
+            "watchBidsAsks": {
+                "bid": "staging books are empty, so the best bid is null",
+                "ask": "staging books are empty, so the best ask is null"
+            }
+        }
+    },
     "oceanex": {
         "skipMethods": {
             "loadMarkets": {
