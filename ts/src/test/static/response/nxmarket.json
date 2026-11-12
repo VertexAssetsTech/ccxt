@@ -1,0 +1,4229 @@
+{
+    "exchange": "nxmarket",
+    "skipKeys": [],
+    "methods": {
+        "fetchMarkets": [
+            {
+                "description": "markets from dev",
+                "method": "fetchMarkets",
+                "input": [],
+                "httpResponse": [
+                    {
+                        "id": "BTCUSDT",
+                        "symbol": "BTC/USDT",
+                        "base": "BTC",
+                        "quote": "USDT",
+                        "baseId": "btc",
+                        "quoteId": "usdt",
+                        "active": true,
+                        "type": "spot",
+                        "spot": true,
+                        "margin": false,
+                        "future": false,
+                        "swap": false,
+                        "option": false,
+                        "contract": false,
+                        "settle": null,
+                        "settleId": null,
+                        "contractSize": null,
+                        "linear": null,
+                        "inverse": null,
+                        "expiry": null,
+                        "expiryDatetime": null,
+                        "strike": null,
+                        "optionType": null,
+                        "taker": 0.002,
+                        "maker": 0.002,
+                        "percentage": true,
+                        "tierBased": false,
+                        "feeSide": "get",
+                        "precision": {
+                            "price": 9,
+                            "amount": 9,
+                            "cost": null
+                        },
+                        "limits": {
+                            "amount": {
+                                "min": 0.00001,
+                                "max": null
+                            },
+                            "price": {
+                                "min": 0.01,
+                                "max": null
+                            },
+                            "cost": {
+                                "min": null,
+                                "max": null
+                            }
+                        },
+                        "marginModes": {
+                            "cross": false,
+                            "isolated": false
+                        },
+                        "info": {
+                            "id": "BTCUSDT",
+                            "baseCurrencyId": "btc",
+                            "quoteCurrencyId": "usdt",
+                            "lotSize": 0.00001,
+                            "priceStep": 0.01,
+                            "enabled": true
+                        }
+                    },
+                    {
+                        "id": "ETHUSDT",
+                        "symbol": "ETH/USDT",
+                        "base": "ETH",
+                        "quote": "USDT",
+                        "baseId": "eth",
+                        "quoteId": "usdt",
+                        "active": true,
+                        "type": "spot",
+                        "spot": true,
+                        "margin": false,
+                        "future": false,
+                        "swap": false,
+                        "option": false,
+                        "contract": false,
+                        "settle": null,
+                        "settleId": null,
+                        "contractSize": null,
+                        "linear": null,
+                        "inverse": null,
+                        "expiry": null,
+                        "expiryDatetime": null,
+                        "strike": null,
+                        "optionType": null,
+                        "taker": 0.002,
+                        "maker": 0.002,
+                        "percentage": true,
+                        "tierBased": false,
+                        "feeSide": "get",
+                        "precision": {
+                            "price": 9,
+                            "amount": 9,
+                            "cost": null
+                        },
+                        "limits": {
+                            "amount": {
+                                "min": 0.0001,
+                                "max": null
+                            },
+                            "price": {
+                                "min": 0.01,
+                                "max": null
+                            },
+                            "cost": {
+                                "min": null,
+                                "max": null
+                            }
+                        },
+                        "marginModes": {
+                            "cross": false,
+                            "isolated": false
+                        },
+                        "info": {
+                            "id": "ETHUSDT",
+                            "baseCurrencyId": "eth",
+                            "quoteCurrencyId": "usdt",
+                            "lotSize": 0.0001,
+                            "priceStep": 0.01,
+                            "enabled": true
+                        }
+                    },
+                    {
+                        "id": "RAAPLUSDT",
+                        "symbol": "RAAPL/USDT",
+                        "base": "RAAPL",
+                        "quote": "USDT",
+                        "baseId": "raapl",
+                        "quoteId": "usdt",
+                        "active": true,
+                        "type": "spot",
+                        "spot": true,
+                        "margin": false,
+                        "future": false,
+                        "swap": false,
+                        "option": false,
+                        "contract": false,
+                        "settle": null,
+                        "settleId": null,
+                        "contractSize": null,
+                        "linear": null,
+                        "inverse": null,
+                        "expiry": null,
+                        "expiryDatetime": null,
+                        "strike": null,
+                        "optionType": null,
+                        "taker": 0.002,
+                        "maker": 0.002,
+                        "percentage": true,
+                        "tierBased": false,
+                        "feeSide": "get",
+                        "precision": {
+                            "price": 9,
+                            "amount": 9,
+                            "cost": null
+                        },
+                        "limits": {
+                            "amount": {
+                                "min": 0.0001,
+                                "max": null
+                            },
+                            "price": {
+                                "min": 0.01,
+                                "max": null
+                            },
+                            "cost": {
+                                "min": null,
+                                "max": null
+                            }
+                        },
+                        "marginModes": {
+                            "cross": false,
+                            "isolated": false
+                        },
+                        "info": {
+                            "id": "RAAPLUSDT",
+                            "baseCurrencyId": "raapl",
+                            "quoteCurrencyId": "usdt",
+                            "lotSize": 0.0001,
+                            "priceStep": 0.01,
+                            "enabled": true
+                        }
+                    }
+                ],
+                "parsedResponse": [
+                    {
+                        "id": "BTCUSDT",
+                        "lowercaseId": null,
+                        "symbol": "BTC/USDT",
+                        "base": "BTC",
+                        "quote": "USDT",
+                        "settle": null,
+                        "baseId": "btc",
+                        "quoteId": "usdt",
+                        "settleId": null,
+                        "type": "spot",
+                        "spot": true,
+                        "margin": false,
+                        "swap": false,
+                        "future": false,
+                        "option": false,
+                        "index": false,
+                        "active": true,
+                        "contract": false,
+                        "linear": null,
+                        "inverse": null,
+                        "subType": null,
+                        "taker": 0.002,
+                        "maker": 0.002,
+                        "contractSize": null,
+                        "expiry": null,
+                        "expiryDatetime": null,
+                        "strike": null,
+                        "optionType": null,
+                        "precision": {
+                            "amount": 1e-9,
+                            "price": 1e-9
+                        },
+                        "limits": {
+                            "leverage": {
+                                "min": null,
+                                "max": null
+                            },
+                            "amount": {
+                                "min": 0.00001,
+                                "max": null
+                            },
+                            "price": {
+                                "min": 0.01,
+                                "max": null
+                            },
+                            "cost": {
+                                "min": null,
+                                "max": null
+                            }
+                        },
+                        "marginModes": {
+                            "cross": false,
+                            "isolated": false
+                        },
+                        "created": null,
+                        "info": {
+                            "id": "BTCUSDT",
+                            "symbol": "BTC/USDT",
+                            "base": "BTC",
+                            "quote": "USDT",
+                            "baseId": "btc",
+                            "quoteId": "usdt",
+                            "active": true,
+                            "type": "spot",
+                            "spot": true,
+                            "margin": false,
+                            "future": false,
+                            "swap": false,
+                            "option": false,
+                            "contract": false,
+                            "settle": null,
+                            "settleId": null,
+                            "contractSize": null,
+                            "linear": null,
+                            "inverse": null,
+                            "expiry": null,
+                            "expiryDatetime": null,
+                            "strike": null,
+                            "optionType": null,
+                            "taker": 0.002,
+                            "maker": 0.002,
+                            "percentage": true,
+                            "tierBased": false,
+                            "feeSide": "get",
+                            "precision": {
+                                "price": 9,
+                                "amount": 9,
+                                "cost": null
+                            },
+                            "limits": {
+                                "amount": {
+                                    "min": 0.00001,
+                                    "max": null
+                                },
+                                "price": {
+                                    "min": 0.01,
+                                    "max": null
+                                },
+                                "cost": {
+                                    "min": null,
+                                    "max": null
+                                }
+                            },
+                            "marginModes": {
+                                "cross": false,
+                                "isolated": false
+                            },
+                            "info": {
+                                "id": "BTCUSDT",
+                                "baseCurrencyId": "btc",
+                                "quoteCurrencyId": "usdt",
+                                "lotSize": 0.00001,
+                                "priceStep": 0.01,
+                                "enabled": true
+                            }
+                        }
+                    },
+                    {
+                        "id": "ETHUSDT",
+                        "lowercaseId": null,
+                        "symbol": "ETH/USDT",
+                        "base": "ETH",
+                        "quote": "USDT",
+                        "settle": null,
+                        "baseId": "eth",
+                        "quoteId": "usdt",
+                        "settleId": null,
+                        "type": "spot",
+                        "spot": true,
+                        "margin": false,
+                        "swap": false,
+                        "future": false,
+                        "option": false,
+                        "index": false,
+                        "active": true,
+                        "contract": false,
+                        "linear": null,
+                        "inverse": null,
+                        "subType": null,
+                        "taker": 0.002,
+                        "maker": 0.002,
+                        "contractSize": null,
+                        "expiry": null,
+                        "expiryDatetime": null,
+                        "strike": null,
+                        "optionType": null,
+                        "precision": {
+                            "amount": 1e-9,
+                            "price": 1e-9
+                        },
+                        "limits": {
+                            "leverage": {
+                                "min": null,
+                                "max": null
+                            },
+                            "amount": {
+                                "min": 0.0001,
+                                "max": null
+                            },
+                            "price": {
+                                "min": 0.01,
+                                "max": null
+                            },
+                            "cost": {
+                                "min": null,
+                                "max": null
+                            }
+                        },
+                        "marginModes": {
+                            "cross": false,
+                            "isolated": false
+                        },
+                        "created": null,
+                        "info": {
+                            "id": "ETHUSDT",
+                            "symbol": "ETH/USDT",
+                            "base": "ETH",
+                            "quote": "USDT",
+                            "baseId": "eth",
+                            "quoteId": "usdt",
+                            "active": true,
+                            "type": "spot",
+                            "spot": true,
+                            "margin": false,
+                            "future": false,
+                            "swap": false,
+                            "option": false,
+                            "contract": false,
+                            "settle": null,
+                            "settleId": null,
+                            "contractSize": null,
+                            "linear": null,
+                            "inverse": null,
+                            "expiry": null,
+                            "expiryDatetime": null,
+                            "strike": null,
+                            "optionType": null,
+                            "taker": 0.002,
+                            "maker": 0.002,
+                            "percentage": true,
+                            "tierBased": false,
+                            "feeSide": "get",
+                            "precision": {
+                                "price": 9,
+                                "amount": 9,
+                                "cost": null
+                            },
+                            "limits": {
+                                "amount": {
+                                    "min": 0.0001,
+                                    "max": null
+                                },
+                                "price": {
+                                    "min": 0.01,
+                                    "max": null
+                                },
+                                "cost": {
+                                    "min": null,
+                                    "max": null
+                                }
+                            },
+                            "marginModes": {
+                                "cross": false,
+                                "isolated": false
+                            },
+                            "info": {
+                                "id": "ETHUSDT",
+                                "baseCurrencyId": "eth",
+                                "quoteCurrencyId": "usdt",
+                                "lotSize": 0.0001,
+                                "priceStep": 0.01,
+                                "enabled": true
+                            }
+                        }
+                    },
+                    {
+                        "id": "RAAPLUSDT",
+                        "lowercaseId": null,
+                        "symbol": "RAAPL/USDT",
+                        "base": "RAAPL",
+                        "quote": "USDT",
+                        "settle": null,
+                        "baseId": "raapl",
+                        "quoteId": "usdt",
+                        "settleId": null,
+                        "type": "spot",
+                        "spot": true,
+                        "margin": false,
+                        "swap": false,
+                        "future": false,
+                        "option": false,
+                        "index": false,
+                        "active": true,
+                        "contract": false,
+                        "linear": null,
+                        "inverse": null,
+                        "subType": null,
+                        "taker": 0.002,
+                        "maker": 0.002,
+                        "contractSize": null,
+                        "expiry": null,
+                        "expiryDatetime": null,
+                        "strike": null,
+                        "optionType": null,
+                        "precision": {
+                            "amount": 1e-9,
+                            "price": 1e-9
+                        },
+                        "limits": {
+                            "leverage": {
+                                "min": null,
+                                "max": null
+                            },
+                            "amount": {
+                                "min": 0.0001,
+                                "max": null
+                            },
+                            "price": {
+                                "min": 0.01,
+                                "max": null
+                            },
+                            "cost": {
+                                "min": null,
+                                "max": null
+                            }
+                        },
+                        "marginModes": {
+                            "cross": false,
+                            "isolated": false
+                        },
+                        "created": null,
+                        "info": {
+                            "id": "RAAPLUSDT",
+                            "symbol": "RAAPL/USDT",
+                            "base": "RAAPL",
+                            "quote": "USDT",
+                            "baseId": "raapl",
+                            "quoteId": "usdt",
+                            "active": true,
+                            "type": "spot",
+                            "spot": true,
+                            "margin": false,
+                            "future": false,
+                            "swap": false,
+                            "option": false,
+                            "contract": false,
+                            "settle": null,
+                            "settleId": null,
+                            "contractSize": null,
+                            "linear": null,
+                            "inverse": null,
+                            "expiry": null,
+                            "expiryDatetime": null,
+                            "strike": null,
+                            "optionType": null,
+                            "taker": 0.002,
+                            "maker": 0.002,
+                            "percentage": true,
+                            "tierBased": false,
+                            "feeSide": "get",
+                            "precision": {
+                                "price": 9,
+                                "amount": 9,
+                                "cost": null
+                            },
+                            "limits": {
+                                "amount": {
+                                    "min": 0.0001,
+                                    "max": null
+                                },
+                                "price": {
+                                    "min": 0.01,
+                                    "max": null
+                                },
+                                "cost": {
+                                    "min": null,
+                                    "max": null
+                                }
+                            },
+                            "marginModes": {
+                                "cross": false,
+                                "isolated": false
+                            },
+                            "info": {
+                                "id": "RAAPLUSDT",
+                                "baseCurrencyId": "raapl",
+                                "quoteCurrencyId": "usdt",
+                                "lotSize": 0.0001,
+                                "priceStep": 0.01,
+                                "enabled": true
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "fetchCurrencies": [
+            {
+                "description": "currencies from dev, networks keyed by the server",
+                "method": "fetchCurrencies",
+                "input": [],
+                "httpResponse": [
+                    {
+                        "id": "btc",
+                        "code": "BTC",
+                        "name": "Bitcoin",
+                        "active": true,
+                        "deposit": false,
+                        "withdraw": false,
+                        "fee": 0.00004,
+                        "precision": 9,
+                        "limits": {
+                            "amount": {
+                                "min": null,
+                                "max": null
+                            },
+                            "deposit": {
+                                "min": null,
+                                "max": null
+                            },
+                            "withdraw": {
+                                "min": null,
+                                "max": null
+                            }
+                        },
+                        "networks": {
+                            "bitcoin_mainnet": {
+                                "id": "native::btc",
+                                "network": "mainnet",
+                                "name": "Bitcoin",
+                                "active": true,
+                                "deposit": false,
+                                "withdraw": false,
+                                "fee": 0.00004,
+                                "precision": 9,
+                                "limits": {
+                                    "amount": {
+                                        "min": null,
+                                        "max": null
+                                    },
+                                    "deposit": {
+                                        "min": 0.000006,
+                                        "max": null
+                                    },
+                                    "withdraw": {
+                                        "min": 0.002,
+                                        "max": null
+                                    }
+                                },
+                                "info": {
+                                    "blockchain": "bitcoin",
+                                    "network": "mainnet",
+                                    "address": "native::btc",
+                                    "depositable": false,
+                                    "withdrawable": false
+                                }
+                            },
+                            "bitcoin_testnet": {
+                                "id": "native::btc",
+                                "network": "testnet",
+                                "name": "Bitcoin",
+                                "active": true,
+                                "deposit": false,
+                                "withdraw": false,
+                                "fee": null,
+                                "precision": 9,
+                                "limits": {
+                                    "amount": {
+                                        "min": null,
+                                        "max": null
+                                    },
+                                    "deposit": {
+                                        "min": null,
+                                        "max": null
+                                    },
+                                    "withdraw": {
+                                        "min": null,
+                                        "max": null
+                                    }
+                                },
+                                "info": {
+                                    "blockchain": "bitcoin",
+                                    "network": "testnet",
+                                    "address": "native::btc",
+                                    "depositable": false,
+                                    "withdrawable": false
+                                }
+                            },
+                            "bitcoin_testnet4": {
+                                "id": "native::btc",
+                                "network": "testnet4",
+                                "name": "Bitcoin",
+                                "active": true,
+                                "deposit": false,
+                                "withdraw": false,
+                                "fee": 0.00004,
+                                "precision": 9,
+                                "limits": {
+                                    "amount": {
+                                        "min": null,
+                                        "max": null
+                                    },
+                                    "deposit": {
+                                        "min": 0.000006,
+                                        "max": null
+                                    },
+                                    "withdraw": {
+                                        "min": 0.002,
+                                        "max": null
+                                    }
+                                },
+                                "info": {
+                                    "blockchain": "bitcoin",
+                                    "network": "testnet4",
+                                    "address": "native::btc",
+                                    "depositable": false,
+                                    "withdrawable": false
+                                }
+                            }
+                        },
+                        "info": {
+                            "id": 2,
+                            "type": "CRYPTO",
+                            "provider": "Safeheron",
+                            "isUtxo": true,
+                            "transferable": true,
+                            "renderScale": 5
+                        }
+                    },
+                    {
+                        "id": "usdt",
+                        "code": "USDT",
+                        "name": "Tether USDt",
+                        "active": true,
+                        "deposit": false,
+                        "withdraw": true,
+                        "fee": 1,
+                        "precision": 9,
+                        "limits": {
+                            "amount": {
+                                "min": null,
+                                "max": null
+                            },
+                            "deposit": {
+                                "min": null,
+                                "max": null
+                            },
+                            "withdraw": {
+                                "min": 10,
+                                "max": null
+                            }
+                        },
+                        "networks": {
+                            "binance_smart_chain_testnet": {
+                                "id": "0x337610d27c682e347c9cd60bd4b3b107c9d34ddd",
+                                "network": "testnet",
+                                "name": "Tether USDt",
+                                "active": true,
+                                "deposit": false,
+                                "withdraw": true,
+                                "fee": 1,
+                                "precision": 9,
+                                "limits": {
+                                    "amount": {
+                                        "min": null,
+                                        "max": null
+                                    },
+                                    "deposit": {
+                                        "min": 1,
+                                        "max": null
+                                    },
+                                    "withdraw": {
+                                        "min": 10,
+                                        "max": null
+                                    }
+                                },
+                                "info": {
+                                    "blockchain": "binance_smart_chain",
+                                    "network": "testnet",
+                                    "address": "0x337610d27c682e347c9cd60bd4b3b107c9d34ddd",
+                                    "depositable": false,
+                                    "withdrawable": true
+                                }
+                            },
+                            "tron_mainnet": {
+                                "id": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+                                "network": "mainnet",
+                                "name": "Tether USDt",
+                                "active": true,
+                                "deposit": false,
+                                "withdraw": true,
+                                "fee": 1,
+                                "precision": 9,
+                                "limits": {
+                                    "amount": {
+                                        "min": null,
+                                        "max": null
+                                    },
+                                    "deposit": {
+                                        "min": 1,
+                                        "max": null
+                                    },
+                                    "withdraw": {
+                                        "min": 10,
+                                        "max": null
+                                    }
+                                },
+                                "info": {
+                                    "blockchain": "tron",
+                                    "network": "mainnet",
+                                    "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+                                    "depositable": false,
+                                    "withdrawable": true
+                                }
+                            },
+                            "ethereum_mainnet": {
+                                "id": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+                                "network": "mainnet",
+                                "name": "Tether USDt",
+                                "active": true,
+                                "deposit": false,
+                                "withdraw": true,
+                                "fee": 4,
+                                "precision": 9,
+                                "limits": {
+                                    "amount": {
+                                        "min": null,
+                                        "max": null
+                                    },
+                                    "deposit": {
+                                        "min": 1,
+                                        "max": null
+                                    },
+                                    "withdraw": {
+                                        "min": 50,
+                                        "max": null
+                                    }
+                                },
+                                "info": {
+                                    "blockchain": "ethereum",
+                                    "network": "mainnet",
+                                    "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+                                    "depositable": false,
+                                    "withdrawable": true
+                                }
+                            },
+                            "ethereum_sepolia": {
+                                "id": "0x30fA2FbE15c1EaDfbEF28C188b7B8dbd3c1Ff2eB",
+                                "network": "sepolia",
+                                "name": "Tether USDt",
+                                "active": true,
+                                "deposit": false,
+                                "withdraw": true,
+                                "fee": 4,
+                                "precision": 9,
+                                "limits": {
+                                    "amount": {
+                                        "min": null,
+                                        "max": null
+                                    },
+                                    "deposit": {
+                                        "min": 1,
+                                        "max": null
+                                    },
+                                    "withdraw": {
+                                        "min": 50,
+                                        "max": null
+                                    }
+                                },
+                                "info": {
+                                    "blockchain": "ethereum",
+                                    "network": "sepolia",
+                                    "address": "0x30fA2FbE15c1EaDfbEF28C188b7B8dbd3c1Ff2eB",
+                                    "depositable": false,
+                                    "withdrawable": true
+                                }
+                            },
+                            "solana_mainnet": {
+                                "id": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                                "network": "mainnet",
+                                "name": "Tether USDt",
+                                "active": true,
+                                "deposit": false,
+                                "withdraw": true,
+                                "fee": 1,
+                                "precision": 9,
+                                "limits": {
+                                    "amount": {
+                                        "min": null,
+                                        "max": null
+                                    },
+                                    "deposit": {
+                                        "min": 1,
+                                        "max": null
+                                    },
+                                    "withdraw": {
+                                        "min": 10,
+                                        "max": null
+                                    }
+                                },
+                                "info": {
+                                    "blockchain": "solana",
+                                    "network": "mainnet",
+                                    "address": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                                    "depositable": false,
+                                    "withdrawable": true
+                                }
+                            },
+                            "binance_smart_chain_mainnet": {
+                                "id": "0x55d398326f99059fF775485246999027B3197955",
+                                "network": "mainnet",
+                                "name": "Tether USDt",
+                                "active": true,
+                                "deposit": false,
+                                "withdraw": true,
+                                "fee": 1,
+                                "precision": 9,
+                                "limits": {
+                                    "amount": {
+                                        "min": null,
+                                        "max": null
+                                    },
+                                    "deposit": {
+                                        "min": 1,
+                                        "max": null
+                                    },
+                                    "withdraw": {
+                                        "min": 10,
+                                        "max": null
+                                    }
+                                },
+                                "info": {
+                                    "blockchain": "binance_smart_chain",
+                                    "network": "mainnet",
+                                    "address": "0x55d398326f99059fF775485246999027B3197955",
+                                    "depositable": false,
+                                    "withdrawable": true
+                                }
+                            },
+                            "tron_shasta": {
+                                "id": "TG3XXyExBkPp9nzdajDZsozEu4BkaSJozs",
+                                "network": "shasta",
+                                "name": "Tether USDt",
+                                "active": true,
+                                "deposit": false,
+                                "withdraw": true,
+                                "fee": 1,
+                                "precision": 9,
+                                "limits": {
+                                    "amount": {
+                                        "min": null,
+                                        "max": null
+                                    },
+                                    "deposit": {
+                                        "min": 1,
+                                        "max": null
+                                    },
+                                    "withdraw": {
+                                        "min": 10,
+                                        "max": null
+                                    }
+                                },
+                                "info": {
+                                    "blockchain": "tron",
+                                    "network": "shasta",
+                                    "address": "TG3XXyExBkPp9nzdajDZsozEu4BkaSJozs",
+                                    "depositable": false,
+                                    "withdrawable": true
+                                }
+                            }
+                        },
+                        "info": {
+                            "id": 1,
+                            "type": "CRYPTO",
+                            "provider": "Safeheron",
+                            "isUtxo": false,
+                            "transferable": true,
+                            "renderScale": 2
+                        }
+                    },
+                    {
+                        "id": "eth",
+                        "code": "ETH",
+                        "name": "Ethereum",
+                        "active": true,
+                        "deposit": false,
+                        "withdraw": false,
+                        "fee": 0.00004,
+                        "precision": 9,
+                        "limits": {
+                            "amount": {
+                                "min": null,
+                                "max": null
+                            },
+                            "deposit": {
+                                "min": null,
+                                "max": null
+                            },
+                            "withdraw": {
+                                "min": null,
+                                "max": null
+                            }
+                        },
+                        "networks": {
+                            "ethereum_mainnet": {
+                                "id": "native::eth",
+                                "network": "mainnet",
+                                "name": "Ethereum",
+                                "active": true,
+                                "deposit": false,
+                                "withdraw": false,
+                                "fee": 0.00004,
+                                "precision": 9,
+                                "limits": {
+                                    "amount": {
+                                        "min": null,
+                                        "max": null
+                                    },
+                                    "deposit": {
+                                        "min": 3e-7,
+                                        "max": null
+                                    },
+                                    "withdraw": {
+                                        "min": 0.0001,
+                                        "max": null
+                                    }
+                                },
+                                "info": {
+                                    "blockchain": "ethereum",
+                                    "network": "mainnet",
+                                    "address": "native::eth",
+                                    "depositable": false,
+                                    "withdrawable": false
+                                }
+                            },
+                            "ethereum_sepolia": {
+                                "id": "native::eth",
+                                "network": "sepolia",
+                                "name": "Ethereum",
+                                "active": true,
+                                "deposit": false,
+                                "withdraw": false,
+                                "fee": 0.00004,
+                                "precision": 9,
+                                "limits": {
+                                    "amount": {
+                                        "min": null,
+                                        "max": null
+                                    },
+                                    "deposit": {
+                                        "min": 3e-7,
+                                        "max": null
+                                    },
+                                    "withdraw": {
+                                        "min": 0.0001,
+                                        "max": null
+                                    }
+                                },
+                                "info": {
+                                    "blockchain": "ethereum",
+                                    "network": "sepolia",
+                                    "address": "native::eth",
+                                    "depositable": false,
+                                    "withdrawable": false
+                                }
+                            }
+                        },
+                        "info": {
+                            "id": 3,
+                            "type": "CRYPTO",
+                            "provider": "Safeheron",
+                            "isUtxo": false,
+                            "transferable": true,
+                            "renderScale": 4
+                        }
+                    },
+                    {
+                        "id": "raapl",
+                        "code": "RAAPL",
+                        "name": "Apple Reality Token",
+                        "active": true,
+                        "deposit": false,
+                        "withdraw": false,
+                        "fee": null,
+                        "precision": 9,
+                        "limits": {
+                            "amount": {
+                                "min": null,
+                                "max": null
+                            },
+                            "deposit": {
+                                "min": null,
+                                "max": null
+                            },
+                            "withdraw": {
+                                "min": null,
+                                "max": null
+                            }
+                        },
+                        "networks": null,
+                        "info": {
+                            "id": 24,
+                            "type": "CRYPTO",
+                            "provider": "Safeheron",
+                            "isUtxo": false,
+                            "transferable": true,
+                            "renderScale": 4
+                        }
+                    }
+                ],
+                "parsedResponse": {
+                    "BTC": {
+                        "info": {
+                            "id": "btc",
+                            "code": "BTC",
+                            "name": "Bitcoin",
+                            "active": true,
+                            "deposit": false,
+                            "withdraw": false,
+                            "fee": 0.00004,
+                            "precision": 9,
+                            "limits": {
+                                "amount": {
+                                    "min": null,
+                                    "max": null
+                                },
+                                "deposit": {
+                                    "min": null,
+                                    "max": null
+                                },
+                                "withdraw": {
+                                    "min": null,
+                                    "max": null
+                                }
+                            },
+                            "networks": {
+                                "bitcoin_mainnet": {
+                                    "id": "native::btc",
+                                    "network": "mainnet",
+                                    "name": "Bitcoin",
+                                    "active": true,
+                                    "deposit": false,
+                                    "withdraw": false,
+                                    "fee": 0.00004,
+                                    "precision": 9,
+                                    "limits": {
+                                        "amount": {
+                                            "min": null,
+                                            "max": null
+                                        },
+                                        "deposit": {
+                                            "min": 0.000006,
+                                            "max": null
+                                        },
+                                        "withdraw": {
+                                            "min": 0.002,
+                                            "max": null
+                                        }
+                                    },
+                                    "info": {
+                                        "blockchain": "bitcoin",
+                                        "network": "mainnet",
+                                        "address": "native::btc",
+                                        "depositable": false,
+                                        "withdrawable": false
+                                    }
+                                },
+                                "bitcoin_testnet": {
+                                    "id": "native::btc",
+                                    "network": "testnet",
+                                    "name": "Bitcoin",
+                                    "active": true,
+                                    "deposit": false,
+                                    "withdraw": false,
+                                    "fee": null,
+                                    "precision": 9,
+                                    "limits": {
+                                        "amount": {
+                                            "min": null,
+                                            "max": null
+                                        },
+                                        "deposit": {
+                                            "min": null,
+                                            "max": null
+                                        },
+                                        "withdraw": {
+                                            "min": null,
+                                            "max": null
+                                        }
+                                    },
+                                    "info": {
+                                        "blockchain": "bitcoin",
+                                        "network": "testnet",
+                                        "address": "native::btc",
+                                        "depositable": false,
+                                        "withdrawable": false
+                                    }
+                                },
+                                "bitcoin_testnet4": {
+                                    "id": "native::btc",
+                                    "network": "testnet4",
+                                    "name": "Bitcoin",
+                                    "active": true,
+                                    "deposit": false,
+                                    "withdraw": false,
+                                    "fee": 0.00004,
+                                    "precision": 9,
+                                    "limits": {
+                                        "amount": {
+                                            "min": null,
+                                            "max": null
+                                        },
+                                        "deposit": {
+                                            "min": 0.000006,
+                                            "max": null
+                                        },
+                                        "withdraw": {
+                                            "min": 0.002,
+                                            "max": null
+                                        }
+                                    },
+                                    "info": {
+                                        "blockchain": "bitcoin",
+                                        "network": "testnet4",
+                                        "address": "native::btc",
+                                        "depositable": false,
+                                        "withdrawable": false
+                                    }
+                                }
+                            },
+                            "info": {
+                                "id": 2,
+                                "type": "CRYPTO",
+                                "provider": "Safeheron",
+                                "isUtxo": true,
+                                "transferable": true,
+                                "renderScale": 5
+                            }
+                        },
+                        "id": "btc",
+                        "numericId": null,
+                        "code": "BTC",
+                        "precision": 1e-9,
+                        "type": "crypto",
+                        "name": "Bitcoin",
+                        "active": true,
+                        "deposit": false,
+                        "withdraw": false,
+                        "fee": 0.00004,
+                        "fees": {},
+                        "networks": {
+                            "bitcoin_mainnet": {
+                                "id": "bitcoin_mainnet",
+                                "network": "bitcoin_mainnet",
+                                "active": true,
+                                "deposit": false,
+                                "withdraw": false,
+                                "fee": 0.00004,
+                                "precision": 1e-9,
+                                "limits": {
+                                    "deposit": {
+                                        "min": 0.000006,
+                                        "max": null
+                                    },
+                                    "withdraw": {
+                                        "min": 0.002,
+                                        "max": null
+                                    }
+                                },
+                                "info": {
+                                    "id": "native::btc",
+                                    "network": "mainnet",
+                                    "name": "Bitcoin",
+                                    "active": true,
+                                    "deposit": false,
+                                    "withdraw": false,
+                                    "fee": 0.00004,
+                                    "precision": 9,
+                                    "limits": {
+                                        "amount": {
+                                            "min": null,
+                                            "max": null
+                                        },
+                                        "deposit": {
+                                            "min": 0.000006,
+                                            "max": null
+                                        },
+                                        "withdraw": {
+                                            "min": 0.002,
+                                            "max": null
+                                        }
+                                    },
+                                    "info": {
+                                        "blockchain": "bitcoin",
+                                        "network": "mainnet",
+                                        "address": "native::btc",
+                                        "depositable": false,
+                                        "withdrawable": false
+                                    }
+                                }
+                            },
+                            "bitcoin_testnet": {
+                                "id": "bitcoin_testnet",
+                                "network": "bitcoin_testnet",
+                                "active": true,
+                                "deposit": false,
+                                "withdraw": false,
+                                "fee": null,
+                                "precision": 1e-9,
+                                "limits": {
+                                    "deposit": {
+                                        "min": null,
+                                        "max": null
+                                    },
+                                    "withdraw": {
+                                        "min": null,
+                                        "max": null
+                                    }
+                                },
+                                "info": {
+                                    "id": "native::btc",
+                                    "network": "testnet",
+                                    "name": "Bitcoin",
+                                    "active": true,
+                                    "deposit": false,
+                                    "withdraw": false,
+                                    "fee": null,
+                                    "precision": 9,
+                                    "limits": {
+                                        "amount": {
+                                            "min": null,
+                                            "max": null
+                                        },
+                                        "deposit": {
+                                            "min": null,
+                                            "max": null
+                                        },
+                                        "withdraw": {
+                                            "min": null,
+                                            "max": null
+                                        }
+                                    },
+                                    "info": {
+                                        "blockchain": "bitcoin",
+                                        "network": "testnet",
+                                        "address": "native::btc",
+                                        "depositable": false,
+                                        "withdrawable": false
+                                    }
+                                }
+                            },
+                            "bitcoin_testnet4": {
+                                "id": "bitcoin_testnet4",
+                                "network": "bitcoin_testnet4",
+                                "active": true,
+                                "deposit": false,
+                                "withdraw": false,
+                                "fee": 0.00004,
+                                "precision": 1e-9,
+                                "limits": {
+                                    "deposit": {
+                                        "min": 0.000006,
+                                        "max": null
+                                    },
+                                    "withdraw": {
+                                        "min": 0.002,
+                                        "max": null
+                                    }
+                                },
+                                "info": {
+                                    "id": "native::btc",
+                                    "network": "testnet4",
+                                    "name": "Bitcoin",
+                                    "active": true,
+                                    "deposit": false,
+                                    "withdraw": false,
+                                    "fee": 0.00004,
+                                    "precision": 9,
+                                    "limits": {
+                                        "amount": {
+                                            "min": null,
+                                            "max": null
+                                        },
+                                        "deposit": {
+                                            "min": 0.000006,
+                                            "max": null
+                                        },
+                                        "withdraw": {
+                                            "min": 0.002,
+                                            "max": null
+                                        }
+                                    },
+                                    "info": {
+                                        "blockchain": "bitcoin",
+                                        "network": "testnet4",
+                                        "address": "native::btc",
+                                        "depositable": false,
+                                        "withdrawable": false
+                                    }
+                                }
+                            }
+                        },
+                        "limits": {
+                            "deposit": {
+                                "min": 0.000006,
+                                "max": null
+                            },
+                            "withdraw": {
+                                "min": 0.002,
+                                "max": null
+                            }
+                        }
+                    },
+                    "USDT": {
+                        "info": {
+                            "id": "usdt",
+                            "code": "USDT",
+                            "name": "Tether USDt",
+                            "active": true,
+                            "deposit": false,
+                            "withdraw": true,
+                            "fee": 1,
+                            "precision": 9,
+                            "limits": {
+                                "amount": {
+                                    "min": null,
+                                    "max": null
+                                },
+                                "deposit": {
+                                    "min": null,
+                                    "max": null
+                                },
+                                "withdraw": {
+                                    "min": 10,
+                                    "max": null
+                                }
+                            },
+                            "networks": {
+                                "binance_smart_chain_testnet": {
+                                    "id": "0x337610d27c682e347c9cd60bd4b3b107c9d34ddd",
+                                    "network": "testnet",
+                                    "name": "Tether USDt",
+                                    "active": true,
+                                    "deposit": false,
+                                    "withdraw": true,
+                                    "fee": 1,
+                                    "precision": 9,
+                                    "limits": {
+                                        "amount": {
+                                            "min": null,
+                                            "max": null
+                                        },
+                                        "deposit": {
+                                            "min": 1,
+                                            "max": null
+                                        },
+                                        "withdraw": {
+                                            "min": 10,
+                                            "max": null
+                                        }
+                                    },
+                                    "info": {
+                                        "blockchain": "binance_smart_chain",
+                                        "network": "testnet",
+                                        "address": "0x337610d27c682e347c9cd60bd4b3b107c9d34ddd",
+                                        "depositable": false,
+                                        "withdrawable": true
+                                    }
+                                },
+                                "tron_mainnet": {
+                                    "id": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+                                    "network": "mainnet",
+                                    "name": "Tether USDt",
+                                    "active": true,
+                                    "deposit": false,
+                                    "withdraw": true,
+                                    "fee": 1,
+                                    "precision": 9,
+                                    "limits": {
+                                        "amount": {
+                                            "min": null,
+                                            "max": null
+                                        },
+                                        "deposit": {
+                                            "min": 1,
+                                            "max": null
+                                        },
+                                        "withdraw": {
+                                            "min": 10,
+                                            "max": null
+                                        }
+                                    },
+                                    "info": {
+                                        "blockchain": "tron",
+                                        "network": "mainnet",
+                                        "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+                                        "depositable": false,
+                                        "withdrawable": true
+                                    }
+                                },
+                                "ethereum_mainnet": {
+                                    "id": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+                                    "network": "mainnet",
+                                    "name": "Tether USDt",
+                                    "active": true,
+                                    "deposit": false,
+                                    "withdraw": true,
+                                    "fee": 4,
+                                    "precision": 9,
+                                    "limits": {
+                                        "amount": {
+                                            "min": null,
+                                            "max": null
+                                        },
+                                        "deposit": {
+                                            "min": 1,
+                                            "max": null
+                                        },
+                                        "withdraw": {
+                                            "min": 50,
+                                            "max": null
+                                        }
+                                    },
+                                    "info": {
+                                        "blockchain": "ethereum",
+                                        "network": "mainnet",
+                                        "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+                                        "depositable": false,
+                                        "withdrawable": true
+                                    }
+                                },
+                                "ethereum_sepolia": {
+                                    "id": "0x30fA2FbE15c1EaDfbEF28C188b7B8dbd3c1Ff2eB",
+                                    "network": "sepolia",
+                                    "name": "Tether USDt",
+                                    "active": true,
+                                    "deposit": false,
+                                    "withdraw": true,
+                                    "fee": 4,
+                                    "precision": 9,
+                                    "limits": {
+                                        "amount": {
+                                            "min": null,
+                                            "max": null
+                                        },
+                                        "deposit": {
+                                            "min": 1,
+                                            "max": null
+                                        },
+                                        "withdraw": {
+                                            "min": 50,
+                                            "max": null
+                                        }
+                                    },
+                                    "info": {
+                                        "blockchain": "ethereum",
+                                        "network": "sepolia",
+                                        "address": "0x30fA2FbE15c1EaDfbEF28C188b7B8dbd3c1Ff2eB",
+                                        "depositable": false,
+                                        "withdrawable": true
+                                    }
+                                },
+                                "solana_mainnet": {
+                                    "id": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                                    "network": "mainnet",
+                                    "name": "Tether USDt",
+                                    "active": true,
+                                    "deposit": false,
+                                    "withdraw": true,
+                                    "fee": 1,
+                                    "precision": 9,
+                                    "limits": {
+                                        "amount": {
+                                            "min": null,
+                                            "max": null
+                                        },
+                                        "deposit": {
+                                            "min": 1,
+                                            "max": null
+                                        },
+                                        "withdraw": {
+                                            "min": 10,
+                                            "max": null
+                                        }
+                                    },
+                                    "info": {
+                                        "blockchain": "solana",
+                                        "network": "mainnet",
+                                        "address": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                                        "depositable": false,
+                                        "withdrawable": true
+                                    }
+                                },
+                                "binance_smart_chain_mainnet": {
+                                    "id": "0x55d398326f99059fF775485246999027B3197955",
+                                    "network": "mainnet",
+                                    "name": "Tether USDt",
+                                    "active": true,
+                                    "deposit": false,
+                                    "withdraw": true,
+                                    "fee": 1,
+                                    "precision": 9,
+                                    "limits": {
+                                        "amount": {
+                                            "min": null,
+                                            "max": null
+                                        },
+                                        "deposit": {
+                                            "min": 1,
+                                            "max": null
+                                        },
+                                        "withdraw": {
+                                            "min": 10,
+                                            "max": null
+                                        }
+                                    },
+                                    "info": {
+                                        "blockchain": "binance_smart_chain",
+                                        "network": "mainnet",
+                                        "address": "0x55d398326f99059fF775485246999027B3197955",
+                                        "depositable": false,
+                                        "withdrawable": true
+                                    }
+                                },
+                                "tron_shasta": {
+                                    "id": "TG3XXyExBkPp9nzdajDZsozEu4BkaSJozs",
+                                    "network": "shasta",
+                                    "name": "Tether USDt",
+                                    "active": true,
+                                    "deposit": false,
+                                    "withdraw": true,
+                                    "fee": 1,
+                                    "precision": 9,
+                                    "limits": {
+                                        "amount": {
+                                            "min": null,
+                                            "max": null
+                                        },
+                                        "deposit": {
+                                            "min": 1,
+                                            "max": null
+                                        },
+                                        "withdraw": {
+                                            "min": 10,
+                                            "max": null
+                                        }
+                                    },
+                                    "info": {
+                                        "blockchain": "tron",
+                                        "network": "shasta",
+                                        "address": "TG3XXyExBkPp9nzdajDZsozEu4BkaSJozs",
+                                        "depositable": false,
+                                        "withdrawable": true
+                                    }
+                                }
+                            },
+                            "info": {
+                                "id": 1,
+                                "type": "CRYPTO",
+                                "provider": "Safeheron",
+                                "isUtxo": false,
+                                "transferable": true,
+                                "renderScale": 2
+                            }
+                        },
+                        "id": "usdt",
+                        "numericId": null,
+                        "code": "USDT",
+                        "precision": 1e-9,
+                        "type": "crypto",
+                        "name": "Tether USDt",
+                        "active": true,
+                        "deposit": false,
+                        "withdraw": true,
+                        "fee": 1,
+                        "fees": {},
+                        "networks": {
+                            "binance_smart_chain_testnet": {
+                                "id": "binance_smart_chain_testnet",
+                                "network": "binance_smart_chain_testnet",
+                                "active": true,
+                                "deposit": false,
+                                "withdraw": true,
+                                "fee": 1,
+                                "precision": 1e-9,
+                                "limits": {
+                                    "deposit": {
+                                        "min": 1,
+                                        "max": null
+                                    },
+                                    "withdraw": {
+                                        "min": 10,
+                                        "max": null
+                                    }
+                                },
+                                "info": {
+                                    "id": "0x337610d27c682e347c9cd60bd4b3b107c9d34ddd",
+                                    "network": "testnet",
+                                    "name": "Tether USDt",
+                                    "active": true,
+                                    "deposit": false,
+                                    "withdraw": true,
+                                    "fee": 1,
+                                    "precision": 9,
+                                    "limits": {
+                                        "amount": {
+                                            "min": null,
+                                            "max": null
+                                        },
+                                        "deposit": {
+                                            "min": 1,
+                                            "max": null
+                                        },
+                                        "withdraw": {
+                                            "min": 10,
+                                            "max": null
+                                        }
+                                    },
+                                    "info": {
+                                        "blockchain": "binance_smart_chain",
+                                        "network": "testnet",
+                                        "address": "0x337610d27c682e347c9cd60bd4b3b107c9d34ddd",
+                                        "depositable": false,
+                                        "withdrawable": true
+                                    }
+                                }
+                            },
+                            "tron_mainnet": {
+                                "id": "tron_mainnet",
+                                "network": "tron_mainnet",
+                                "active": true,
+                                "deposit": false,
+                                "withdraw": true,
+                                "fee": 1,
+                                "precision": 1e-9,
+                                "limits": {
+                                    "deposit": {
+                                        "min": 1,
+                                        "max": null
+                                    },
+                                    "withdraw": {
+                                        "min": 10,
+                                        "max": null
+                                    }
+                                },
+                                "info": {
+                                    "id": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+                                    "network": "mainnet",
+                                    "name": "Tether USDt",
+                                    "active": true,
+                                    "deposit": false,
+                                    "withdraw": true,
+                                    "fee": 1,
+                                    "precision": 9,
+                                    "limits": {
+                                        "amount": {
+                                            "min": null,
+                                            "max": null
+                                        },
+                                        "deposit": {
+                                            "min": 1,
+                                            "max": null
+                                        },
+                                        "withdraw": {
+                                            "min": 10,
+                                            "max": null
+                                        }
+                                    },
+                                    "info": {
+                                        "blockchain": "tron",
+                                        "network": "mainnet",
+                                        "address": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
+                                        "depositable": false,
+                                        "withdrawable": true
+                                    }
+                                }
+                            },
+                            "ethereum_mainnet": {
+                                "id": "ethereum_mainnet",
+                                "network": "ethereum_mainnet",
+                                "active": true,
+                                "deposit": false,
+                                "withdraw": true,
+                                "fee": 4,
+                                "precision": 1e-9,
+                                "limits": {
+                                    "deposit": {
+                                        "min": 1,
+                                        "max": null
+                                    },
+                                    "withdraw": {
+                                        "min": 50,
+                                        "max": null
+                                    }
+                                },
+                                "info": {
+                                    "id": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+                                    "network": "mainnet",
+                                    "name": "Tether USDt",
+                                    "active": true,
+                                    "deposit": false,
+                                    "withdraw": true,
+                                    "fee": 4,
+                                    "precision": 9,
+                                    "limits": {
+                                        "amount": {
+                                            "min": null,
+                                            "max": null
+                                        },
+                                        "deposit": {
+                                            "min": 1,
+                                            "max": null
+                                        },
+                                        "withdraw": {
+                                            "min": 50,
+                                            "max": null
+                                        }
+                                    },
+                                    "info": {
+                                        "blockchain": "ethereum",
+                                        "network": "mainnet",
+                                        "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+                                        "depositable": false,
+                                        "withdrawable": true
+                                    }
+                                }
+                            },
+                            "ethereum_sepolia": {
+                                "id": "ethereum_sepolia",
+                                "network": "ethereum_sepolia",
+                                "active": true,
+                                "deposit": false,
+                                "withdraw": true,
+                                "fee": 4,
+                                "precision": 1e-9,
+                                "limits": {
+                                    "deposit": {
+                                        "min": 1,
+                                        "max": null
+                                    },
+                                    "withdraw": {
+                                        "min": 50,
+                                        "max": null
+                                    }
+                                },
+                                "info": {
+                                    "id": "0x30fA2FbE15c1EaDfbEF28C188b7B8dbd3c1Ff2eB",
+                                    "network": "sepolia",
+                                    "name": "Tether USDt",
+                                    "active": true,
+                                    "deposit": false,
+                                    "withdraw": true,
+                                    "fee": 4,
+                                    "precision": 9,
+                                    "limits": {
+                                        "amount": {
+                                            "min": null,
+                                            "max": null
+                                        },
+                                        "deposit": {
+                                            "min": 1,
+                                            "max": null
+                                        },
+                                        "withdraw": {
+                                            "min": 50,
+                                            "max": null
+                                        }
+                                    },
+                                    "info": {
+                                        "blockchain": "ethereum",
+                                        "network": "sepolia",
+                                        "address": "0x30fA2FbE15c1EaDfbEF28C188b7B8dbd3c1Ff2eB",
+                                        "depositable": false,
+                                        "withdrawable": true
+                                    }
+                                }
+                            },
+                            "solana_mainnet": {
+                                "id": "solana_mainnet",
+                                "network": "solana_mainnet",
+                                "active": true,
+                                "deposit": false,
+                                "withdraw": true,
+                                "fee": 1,
+                                "precision": 1e-9,
+                                "limits": {
+                                    "deposit": {
+                                        "min": 1,
+                                        "max": null
+                                    },
+                                    "withdraw": {
+                                        "min": 10,
+                                        "max": null
+                                    }
+                                },
+                                "info": {
+                                    "id": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                                    "network": "mainnet",
+                                    "name": "Tether USDt",
+                                    "active": true,
+                                    "deposit": false,
+                                    "withdraw": true,
+                                    "fee": 1,
+                                    "precision": 9,
+                                    "limits": {
+                                        "amount": {
+                                            "min": null,
+                                            "max": null
+                                        },
+                                        "deposit": {
+                                            "min": 1,
+                                            "max": null
+                                        },
+                                        "withdraw": {
+                                            "min": 10,
+                                            "max": null
+                                        }
+                                    },
+                                    "info": {
+                                        "blockchain": "solana",
+                                        "network": "mainnet",
+                                        "address": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                                        "depositable": false,
+                                        "withdrawable": true
+                                    }
+                                }
+                            },
+                            "binance_smart_chain_mainnet": {
+                                "id": "binance_smart_chain_mainnet",
+                                "network": "binance_smart_chain_mainnet",
+                                "active": true,
+                                "deposit": false,
+                                "withdraw": true,
+                                "fee": 1,
+                                "precision": 1e-9,
+                                "limits": {
+                                    "deposit": {
+                                        "min": 1,
+                                        "max": null
+                                    },
+                                    "withdraw": {
+                                        "min": 10,
+                                        "max": null
+                                    }
+                                },
+                                "info": {
+                                    "id": "0x55d398326f99059fF775485246999027B3197955",
+                                    "network": "mainnet",
+                                    "name": "Tether USDt",
+                                    "active": true,
+                                    "deposit": false,
+                                    "withdraw": true,
+                                    "fee": 1,
+                                    "precision": 9,
+                                    "limits": {
+                                        "amount": {
+                                            "min": null,
+                                            "max": null
+                                        },
+                                        "deposit": {
+                                            "min": 1,
+                                            "max": null
+                                        },
+                                        "withdraw": {
+                                            "min": 10,
+                                            "max": null
+                                        }
+                                    },
+                                    "info": {
+                                        "blockchain": "binance_smart_chain",
+                                        "network": "mainnet",
+                                        "address": "0x55d398326f99059fF775485246999027B3197955",
+                                        "depositable": false,
+                                        "withdrawable": true
+                                    }
+                                }
+                            },
+                            "tron_shasta": {
+                                "id": "tron_shasta",
+                                "network": "tron_shasta",
+                                "active": true,
+                                "deposit": false,
+                                "withdraw": true,
+                                "fee": 1,
+                                "precision": 1e-9,
+                                "limits": {
+                                    "deposit": {
+                                        "min": 1,
+                                        "max": null
+                                    },
+                                    "withdraw": {
+                                        "min": 10,
+                                        "max": null
+                                    }
+                                },
+                                "info": {
+                                    "id": "TG3XXyExBkPp9nzdajDZsozEu4BkaSJozs",
+                                    "network": "shasta",
+                                    "name": "Tether USDt",
+                                    "active": true,
+                                    "deposit": false,
+                                    "withdraw": true,
+                                    "fee": 1,
+                                    "precision": 9,
+                                    "limits": {
+                                        "amount": {
+                                            "min": null,
+                                            "max": null
+                                        },
+                                        "deposit": {
+                                            "min": 1,
+                                            "max": null
+                                        },
+                                        "withdraw": {
+                                            "min": 10,
+                                            "max": null
+                                        }
+                                    },
+                                    "info": {
+                                        "blockchain": "tron",
+                                        "network": "shasta",
+                                        "address": "TG3XXyExBkPp9nzdajDZsozEu4BkaSJozs",
+                                        "depositable": false,
+                                        "withdrawable": true
+                                    }
+                                }
+                            }
+                        },
+                        "limits": {
+                            "deposit": {
+                                "min": 1,
+                                "max": null
+                            },
+                            "withdraw": {
+                                "min": 10,
+                                "max": null
+                            }
+                        }
+                    },
+                    "ETH": {
+                        "info": {
+                            "id": "eth",
+                            "code": "ETH",
+                            "name": "Ethereum",
+                            "active": true,
+                            "deposit": false,
+                            "withdraw": false,
+                            "fee": 0.00004,
+                            "precision": 9,
+                            "limits": {
+                                "amount": {
+                                    "min": null,
+                                    "max": null
+                                },
+                                "deposit": {
+                                    "min": null,
+                                    "max": null
+                                },
+                                "withdraw": {
+                                    "min": null,
+                                    "max": null
+                                }
+                            },
+                            "networks": {
+                                "ethereum_mainnet": {
+                                    "id": "native::eth",
+                                    "network": "mainnet",
+                                    "name": "Ethereum",
+                                    "active": true,
+                                    "deposit": false,
+                                    "withdraw": false,
+                                    "fee": 0.00004,
+                                    "precision": 9,
+                                    "limits": {
+                                        "amount": {
+                                            "min": null,
+                                            "max": null
+                                        },
+                                        "deposit": {
+                                            "min": 3e-7,
+                                            "max": null
+                                        },
+                                        "withdraw": {
+                                            "min": 0.0001,
+                                            "max": null
+                                        }
+                                    },
+                                    "info": {
+                                        "blockchain": "ethereum",
+                                        "network": "mainnet",
+                                        "address": "native::eth",
+                                        "depositable": false,
+                                        "withdrawable": false
+                                    }
+                                },
+                                "ethereum_sepolia": {
+                                    "id": "native::eth",
+                                    "network": "sepolia",
+                                    "name": "Ethereum",
+                                    "active": true,
+                                    "deposit": false,
+                                    "withdraw": false,
+                                    "fee": 0.00004,
+                                    "precision": 9,
+                                    "limits": {
+                                        "amount": {
+                                            "min": null,
+                                            "max": null
+                                        },
+                                        "deposit": {
+                                            "min": 3e-7,
+                                            "max": null
+                                        },
+                                        "withdraw": {
+                                            "min": 0.0001,
+                                            "max": null
+                                        }
+                                    },
+                                    "info": {
+                                        "blockchain": "ethereum",
+                                        "network": "sepolia",
+                                        "address": "native::eth",
+                                        "depositable": false,
+                                        "withdrawable": false
+                                    }
+                                }
+                            },
+                            "info": {
+                                "id": 3,
+                                "type": "CRYPTO",
+                                "provider": "Safeheron",
+                                "isUtxo": false,
+                                "transferable": true,
+                                "renderScale": 4
+                            }
+                        },
+                        "id": "eth",
+                        "numericId": null,
+                        "code": "ETH",
+                        "precision": 1e-9,
+                        "type": "crypto",
+                        "name": "Ethereum",
+                        "active": true,
+                        "deposit": false,
+                        "withdraw": false,
+                        "fee": 0.00004,
+                        "fees": {},
+                        "networks": {
+                            "ethereum_mainnet": {
+                                "id": "ethereum_mainnet",
+                                "network": "ethereum_mainnet",
+                                "active": true,
+                                "deposit": false,
+                                "withdraw": false,
+                                "fee": 0.00004,
+                                "precision": 1e-9,
+                                "limits": {
+                                    "deposit": {
+                                        "min": 3e-7,
+                                        "max": null
+                                    },
+                                    "withdraw": {
+                                        "min": 0.0001,
+                                        "max": null
+                                    }
+                                },
+                                "info": {
+                                    "id": "native::eth",
+                                    "network": "mainnet",
+                                    "name": "Ethereum",
+                                    "active": true,
+                                    "deposit": false,
+                                    "withdraw": false,
+                                    "fee": 0.00004,
+                                    "precision": 9,
+                                    "limits": {
+                                        "amount": {
+                                            "min": null,
+                                            "max": null
+                                        },
+                                        "deposit": {
+                                            "min": 3e-7,
+                                            "max": null
+                                        },
+                                        "withdraw": {
+                                            "min": 0.0001,
+                                            "max": null
+                                        }
+                                    },
+                                    "info": {
+                                        "blockchain": "ethereum",
+                                        "network": "mainnet",
+                                        "address": "native::eth",
+                                        "depositable": false,
+                                        "withdrawable": false
+                                    }
+                                }
+                            },
+                            "ethereum_sepolia": {
+                                "id": "ethereum_sepolia",
+                                "network": "ethereum_sepolia",
+                                "active": true,
+                                "deposit": false,
+                                "withdraw": false,
+                                "fee": 0.00004,
+                                "precision": 1e-9,
+                                "limits": {
+                                    "deposit": {
+                                        "min": 3e-7,
+                                        "max": null
+                                    },
+                                    "withdraw": {
+                                        "min": 0.0001,
+                                        "max": null
+                                    }
+                                },
+                                "info": {
+                                    "id": "native::eth",
+                                    "network": "sepolia",
+                                    "name": "Ethereum",
+                                    "active": true,
+                                    "deposit": false,
+                                    "withdraw": false,
+                                    "fee": 0.00004,
+                                    "precision": 9,
+                                    "limits": {
+                                        "amount": {
+                                            "min": null,
+                                            "max": null
+                                        },
+                                        "deposit": {
+                                            "min": 3e-7,
+                                            "max": null
+                                        },
+                                        "withdraw": {
+                                            "min": 0.0001,
+                                            "max": null
+                                        }
+                                    },
+                                    "info": {
+                                        "blockchain": "ethereum",
+                                        "network": "sepolia",
+                                        "address": "native::eth",
+                                        "depositable": false,
+                                        "withdrawable": false
+                                    }
+                                }
+                            }
+                        },
+                        "limits": {
+                            "deposit": {
+                                "min": 3e-7,
+                                "max": null
+                            },
+                            "withdraw": {
+                                "min": 0.0001,
+                                "max": null
+                            }
+                        }
+                    },
+                    "RAAPL": {
+                        "info": {
+                            "id": "raapl",
+                            "code": "RAAPL",
+                            "name": "Apple Reality Token",
+                            "active": true,
+                            "deposit": false,
+                            "withdraw": false,
+                            "fee": null,
+                            "precision": 9,
+                            "limits": {
+                                "amount": {
+                                    "min": null,
+                                    "max": null
+                                },
+                                "deposit": {
+                                    "min": null,
+                                    "max": null
+                                },
+                                "withdraw": {
+                                    "min": null,
+                                    "max": null
+                                }
+                            },
+                            "networks": null,
+                            "info": {
+                                "id": 24,
+                                "type": "CRYPTO",
+                                "provider": "Safeheron",
+                                "isUtxo": false,
+                                "transferable": true,
+                                "renderScale": 4
+                            }
+                        },
+                        "id": "raapl",
+                        "numericId": null,
+                        "code": "RAAPL",
+                        "precision": 1e-9,
+                        "type": "crypto",
+                        "name": "Apple Reality Token",
+                        "active": true,
+                        "deposit": false,
+                        "withdraw": false,
+                        "fee": null,
+                        "fees": {},
+                        "networks": {},
+                        "limits": {
+                            "deposit": {
+                                "min": null,
+                                "max": null
+                            },
+                            "withdraw": {
+                                "min": null,
+                                "max": null
+                            }
+                        }
+                    }
+                }
+            }
+        ],
+        "fetchTicker": [
+            {
+                "description": "ticker from dev",
+                "method": "fetchTicker",
+                "input": [
+                    "BTC/USDT"
+                ],
+                "httpResponse": {
+                    "symbol": "BTC/USDT",
+                    "timestamp": 1794462900000,
+                    "datetime": "2026-11-12T05:55:00Z",
+                    "high": 74217.48,
+                    "low": 73532.96,
+                    "bid": null,
+                    "bidVolume": null,
+                    "ask": null,
+                    "askVolume": null,
+                    "vwap": null,
+                    "open": 74010.01,
+                    "close": 73591.38,
+                    "last": 73591.38,
+                    "previousClose": 74015.2,
+                    "change": -418.63,
+                    "percentage": -0.56564,
+                    "average": 73800.695,
+                    "baseVolume": 0,
+                    "quoteVolume": 0,
+                    "info": {
+                        "symbol": "BTCUSDT",
+                        "barTime": 1794441600000,
+                        "open": 74010.01,
+                        "high": 74217.48,
+                        "low": 73532.96,
+                        "close": 73591.38,
+                        "volume": 0,
+                        "quoteVolume": 0,
+                        "tradeCount": 185636626
+                    }
+                },
+                "parsedResponse": {
+                    "symbol": "BTC/USDT",
+                    "timestamp": 1794462900000,
+                    "datetime": "2026-11-12T05:55:00.000Z",
+                    "high": 74217.48,
+                    "low": 73532.96,
+                    "bid": null,
+                    "bidVolume": null,
+                    "ask": null,
+                    "askVolume": null,
+                    "vwap": null,
+                    "open": 74010.01,
+                    "close": 73591.38,
+                    "last": 73591.38,
+                    "previousClose": 74015.2,
+                    "change": -418.63,
+                    "percentage": -0.56564,
+                    "average": 73800.695,
+                    "baseVolume": 0,
+                    "quoteVolume": 0,
+                    "info": {
+                        "symbol": "BTC/USDT",
+                        "timestamp": 1794462900000,
+                        "datetime": "2026-11-12T05:55:00Z",
+                        "high": 74217.48,
+                        "low": 73532.96,
+                        "bid": null,
+                        "bidVolume": null,
+                        "ask": null,
+                        "askVolume": null,
+                        "vwap": null,
+                        "open": 74010.01,
+                        "close": 73591.38,
+                        "last": 73591.38,
+                        "previousClose": 74015.2,
+                        "change": -418.63,
+                        "percentage": -0.56564,
+                        "average": 73800.695,
+                        "baseVolume": 0,
+                        "quoteVolume": 0,
+                        "info": {
+                            "symbol": "BTCUSDT",
+                            "barTime": 1794441600000,
+                            "open": 74010.01,
+                            "high": 74217.48,
+                            "low": 73532.96,
+                            "close": 73591.38,
+                            "volume": 0,
+                            "quoteVolume": 0,
+                            "tradeCount": 185636626
+                        }
+                    },
+                    "indexPrice": null,
+                    "markPrice": null
+                }
+            }
+        ],
+        "fetchTickers": [
+            {
+                "description": "tickers from dev",
+                "method": "fetchTickers",
+                "input": [
+                    [
+                        "BTC/USDT",
+                        "ETH/USDT"
+                    ]
+                ],
+                "httpResponse": [
+                    {
+                        "symbol": "BTC/USDT",
+                        "timestamp": 1794462900000,
+                        "datetime": "2026-11-12T05:55:00Z",
+                        "high": 74217.48,
+                        "low": 73532.96,
+                        "bid": null,
+                        "bidVolume": null,
+                        "ask": null,
+                        "askVolume": null,
+                        "vwap": null,
+                        "open": 74010.01,
+                        "close": 73591.38,
+                        "last": 73591.38,
+                        "previousClose": 74015.2,
+                        "change": -418.63,
+                        "percentage": -0.56564,
+                        "average": 73800.695,
+                        "baseVolume": 0,
+                        "quoteVolume": 0,
+                        "info": {
+                            "symbol": "BTCUSDT",
+                            "barTime": 1794441600000,
+                            "open": 74010.01,
+                            "high": 74217.48,
+                            "low": 73532.96,
+                            "close": 73591.38,
+                            "volume": 0,
+                            "quoteVolume": 0,
+                            "tradeCount": 185636626
+                        }
+                    },
+                    {
+                        "symbol": "ETH/USDT",
+                        "timestamp": 1794462900000,
+                        "datetime": "2026-11-12T05:55:00Z",
+                        "high": 2066.41,
+                        "low": 2041.56,
+                        "bid": null,
+                        "bidVolume": null,
+                        "ask": null,
+                        "askVolume": null,
+                        "vwap": null,
+                        "open": 2056.03,
+                        "close": 2046.75,
+                        "last": 2046.75,
+                        "previousClose": 2056.36,
+                        "change": -9.28,
+                        "percentage": -0.451355,
+                        "average": 2051.39,
+                        "baseVolume": 0,
+                        "quoteVolume": 0,
+                        "info": {
+                            "symbol": "ETHUSDT",
+                            "barTime": 1794441600000,
+                            "open": 2056.03,
+                            "high": 2066.41,
+                            "low": 2041.56,
+                            "close": 2046.75,
+                            "volume": 0,
+                            "quoteVolume": 0,
+                            "tradeCount": 110328372
+                        }
+                    }
+                ],
+                "parsedResponse": {
+                    "BTC/USDT": {
+                        "symbol": "BTC/USDT",
+                        "timestamp": 1794462900000,
+                        "datetime": "2026-11-12T05:55:00.000Z",
+                        "high": 74217.48,
+                        "low": 73532.96,
+                        "bid": null,
+                        "bidVolume": null,
+                        "ask": null,
+                        "askVolume": null,
+                        "vwap": null,
+                        "open": 74010.01,
+                        "close": 73591.38,
+                        "last": 73591.38,
+                        "previousClose": 74015.2,
+                        "change": -418.63,
+                        "percentage": -0.56564,
+                        "average": 73800.695,
+                        "baseVolume": 0,
+                        "quoteVolume": 0,
+                        "info": {
+                            "symbol": "BTC/USDT",
+                            "timestamp": 1794462900000,
+                            "datetime": "2026-11-12T05:55:00Z",
+                            "high": 74217.48,
+                            "low": 73532.96,
+                            "bid": null,
+                            "bidVolume": null,
+                            "ask": null,
+                            "askVolume": null,
+                            "vwap": null,
+                            "open": 74010.01,
+                            "close": 73591.38,
+                            "last": 73591.38,
+                            "previousClose": 74015.2,
+                            "change": -418.63,
+                            "percentage": -0.56564,
+                            "average": 73800.695,
+                            "baseVolume": 0,
+                            "quoteVolume": 0,
+                            "info": {
+                                "symbol": "BTCUSDT",
+                                "barTime": 1794441600000,
+                                "open": 74010.01,
+                                "high": 74217.48,
+                                "low": 73532.96,
+                                "close": 73591.38,
+                                "volume": 0,
+                                "quoteVolume": 0,
+                                "tradeCount": 185636626
+                            }
+                        },
+                        "indexPrice": null,
+                        "markPrice": null
+                    },
+                    "ETH/USDT": {
+                        "symbol": "ETH/USDT",
+                        "timestamp": 1794462900000,
+                        "datetime": "2026-11-12T05:55:00.000Z",
+                        "high": 2066.41,
+                        "low": 2041.56,
+                        "bid": null,
+                        "bidVolume": null,
+                        "ask": null,
+                        "askVolume": null,
+                        "vwap": null,
+                        "open": 2056.03,
+                        "close": 2046.75,
+                        "last": 2046.75,
+                        "previousClose": 2056.36,
+                        "change": -9.28,
+                        "percentage": -0.451355,
+                        "average": 2051.39,
+                        "baseVolume": 0,
+                        "quoteVolume": 0,
+                        "info": {
+                            "symbol": "ETH/USDT",
+                            "timestamp": 1794462900000,
+                            "datetime": "2026-11-12T05:55:00Z",
+                            "high": 2066.41,
+                            "low": 2041.56,
+                            "bid": null,
+                            "bidVolume": null,
+                            "ask": null,
+                            "askVolume": null,
+                            "vwap": null,
+                            "open": 2056.03,
+                            "close": 2046.75,
+                            "last": 2046.75,
+                            "previousClose": 2056.36,
+                            "change": -9.28,
+                            "percentage": -0.451355,
+                            "average": 2051.39,
+                            "baseVolume": 0,
+                            "quoteVolume": 0,
+                            "info": {
+                                "symbol": "ETHUSDT",
+                                "barTime": 1794441600000,
+                                "open": 2056.03,
+                                "high": 2066.41,
+                                "low": 2041.56,
+                                "close": 2046.75,
+                                "volume": 0,
+                                "quoteVolume": 0,
+                                "tradeCount": 110328372
+                            }
+                        },
+                        "indexPrice": null,
+                        "markPrice": null
+                    }
+                }
+            }
+        ],
+        "fetchOrderBook": [
+            {
+                "description": "order book (CcxtOrderBookDto), synthetic: no environment has a non-empty book",
+                "method": "fetchOrderBook",
+                "input": [
+                    "BTC/USDT",
+                    5
+                ],
+                "httpResponse": {
+                    "symbol": "BTC/USDT",
+                    "timestamp": 1731400000000,
+                    "datetime": "2024-11-12T08:26:40Z",
+                    "nonce": null,
+                    "bids": [
+                        [
+                            50000.5,
+                            0.12
+                        ],
+                        [
+                            50000,
+                            0.5
+                        ],
+                        [
+                            49990,
+                            1.25
+                        ]
+                    ],
+                    "asks": [
+                        [
+                            50010,
+                            0.08
+                        ],
+                        [
+                            50015.5,
+                            0.3
+                        ],
+                        [
+                            50100,
+                            2
+                        ]
+                    ]
+                },
+                "parsedResponse": {
+                    "symbol": "BTC/USDT",
+                    "bids": [
+                        [
+                            50000.5,
+                            0.12
+                        ],
+                        [
+                            50000,
+                            0.5
+                        ],
+                        [
+                            49990,
+                            1.25
+                        ]
+                    ],
+                    "asks": [
+                        [
+                            50010,
+                            0.08
+                        ],
+                        [
+                            50015.5,
+                            0.3
+                        ],
+                        [
+                            50100,
+                            2
+                        ]
+                    ],
+                    "timestamp": 1731400000000,
+                    "datetime": "2024-11-12T08:26:40.000Z",
+                    "nonce": null
+                }
+            }
+        ],
+        "fetchTrades": [
+            {
+                "description": "public trades from staging",
+                "method": "fetchTrades",
+                "input": [
+                    "RAAPL/USDT",
+                    null,
+                    3
+                ],
+                "httpResponse": [
+                    {
+                        "info": {
+                            "id": 95,
+                            "takerOrderId": 5503
+                        },
+                        "id": "95",
+                        "timestamp": 1792578046492,
+                        "datetime": "2026-10-21T10:20:46.492Z",
+                        "symbol": "RAAPL/USDT",
+                        "order": "5503",
+                        "type": "market",
+                        "side": "buy",
+                        "takerOrMaker": "taker",
+                        "price": 337.546682926,
+                        "amount": 0.041,
+                        "cost": 13.839413999966
+                    }
+                ],
+                "parsedResponse": [
+                    {
+                        "info": {
+                            "info": {
+                                "id": 95,
+                                "takerOrderId": 5503
+                            },
+                            "id": "95",
+                            "timestamp": 1792578046492,
+                            "datetime": "2026-10-21T10:20:46.492Z",
+                            "symbol": "RAAPL/USDT",
+                            "order": "5503",
+                            "type": "market",
+                            "side": "buy",
+                            "takerOrMaker": "taker",
+                            "price": 337.546682926,
+                            "amount": 0.041,
+                            "cost": 13.839413999966
+                        },
+                        "id": "95",
+                        "timestamp": 1792578046492,
+                        "datetime": "2026-10-21T10:20:46.492Z",
+                        "symbol": "RAAPL/USDT",
+                        "order": "5503",
+                        "type": "market",
+                        "side": "buy",
+                        "takerOrMaker": "taker",
+                        "price": 337.546682926,
+                        "amount": 0.041,
+                        "cost": 13.839413999966,
+                        "fee": {
+                            "cost": null,
+                            "currency": null
+                        },
+                        "fees": []
+                    }
+                ]
+            }
+        ],
+        "fetchOHLCV": [
+            {
+                "description": "ohlcv arrays (OhlcvDto serialized as arrays), synthetic: no environment returns candles",
+                "method": "fetchOHLCV",
+                "input": [
+                    "BTC/USDT",
+                    "1h",
+                    null,
+                    3
+                ],
+                "httpResponse": [
+                    [
+                        1731400000000,
+                        50000,
+                        50120.5,
+                        49950,
+                        50010,
+                        1.25
+                    ],
+                    [
+                        1731403600000,
+                        50010,
+                        50050,
+                        49900.25,
+                        49980,
+                        0.75
+                    ]
+                ],
+                "parsedResponse": [
+                    [
+                        1731400000000,
+                        50000,
+                        50120.5,
+                        49950,
+                        50010,
+                        1.25
+                    ],
+                    [
+                        1731403600000,
+                        50010,
+                        50050,
+                        49900.25,
+                        49980,
+                        0.75
+                    ]
+                ]
+            }
+        ],
+        "fetchTradingFees": [
+            {
+                "description": "trading fees keyed by symbol",
+                "method": "fetchTradingFees",
+                "input": [],
+                "httpResponse": {
+                    "BTC/USDT": {
+                        "info": {
+                            "id": "BTCUSDT",
+                            "takerFeeRate": 0.002,
+                            "makerFeeRate": 0.002
+                        },
+                        "symbol": "BTC/USDT",
+                        "maker": 0.002,
+                        "taker": 0.002,
+                        "percentage": true,
+                        "tierBased": false
+                    },
+                    "ETH/USDT": {
+                        "info": {
+                            "id": "ETHUSDT",
+                            "takerFeeRate": 0.002,
+                            "makerFeeRate": 0.002
+                        },
+                        "symbol": "ETH/USDT",
+                        "maker": 0.002,
+                        "taker": 0.002,
+                        "percentage": true,
+                        "tierBased": false
+                    }
+                },
+                "parsedResponse": {
+                    "BTC/USDT": {
+                        "info": {
+                            "info": {
+                                "id": "BTCUSDT",
+                                "takerFeeRate": 0.002,
+                                "makerFeeRate": 0.002
+                            },
+                            "symbol": "BTC/USDT",
+                            "maker": 0.002,
+                            "taker": 0.002,
+                            "percentage": true,
+                            "tierBased": false
+                        },
+                        "symbol": "BTC/USDT",
+                        "maker": 0.002,
+                        "taker": 0.002,
+                        "percentage": true,
+                        "tierBased": false
+                    },
+                    "ETH/USDT": {
+                        "info": {
+                            "info": {
+                                "id": "ETHUSDT",
+                                "takerFeeRate": 0.002,
+                                "makerFeeRate": 0.002
+                            },
+                            "symbol": "ETH/USDT",
+                            "maker": 0.002,
+                            "taker": 0.002,
+                            "percentage": true,
+                            "tierBased": false
+                        },
+                        "symbol": "ETH/USDT",
+                        "maker": 0.002,
+                        "taker": 0.002,
+                        "percentage": true,
+                        "tierBased": false
+                    }
+                }
+            }
+        ],
+        "fetchTradingFee": [
+            {
+                "description": "single trading fee",
+                "method": "fetchTradingFee",
+                "input": [
+                    "BTC/USDT"
+                ],
+                "httpResponse": {
+                    "info": {
+                        "id": "BTCUSDT",
+                        "takerFeeRate": 0.002,
+                        "makerFeeRate": 0.002
+                    },
+                    "symbol": "BTC/USDT",
+                    "maker": 0.002,
+                    "taker": 0.002,
+                    "percentage": true,
+                    "tierBased": false
+                },
+                "parsedResponse": {
+                    "info": {
+                        "info": {
+                            "id": "BTCUSDT",
+                            "takerFeeRate": 0.002,
+                            "makerFeeRate": 0.002
+                        },
+                        "symbol": "BTC/USDT",
+                        "maker": 0.002,
+                        "taker": 0.002,
+                        "percentage": true,
+                        "tierBased": false
+                    },
+                    "symbol": "BTC/USDT",
+                    "maker": 0.002,
+                    "taker": 0.002,
+                    "percentage": true,
+                    "tierBased": false
+                }
+            }
+        ],
+        "fetchBalance": [
+            {
+                "description": "balance with per-currency entries flattened at the top level (BalanceDto)",
+                "method": "fetchBalance",
+                "input": [],
+                "httpResponse": {
+                    "free": {
+                        "BTC": 0.5,
+                        "USDT": 1000
+                    },
+                    "used": {
+                        "BTC": 0,
+                        "USDT": 50
+                    },
+                    "total": {
+                        "BTC": 0.5,
+                        "USDT": 1050
+                    },
+                    "info": {},
+                    "timestamp": 1731400000000,
+                    "datetime": "2024-11-12T08:26:40Z",
+                    "BTC": {
+                        "free": 0.5,
+                        "used": 0,
+                        "total": 0.5
+                    },
+                    "USDT": {
+                        "free": 1000,
+                        "used": 50,
+                        "total": 1050
+                    }
+                },
+                "parsedResponse": {
+                    "info": {
+                        "free": {
+                            "BTC": 0.5,
+                            "USDT": 1000
+                        },
+                        "used": {
+                            "BTC": 0,
+                            "USDT": 50
+                        },
+                        "total": {
+                            "BTC": 0.5,
+                            "USDT": 1050
+                        },
+                        "info": {},
+                        "timestamp": 1731400000000,
+                        "datetime": "2024-11-12T08:26:40Z",
+                        "BTC": {
+                            "free": 0.5,
+                            "used": 0,
+                            "total": 0.5
+                        },
+                        "USDT": {
+                            "free": 1000,
+                            "used": 50,
+                            "total": 1050
+                        }
+                    },
+                    "timestamp": 1731400000000,
+                    "datetime": "2024-11-12T08:26:40.000Z",
+                    "BTC": {
+                        "free": 0.5,
+                        "used": 0,
+                        "total": 0.5
+                    },
+                    "USDT": {
+                        "free": 1000,
+                        "used": 50,
+                        "total": 1050
+                    },
+                    "free": {
+                        "BTC": 0.5,
+                        "USDT": 1000
+                    },
+                    "used": {
+                        "BTC": 0,
+                        "USDT": 50
+                    },
+                    "total": {
+                        "BTC": 0.5,
+                        "USDT": 1050
+                    }
+                }
+            }
+        ],
+        "fetchAccounts": [
+            {
+                "description": "accounts (AccountDto)",
+                "method": "fetchAccounts",
+                "input": [],
+                "httpResponse": [
+                    {
+                        "id": "SPOT_WALLET",
+                        "type": "spot",
+                        "code": null,
+                        "name": "Spot Wallet",
+                        "info": {}
+                    },
+                    {
+                        "id": "LAUNCHPAD_WALLET",
+                        "type": "funding",
+                        "code": null,
+                        "name": "Funding Wallet",
+                        "info": {}
+                    }
+                ],
+                "parsedResponse": [
+                    {
+                        "info": {
+                            "id": "SPOT_WALLET",
+                            "type": "spot",
+                            "code": null,
+                            "name": "Spot Wallet",
+                            "info": {}
+                        },
+                        "id": "SPOT_WALLET",
+                        "type": "spot",
+                        "code": null
+                    },
+                    {
+                        "info": {
+                            "id": "LAUNCHPAD_WALLET",
+                            "type": "funding",
+                            "code": null,
+                            "name": "Funding Wallet",
+                            "info": {}
+                        },
+                        "id": "LAUNCHPAD_WALLET",
+                        "type": "funding",
+                        "code": null
+                    }
+                ]
+            }
+        ],
+        "createOrder": [
+            {
+                "description": "open limit order (OrderDto)",
+                "method": "createOrder",
+                "input": [
+                    "BTC/USDT",
+                    "limit",
+                    "buy",
+                    0.001,
+                    50000
+                ],
+                "httpResponse": {
+                    "id": "123",
+                    "clientOrderId": null,
+                    "timestamp": 1731400000000,
+                    "datetime": "2024-11-12T08:26:40.000Z",
+                    "lastTradeTimestamp": null,
+                    "status": "open",
+                    "symbol": "BTC/USDT",
+                    "type": "limit",
+                    "timeInForce": "GTC",
+                    "side": "buy",
+                    "price": 50000,
+                    "average": null,
+                    "amount": 0.001,
+                    "filled": 0,
+                    "remaining": 0.001,
+                    "cost": 0,
+                    "trades": [],
+                    "fee": null,
+                    "fees": [],
+                    "info": {
+                        "id": 123
+                    }
+                },
+                "parsedResponse": {
+                    "info": {
+                        "id": "123",
+                        "clientOrderId": null,
+                        "timestamp": 1731400000000,
+                        "datetime": "2024-11-12T08:26:40.000Z",
+                        "lastTradeTimestamp": null,
+                        "status": "open",
+                        "symbol": "BTC/USDT",
+                        "type": "limit",
+                        "timeInForce": "GTC",
+                        "side": "buy",
+                        "price": 50000,
+                        "average": null,
+                        "amount": 0.001,
+                        "filled": 0,
+                        "remaining": 0.001,
+                        "cost": 0,
+                        "trades": [],
+                        "fee": null,
+                        "fees": [],
+                        "info": {
+                            "id": 123
+                        }
+                    },
+                    "id": "123",
+                    "clientOrderId": null,
+                    "timestamp": 1731400000000,
+                    "datetime": "2024-11-12T08:26:40.000Z",
+                    "lastTradeTimestamp": null,
+                    "status": "open",
+                    "symbol": "BTC/USDT",
+                    "type": "limit",
+                    "timeInForce": "GTC",
+                    "postOnly": false,
+                    "reduceOnly": null,
+                    "side": "buy",
+                    "price": 50000,
+                    "triggerPrice": null,
+                    "average": null,
+                    "amount": 0.001,
+                    "filled": 0,
+                    "remaining": 0.001,
+                    "cost": 0,
+                    "trades": [],
+                    "fee": null,
+                    "fees": [],
+                    "lastUpdateTimestamp": null,
+                    "stopPrice": null,
+                    "takeProfitPrice": null,
+                    "stopLossPrice": null
+                }
+            }
+        ],
+        "editOrder": [
+            {
+                "description": "edited order",
+                "method": "editOrder",
+                "input": [
+                    "123",
+                    "BTC/USDT",
+                    "limit",
+                    "buy",
+                    0.002,
+                    51000
+                ],
+                "httpResponse": {
+                    "id": "123",
+                    "clientOrderId": null,
+                    "timestamp": 1731400000000,
+                    "datetime": "2024-11-12T08:26:40.000Z",
+                    "lastTradeTimestamp": null,
+                    "status": "open",
+                    "symbol": "BTC/USDT",
+                    "type": "limit",
+                    "timeInForce": "GTC",
+                    "side": "buy",
+                    "price": 51000,
+                    "average": null,
+                    "amount": 0.002,
+                    "filled": 0,
+                    "remaining": 0.002,
+                    "cost": 0,
+                    "trades": [],
+                    "fee": null,
+                    "fees": [],
+                    "info": {
+                        "id": 123
+                    }
+                },
+                "parsedResponse": {
+                    "info": {
+                        "id": "123",
+                        "clientOrderId": null,
+                        "timestamp": 1731400000000,
+                        "datetime": "2024-11-12T08:26:40.000Z",
+                        "lastTradeTimestamp": null,
+                        "status": "open",
+                        "symbol": "BTC/USDT",
+                        "type": "limit",
+                        "timeInForce": "GTC",
+                        "side": "buy",
+                        "price": 51000,
+                        "average": null,
+                        "amount": 0.002,
+                        "filled": 0,
+                        "remaining": 0.002,
+                        "cost": 0,
+                        "trades": [],
+                        "fee": null,
+                        "fees": [],
+                        "info": {
+                            "id": 123
+                        }
+                    },
+                    "id": "123",
+                    "clientOrderId": null,
+                    "timestamp": 1731400000000,
+                    "datetime": "2024-11-12T08:26:40.000Z",
+                    "lastTradeTimestamp": null,
+                    "status": "open",
+                    "symbol": "BTC/USDT",
+                    "type": "limit",
+                    "timeInForce": "GTC",
+                    "postOnly": false,
+                    "reduceOnly": null,
+                    "side": "buy",
+                    "price": 51000,
+                    "triggerPrice": null,
+                    "average": null,
+                    "amount": 0.002,
+                    "filled": 0,
+                    "remaining": 0.002,
+                    "cost": 0,
+                    "trades": [],
+                    "fee": null,
+                    "fees": [],
+                    "lastUpdateTimestamp": null,
+                    "stopPrice": null,
+                    "takeProfitPrice": null,
+                    "stopLossPrice": null
+                }
+            }
+        ],
+        "cancelOrder": [
+            {
+                "description": "canceled order",
+                "method": "cancelOrder",
+                "input": [
+                    "123"
+                ],
+                "httpResponse": {
+                    "id": "123",
+                    "clientOrderId": null,
+                    "timestamp": 1731400000000,
+                    "datetime": "2024-11-12T08:26:40.000Z",
+                    "lastTradeTimestamp": null,
+                    "status": "canceled",
+                    "symbol": "BTC/USDT",
+                    "type": "limit",
+                    "timeInForce": "GTC",
+                    "side": "buy",
+                    "price": 50000,
+                    "average": null,
+                    "amount": 0.001,
+                    "filled": 0,
+                    "remaining": 0.001,
+                    "cost": 0,
+                    "trades": [],
+                    "fee": null,
+                    "fees": [],
+                    "info": {
+                        "id": 123
+                    }
+                },
+                "parsedResponse": {
+                    "info": {
+                        "id": "123",
+                        "clientOrderId": null,
+                        "timestamp": 1731400000000,
+                        "datetime": "2024-11-12T08:26:40.000Z",
+                        "lastTradeTimestamp": null,
+                        "status": "canceled",
+                        "symbol": "BTC/USDT",
+                        "type": "limit",
+                        "timeInForce": "GTC",
+                        "side": "buy",
+                        "price": 50000,
+                        "average": null,
+                        "amount": 0.001,
+                        "filled": 0,
+                        "remaining": 0.001,
+                        "cost": 0,
+                        "trades": [],
+                        "fee": null,
+                        "fees": [],
+                        "info": {
+                            "id": 123
+                        }
+                    },
+                    "id": "123",
+                    "clientOrderId": null,
+                    "timestamp": 1731400000000,
+                    "datetime": "2024-11-12T08:26:40.000Z",
+                    "lastTradeTimestamp": null,
+                    "status": "canceled",
+                    "symbol": "BTC/USDT",
+                    "type": "limit",
+                    "timeInForce": "GTC",
+                    "postOnly": false,
+                    "reduceOnly": null,
+                    "side": "buy",
+                    "price": 50000,
+                    "triggerPrice": null,
+                    "average": null,
+                    "amount": 0.001,
+                    "filled": 0,
+                    "remaining": 0.001,
+                    "cost": 0,
+                    "trades": [],
+                    "fee": null,
+                    "fees": [],
+                    "lastUpdateTimestamp": null,
+                    "stopPrice": null,
+                    "takeProfitPrice": null,
+                    "stopLossPrice": null
+                }
+            }
+        ],
+        "fetchOrder": [
+            {
+                "description": "filled order with fee",
+                "method": "fetchOrder",
+                "input": [
+                    "124"
+                ],
+                "httpResponse": {
+                    "id": "124",
+                    "clientOrderId": null,
+                    "timestamp": 1731400000000,
+                    "datetime": "2024-11-12T08:26:40.000Z",
+                    "lastTradeTimestamp": 1731400001000,
+                    "status": "closed",
+                    "symbol": "BTC/USDT",
+                    "type": "limit",
+                    "timeInForce": "GTC",
+                    "side": "buy",
+                    "price": 50000,
+                    "average": 50010,
+                    "amount": 0.001,
+                    "filled": 0.001,
+                    "remaining": 0,
+                    "cost": 50.01,
+                    "trades": [],
+                    "fee": {
+                        "cost": 0.05001,
+                        "currency": "USDT",
+                        "rate": 0.001
+                    },
+                    "fees": [
+                        {
+                            "cost": 0.05001,
+                            "currency": "USDT",
+                            "rate": 0.001
+                        }
+                    ],
+                    "info": {
+                        "id": 123
+                    }
+                },
+                "parsedResponse": {
+                    "info": {
+                        "id": "124",
+                        "clientOrderId": null,
+                        "timestamp": 1731400000000,
+                        "datetime": "2024-11-12T08:26:40.000Z",
+                        "lastTradeTimestamp": 1731400001000,
+                        "status": "closed",
+                        "symbol": "BTC/USDT",
+                        "type": "limit",
+                        "timeInForce": "GTC",
+                        "side": "buy",
+                        "price": 50000,
+                        "average": 50010,
+                        "amount": 0.001,
+                        "filled": 0.001,
+                        "remaining": 0,
+                        "cost": 50.01,
+                        "trades": [],
+                        "fee": {
+                            "cost": 0.05001,
+                            "currency": "USDT",
+                            "rate": 0.001
+                        },
+                        "fees": [
+                            {
+                                "cost": 0.05001,
+                                "currency": "USDT",
+                                "rate": 0.001
+                            }
+                        ],
+                        "info": {
+                            "id": 123
+                        }
+                    },
+                    "id": "124",
+                    "clientOrderId": null,
+                    "timestamp": 1731400000000,
+                    "datetime": "2024-11-12T08:26:40.000Z",
+                    "lastTradeTimestamp": 1731400001000,
+                    "status": "closed",
+                    "symbol": "BTC/USDT",
+                    "type": "limit",
+                    "timeInForce": "GTC",
+                    "postOnly": false,
+                    "reduceOnly": null,
+                    "side": "buy",
+                    "price": 50000,
+                    "triggerPrice": null,
+                    "average": 50010,
+                    "amount": 0.001,
+                    "filled": 0.001,
+                    "remaining": 0,
+                    "cost": 50.01,
+                    "trades": [],
+                    "fee": {
+                        "cost": 0.05001,
+                        "currency": "USDT",
+                        "rate": 0.001
+                    },
+                    "fees": [
+                        {
+                            "cost": 0.05001,
+                            "currency": "USDT",
+                            "rate": 0.001
+                        }
+                    ],
+                    "lastUpdateTimestamp": null,
+                    "stopPrice": null,
+                    "takeProfitPrice": null,
+                    "stopLossPrice": null
+                }
+            }
+        ],
+        "fetchOrders": [
+            {
+                "description": "orders list",
+                "method": "fetchOrders",
+                "input": [
+                    "BTC/USDT"
+                ],
+                "httpResponse": [
+                    {
+                        "id": "123",
+                        "clientOrderId": null,
+                        "timestamp": 1731400000000,
+                        "datetime": "2024-11-12T08:26:40.000Z",
+                        "lastTradeTimestamp": null,
+                        "status": "open",
+                        "symbol": "BTC/USDT",
+                        "type": "limit",
+                        "timeInForce": "GTC",
+                        "side": "buy",
+                        "price": 50000,
+                        "average": null,
+                        "amount": 0.001,
+                        "filled": 0,
+                        "remaining": 0.001,
+                        "cost": 0,
+                        "trades": [],
+                        "fee": null,
+                        "fees": [],
+                        "info": {
+                            "id": 123
+                        }
+                    },
+                    {
+                        "id": "124",
+                        "clientOrderId": null,
+                        "timestamp": 1731400000000,
+                        "datetime": "2024-11-12T08:26:40.000Z",
+                        "lastTradeTimestamp": 1731400001000,
+                        "status": "closed",
+                        "symbol": "BTC/USDT",
+                        "type": "limit",
+                        "timeInForce": "GTC",
+                        "side": "buy",
+                        "price": 50000,
+                        "average": 50010,
+                        "amount": 0.001,
+                        "filled": 0.001,
+                        "remaining": 0,
+                        "cost": 50.01,
+                        "trades": [],
+                        "fee": {
+                            "cost": 0.05001,
+                            "currency": "USDT",
+                            "rate": 0.001
+                        },
+                        "fees": [
+                            {
+                                "cost": 0.05001,
+                                "currency": "USDT",
+                                "rate": 0.001
+                            }
+                        ],
+                        "info": {
+                            "id": 123
+                        }
+                    }
+                ],
+                "parsedResponse": [
+                    {
+                        "info": {
+                            "id": "123",
+                            "clientOrderId": null,
+                            "timestamp": 1731400000000,
+                            "datetime": "2024-11-12T08:26:40.000Z",
+                            "lastTradeTimestamp": null,
+                            "status": "open",
+                            "symbol": "BTC/USDT",
+                            "type": "limit",
+                            "timeInForce": "GTC",
+                            "side": "buy",
+                            "price": 50000,
+                            "average": null,
+                            "amount": 0.001,
+                            "filled": 0,
+                            "remaining": 0.001,
+                            "cost": 0,
+                            "trades": [],
+                            "fee": null,
+                            "fees": [],
+                            "info": {
+                                "id": 123
+                            }
+                        },
+                        "id": "123",
+                        "clientOrderId": null,
+                        "timestamp": 1731400000000,
+                        "datetime": "2024-11-12T08:26:40.000Z",
+                        "lastTradeTimestamp": null,
+                        "status": "open",
+                        "symbol": "BTC/USDT",
+                        "type": "limit",
+                        "timeInForce": "GTC",
+                        "postOnly": false,
+                        "reduceOnly": null,
+                        "side": "buy",
+                        "price": 50000,
+                        "triggerPrice": null,
+                        "average": null,
+                        "amount": 0.001,
+                        "filled": 0,
+                        "remaining": 0.001,
+                        "cost": 0,
+                        "trades": [],
+                        "fee": null,
+                        "fees": [],
+                        "lastUpdateTimestamp": null,
+                        "stopPrice": null,
+                        "takeProfitPrice": null,
+                        "stopLossPrice": null
+                    },
+                    {
+                        "info": {
+                            "id": "124",
+                            "clientOrderId": null,
+                            "timestamp": 1731400000000,
+                            "datetime": "2024-11-12T08:26:40.000Z",
+                            "lastTradeTimestamp": 1731400001000,
+                            "status": "closed",
+                            "symbol": "BTC/USDT",
+                            "type": "limit",
+                            "timeInForce": "GTC",
+                            "side": "buy",
+                            "price": 50000,
+                            "average": 50010,
+                            "amount": 0.001,
+                            "filled": 0.001,
+                            "remaining": 0,
+                            "cost": 50.01,
+                            "trades": [],
+                            "fee": {
+                                "cost": 0.05001,
+                                "currency": "USDT",
+                                "rate": 0.001
+                            },
+                            "fees": [
+                                {
+                                    "cost": 0.05001,
+                                    "currency": "USDT",
+                                    "rate": 0.001
+                                }
+                            ],
+                            "info": {
+                                "id": 123
+                            }
+                        },
+                        "id": "124",
+                        "clientOrderId": null,
+                        "timestamp": 1731400000000,
+                        "datetime": "2024-11-12T08:26:40.000Z",
+                        "lastTradeTimestamp": 1731400001000,
+                        "status": "closed",
+                        "symbol": "BTC/USDT",
+                        "type": "limit",
+                        "timeInForce": "GTC",
+                        "postOnly": false,
+                        "reduceOnly": null,
+                        "side": "buy",
+                        "price": 50000,
+                        "triggerPrice": null,
+                        "average": 50010,
+                        "amount": 0.001,
+                        "filled": 0.001,
+                        "remaining": 0,
+                        "cost": 50.01,
+                        "trades": [],
+                        "fee": {
+                            "cost": 0.05001,
+                            "currency": "USDT",
+                            "rate": 0.001
+                        },
+                        "fees": [
+                            {
+                                "cost": 0.05001,
+                                "currency": "USDT",
+                                "rate": 0.001
+                            }
+                        ],
+                        "lastUpdateTimestamp": null,
+                        "stopPrice": null,
+                        "takeProfitPrice": null,
+                        "stopLossPrice": null
+                    }
+                ]
+            }
+        ],
+        "fetchMyTrades": [
+            {
+                "description": "my trades (TradeDto)",
+                "method": "fetchMyTrades",
+                "input": [
+                    "BTC/USDT"
+                ],
+                "httpResponse": [
+                    {
+                        "info": {
+                            "id": 9001
+                        },
+                        "id": "9001",
+                        "timestamp": 1731400001000,
+                        "datetime": "2024-11-12T08:26:41.000Z",
+                        "symbol": "BTC/USDT",
+                        "order": "124",
+                        "type": "limit",
+                        "side": "buy",
+                        "takerOrMaker": "taker",
+                        "price": 50010,
+                        "amount": 0.001,
+                        "cost": 50.01,
+                        "fee": {
+                            "cost": 0.05001,
+                            "currency": "USDT",
+                            "rate": 0.001
+                        },
+                        "fees": [
+                            {
+                                "cost": 0.05001,
+                                "currency": "USDT",
+                                "rate": 0.001
+                            }
+                        ]
+                    }
+                ],
+                "parsedResponse": [
+                    {
+                        "info": {
+                            "info": {
+                                "id": 9001
+                            },
+                            "id": "9001",
+                            "timestamp": 1731400001000,
+                            "datetime": "2024-11-12T08:26:41.000Z",
+                            "symbol": "BTC/USDT",
+                            "order": "124",
+                            "type": "limit",
+                            "side": "buy",
+                            "takerOrMaker": "taker",
+                            "price": 50010,
+                            "amount": 0.001,
+                            "cost": 50.01,
+                            "fee": {
+                                "cost": 0.05001,
+                                "currency": "USDT",
+                                "rate": 0.001
+                            },
+                            "fees": [
+                                {
+                                    "cost": 0.05001,
+                                    "currency": "USDT",
+                                    "rate": 0.001
+                                }
+                            ]
+                        },
+                        "id": "9001",
+                        "timestamp": 1731400001000,
+                        "datetime": "2024-11-12T08:26:41.000Z",
+                        "symbol": "BTC/USDT",
+                        "order": "124",
+                        "type": "limit",
+                        "side": "buy",
+                        "takerOrMaker": "taker",
+                        "price": 50010,
+                        "amount": 0.001,
+                        "cost": 50.01,
+                        "fee": {
+                            "currency": "USDT",
+                            "cost": 0.05001,
+                            "rate": 0.001
+                        },
+                        "fees": [
+                            {
+                                "currency": "USDT",
+                                "cost": 0.05001,
+                                "rate": 0.001
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "fetchDepositAddress": [
+            {
+                "description": "deposit address (DepositAddressDto)",
+                "method": "fetchDepositAddress",
+                "input": [
+                    "USDT"
+                ],
+                "httpResponse": {
+                    "info": {},
+                    "currency": "USDT",
+                    "address": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                    "tag": null,
+                    "network": "TRC20"
+                },
+                "parsedResponse": {
+                    "info": {
+                        "info": {},
+                        "currency": "USDT",
+                        "address": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                        "tag": null,
+                        "network": "TRC20"
+                    },
+                    "currency": "USDT",
+                    "network": "TRC20",
+                    "address": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                    "tag": null
+                }
+            }
+        ],
+        "fetchDeposits": [
+            {
+                "description": "deposits (TransactionDto)",
+                "method": "fetchDeposits",
+                "input": [
+                    "USDT"
+                ],
+                "httpResponse": [
+                    {
+                        "info": {
+                            "id": 555
+                        },
+                        "id": "555",
+                        "txid": "0xabc",
+                        "timestamp": 1731400000000,
+                        "datetime": "2024-11-12T08:26:40.000Z",
+                        "network": "TRC20",
+                        "address": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                        "addressTo": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                        "addressFrom": null,
+                        "tag": null,
+                        "tagTo": null,
+                        "tagFrom": null,
+                        "type": "deposit",
+                        "amount": 100,
+                        "currency": "USDT",
+                        "status": "ok",
+                        "updated": 1731400000000,
+                        "comment": null,
+                        "fee": null
+                    }
+                ],
+                "parsedResponse": [
+                    {
+                        "info": {
+                            "info": {
+                                "id": 555
+                            },
+                            "id": "555",
+                            "txid": "0xabc",
+                            "timestamp": 1731400000000,
+                            "datetime": "2024-11-12T08:26:40.000Z",
+                            "network": "TRC20",
+                            "address": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                            "addressTo": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                            "addressFrom": null,
+                            "tag": null,
+                            "tagTo": null,
+                            "tagFrom": null,
+                            "type": "deposit",
+                            "amount": 100,
+                            "currency": "USDT",
+                            "status": "ok",
+                            "updated": 1731400000000,
+                            "comment": null,
+                            "fee": null
+                        },
+                        "id": "555",
+                        "txid": "0xabc",
+                        "timestamp": 1731400000000,
+                        "datetime": "2024-11-12T08:26:40.000Z",
+                        "network": "TRC20",
+                        "address": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                        "addressTo": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                        "addressFrom": null,
+                        "tag": null,
+                        "tagTo": null,
+                        "tagFrom": null,
+                        "type": "deposit",
+                        "amount": 100,
+                        "currency": "USDT",
+                        "status": "ok",
+                        "updated": 1731400000000,
+                        "internal": null,
+                        "comment": null,
+                        "fee": null
+                    }
+                ]
+            }
+        ],
+        "fetchWithdrawals": [
+            {
+                "description": "withdrawals (TransactionDto)",
+                "method": "fetchWithdrawals",
+                "input": [
+                    "USDT"
+                ],
+                "httpResponse": [
+                    {
+                        "info": {
+                            "id": 556
+                        },
+                        "id": "556",
+                        "txid": null,
+                        "timestamp": 1731400000000,
+                        "datetime": "2024-11-12T08:26:40.000Z",
+                        "network": "TRC20",
+                        "address": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                        "addressTo": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                        "addressFrom": null,
+                        "tag": null,
+                        "tagTo": null,
+                        "tagFrom": null,
+                        "type": "withdrawal",
+                        "amount": 20,
+                        "currency": "USDT",
+                        "status": "pending",
+                        "updated": 1731400000000,
+                        "comment": null,
+                        "fee": {
+                            "currency": "USDT",
+                            "cost": 1
+                        }
+                    }
+                ],
+                "parsedResponse": [
+                    {
+                        "info": {
+                            "info": {
+                                "id": 556
+                            },
+                            "id": "556",
+                            "txid": null,
+                            "timestamp": 1731400000000,
+                            "datetime": "2024-11-12T08:26:40.000Z",
+                            "network": "TRC20",
+                            "address": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                            "addressTo": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                            "addressFrom": null,
+                            "tag": null,
+                            "tagTo": null,
+                            "tagFrom": null,
+                            "type": "withdrawal",
+                            "amount": 20,
+                            "currency": "USDT",
+                            "status": "pending",
+                            "updated": 1731400000000,
+                            "comment": null,
+                            "fee": {
+                                "currency": "USDT",
+                                "cost": 1
+                            }
+                        },
+                        "id": "556",
+                        "txid": null,
+                        "timestamp": 1731400000000,
+                        "datetime": "2024-11-12T08:26:40.000Z",
+                        "network": "TRC20",
+                        "address": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                        "addressTo": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                        "addressFrom": null,
+                        "tag": null,
+                        "tagTo": null,
+                        "tagFrom": null,
+                        "type": "withdrawal",
+                        "amount": 20,
+                        "currency": "USDT",
+                        "status": "pending",
+                        "updated": 1731400000000,
+                        "internal": null,
+                        "comment": null,
+                        "fee": {
+                            "currency": "USDT",
+                            "cost": 1,
+                            "rate": null
+                        }
+                    }
+                ]
+            }
+        ],
+        "fetchDepositsWithdrawals": [
+            {
+                "description": "deposits and withdrawals",
+                "method": "fetchDepositsWithdrawals",
+                "input": [
+                    "USDT"
+                ],
+                "httpResponse": [
+                    {
+                        "info": {
+                            "id": 555
+                        },
+                        "id": "555",
+                        "txid": "0xabc",
+                        "timestamp": 1731400000000,
+                        "datetime": "2024-11-12T08:26:40.000Z",
+                        "network": "TRC20",
+                        "address": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                        "addressTo": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                        "addressFrom": null,
+                        "tag": null,
+                        "tagTo": null,
+                        "tagFrom": null,
+                        "type": "deposit",
+                        "amount": 100,
+                        "currency": "USDT",
+                        "status": "ok",
+                        "updated": 1731400000000,
+                        "comment": null,
+                        "fee": null
+                    },
+                    {
+                        "info": {
+                            "id": 556
+                        },
+                        "id": "556",
+                        "txid": null,
+                        "timestamp": 1731400000000,
+                        "datetime": "2024-11-12T08:26:40.000Z",
+                        "network": "TRC20",
+                        "address": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                        "addressTo": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                        "addressFrom": null,
+                        "tag": null,
+                        "tagTo": null,
+                        "tagFrom": null,
+                        "type": "withdrawal",
+                        "amount": 20,
+                        "currency": "USDT",
+                        "status": "pending",
+                        "updated": 1731400000000,
+                        "comment": null,
+                        "fee": {
+                            "currency": "USDT",
+                            "cost": 1
+                        }
+                    }
+                ],
+                "parsedResponse": [
+                    {
+                        "info": {
+                            "info": {
+                                "id": 555
+                            },
+                            "id": "555",
+                            "txid": "0xabc",
+                            "timestamp": 1731400000000,
+                            "datetime": "2024-11-12T08:26:40.000Z",
+                            "network": "TRC20",
+                            "address": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                            "addressTo": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                            "addressFrom": null,
+                            "tag": null,
+                            "tagTo": null,
+                            "tagFrom": null,
+                            "type": "deposit",
+                            "amount": 100,
+                            "currency": "USDT",
+                            "status": "ok",
+                            "updated": 1731400000000,
+                            "comment": null,
+                            "fee": null
+                        },
+                        "id": "555",
+                        "txid": "0xabc",
+                        "timestamp": 1731400000000,
+                        "datetime": "2024-11-12T08:26:40.000Z",
+                        "network": "TRC20",
+                        "address": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                        "addressTo": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                        "addressFrom": null,
+                        "tag": null,
+                        "tagTo": null,
+                        "tagFrom": null,
+                        "type": "deposit",
+                        "amount": 100,
+                        "currency": "USDT",
+                        "status": "ok",
+                        "updated": 1731400000000,
+                        "internal": null,
+                        "comment": null,
+                        "fee": null
+                    },
+                    {
+                        "info": {
+                            "info": {
+                                "id": 556
+                            },
+                            "id": "556",
+                            "txid": null,
+                            "timestamp": 1731400000000,
+                            "datetime": "2024-11-12T08:26:40.000Z",
+                            "network": "TRC20",
+                            "address": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                            "addressTo": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                            "addressFrom": null,
+                            "tag": null,
+                            "tagTo": null,
+                            "tagFrom": null,
+                            "type": "withdrawal",
+                            "amount": 20,
+                            "currency": "USDT",
+                            "status": "pending",
+                            "updated": 1731400000000,
+                            "comment": null,
+                            "fee": {
+                                "currency": "USDT",
+                                "cost": 1
+                            }
+                        },
+                        "id": "556",
+                        "txid": null,
+                        "timestamp": 1731400000000,
+                        "datetime": "2024-11-12T08:26:40.000Z",
+                        "network": "TRC20",
+                        "address": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                        "addressTo": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                        "addressFrom": null,
+                        "tag": null,
+                        "tagTo": null,
+                        "tagFrom": null,
+                        "type": "withdrawal",
+                        "amount": 20,
+                        "currency": "USDT",
+                        "status": "pending",
+                        "updated": 1731400000000,
+                        "internal": null,
+                        "comment": null,
+                        "fee": {
+                            "currency": "USDT",
+                            "cost": 1,
+                            "rate": null
+                        }
+                    }
+                ]
+            }
+        ],
+        "fetchLedger": [
+            {
+                "description": "ledger (LedgerEntryDto)",
+                "method": "fetchLedger",
+                "input": [
+                    "BTC"
+                ],
+                "httpResponse": [
+                    {
+                        "info": {
+                            "id": 777
+                        },
+                        "id": "777",
+                        "timestamp": 1731400001000,
+                        "datetime": "2024-11-12T08:26:41.000Z",
+                        "direction": "in",
+                        "account": "SPOT_WALLET",
+                        "referenceId": "124",
+                        "referenceAccount": null,
+                        "type": "trade",
+                        "currency": "BTC",
+                        "amount": 0.001,
+                        "before": 0.499,
+                        "after": 0.5,
+                        "status": "ok",
+                        "fee": null
+                    }
+                ],
+                "parsedResponse": [
+                    {
+                        "id": "777",
+                        "timestamp": 1731400001000,
+                        "datetime": "2024-11-12T08:26:41.000Z",
+                        "direction": "in",
+                        "account": "SPOT_WALLET",
+                        "referenceId": "124",
+                        "referenceAccount": null,
+                        "type": "trade",
+                        "currency": "BTC",
+                        "amount": 0.001,
+                        "before": 0.499,
+                        "after": 0.5,
+                        "status": "ok",
+                        "fee": null,
+                        "info": {
+                            "info": {
+                                "id": 777
+                            },
+                            "id": "777",
+                            "timestamp": 1731400001000,
+                            "datetime": "2024-11-12T08:26:41.000Z",
+                            "direction": "in",
+                            "account": "SPOT_WALLET",
+                            "referenceId": "124",
+                            "referenceAccount": null,
+                            "type": "trade",
+                            "currency": "BTC",
+                            "amount": 0.001,
+                            "before": 0.499,
+                            "after": 0.5,
+                            "status": "ok",
+                            "fee": null
+                        }
+                    }
+                ]
+            }
+        ],
+        "withdraw": [
+            {
+                "description": "withdrawal created (TransactionDto)",
+                "method": "withdraw",
+                "input": [
+                    "USDT",
+                    20,
+                    "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE"
+                ],
+                "httpResponse": {
+                    "info": {
+                        "id": 556
+                    },
+                    "id": "556",
+                    "txid": null,
+                    "timestamp": 1731400000000,
+                    "datetime": "2024-11-12T08:26:40.000Z",
+                    "network": "TRC20",
+                    "address": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                    "addressTo": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                    "addressFrom": null,
+                    "tag": null,
+                    "tagTo": null,
+                    "tagFrom": null,
+                    "type": "withdrawal",
+                    "amount": 20,
+                    "currency": "USDT",
+                    "status": "pending",
+                    "updated": 1731400000000,
+                    "comment": null,
+                    "fee": {
+                        "currency": "USDT",
+                        "cost": 1
+                    }
+                },
+                "parsedResponse": {
+                    "info": {
+                        "info": {
+                            "id": 556
+                        },
+                        "id": "556",
+                        "txid": null,
+                        "timestamp": 1731400000000,
+                        "datetime": "2024-11-12T08:26:40.000Z",
+                        "network": "TRC20",
+                        "address": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                        "addressTo": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                        "addressFrom": null,
+                        "tag": null,
+                        "tagTo": null,
+                        "tagFrom": null,
+                        "type": "withdrawal",
+                        "amount": 20,
+                        "currency": "USDT",
+                        "status": "pending",
+                        "updated": 1731400000000,
+                        "comment": null,
+                        "fee": {
+                            "currency": "USDT",
+                            "cost": 1
+                        }
+                    },
+                    "id": "556",
+                    "txid": null,
+                    "timestamp": 1731400000000,
+                    "datetime": "2024-11-12T08:26:40.000Z",
+                    "network": "TRC20",
+                    "address": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                    "addressTo": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                    "addressFrom": null,
+                    "tag": null,
+                    "tagTo": null,
+                    "tagFrom": null,
+                    "type": "withdrawal",
+                    "amount": 20,
+                    "currency": "USDT",
+                    "status": "pending",
+                    "updated": 1731400000000,
+                    "internal": null,
+                    "comment": null,
+                    "fee": {
+                        "currency": "USDT",
+                        "cost": 1,
+                        "rate": null
+                    }
+                }
+            }
+        ],
+        "transfer": [
+            {
+                "description": "internal transfer (TransferEntryDto)",
+                "method": "transfer",
+                "input": [
+                    "USDT",
+                    10,
+                    "SPOT_WALLET",
+                    "LAUNCHPAD_WALLET"
+                ],
+                "httpResponse": {
+                    "id": "888",
+                    "timestamp": 1731400000000,
+                    "datetime": "2024-11-12T08:26:40.000Z",
+                    "currency": "USDT",
+                    "amount": 10,
+                    "fromAccount": "SPOT_WALLET",
+                    "toAccount": "LAUNCHPAD_WALLET",
+                    "status": "ok",
+                    "info": {}
+                },
+                "parsedResponse": {
+                    "info": {
+                        "id": "888",
+                        "timestamp": 1731400000000,
+                        "datetime": "2024-11-12T08:26:40.000Z",
+                        "currency": "USDT",
+                        "amount": 10,
+                        "fromAccount": "SPOT_WALLET",
+                        "toAccount": "LAUNCHPAD_WALLET",
+                        "status": "ok",
+                        "info": {}
+                    },
+                    "id": "888",
+                    "timestamp": 1731400000000,
+                    "datetime": "2024-11-12T08:26:40.000Z",
+                    "currency": "USDT",
+                    "amount": 10,
+                    "fromAccount": "SPOT_WALLET",
+                    "toAccount": "LAUNCHPAD_WALLET",
+                    "status": "ok"
+                }
+            }
+        ]
+    }
+}

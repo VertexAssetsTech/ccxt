@@ -1,0 +1,419 @@
+{
+    "exchange": "nxmarket",
+    "skipKeys": [],
+    "outputType": "json",
+    "methods": {
+        "fetchMarkets": [
+            {
+                "description": "fetch all markets",
+                "method": "fetchMarkets",
+                "url": "https://ccxt.nxmarket.com/v1/markets",
+                "input": [],
+                "output": null
+            }
+        ],
+        "fetchCurrencies": [
+            {
+                "description": "fetch all currencies",
+                "method": "fetchCurrencies",
+                "url": "https://ccxt.nxmarket.com/v1/currencies",
+                "input": [],
+                "output": null
+            }
+        ],
+        "fetchTicker": [
+            {
+                "description": "ticker by market id",
+                "method": "fetchTicker",
+                "url": "https://ccxt.nxmarket.com/v1/ticker?symbol=BTCUSDT",
+                "input": [
+                    "BTC/USDT"
+                ],
+                "output": null
+            }
+        ],
+        "fetchTickers": [
+            {
+                "description": "tickers for two symbols, comma-separated ids",
+                "method": "fetchTickers",
+                "url": "https://ccxt.nxmarket.com/v1/tickers?symbols=BTCUSDT%2CETHUSDT",
+                "input": [
+                    [
+                        "BTC/USDT",
+                        "ETH/USDT"
+                    ]
+                ],
+                "output": null
+            },
+            {
+                "description": "tickers for all markets",
+                "method": "fetchTickers",
+                "url": "https://ccxt.nxmarket.com/v1/tickers",
+                "input": [],
+                "output": null
+            }
+        ],
+        "fetchOrderBook": [
+            {
+                "description": "order book with limit",
+                "method": "fetchOrderBook",
+                "url": "https://ccxt.nxmarket.com/v1/order-book?symbol=BTCUSDT&limit=10",
+                "input": [
+                    "BTC/USDT",
+                    10
+                ],
+                "output": null
+            }
+        ],
+        "fetchTrades": [
+            {
+                "description": "public trades with since and limit",
+                "method": "fetchTrades",
+                "url": "https://ccxt.nxmarket.com/v1/trades?symbol=BTCUSDT&since=1731400000000&limit=5",
+                "input": [
+                    "BTC/USDT",
+                    1731400000000,
+                    5
+                ],
+                "output": null
+            }
+        ],
+        "fetchOHLCV": [
+            {
+                "description": "ohlcv limit is clamped to 1000",
+                "method": "fetchOHLCV",
+                "url": "https://ccxt.nxmarket.com/v1/ohlcv?symbol=BTCUSDT&timeframe=1h&since=1731400000000&limit=1000",
+                "input": [
+                    "BTC/USDT",
+                    "1h",
+                    1731400000000,
+                    2000
+                ],
+                "output": null
+            },
+            {
+                "description": "ohlcv with until param",
+                "method": "fetchOHLCV",
+                "url": "https://ccxt.nxmarket.com/v1/ohlcv?symbol=BTCUSDT&timeframe=1d&until=1731400000000",
+                "input": [
+                    "BTC/USDT",
+                    "1d",
+                    null,
+                    null,
+                    {
+                        "until": 1731400000000
+                    }
+                ],
+                "output": null
+            }
+        ],
+        "fetchTradingFees": [
+            {
+                "description": "trading fees for all markets",
+                "method": "fetchTradingFees",
+                "url": "https://ccxt.nxmarket.com/v1/trading-fees",
+                "input": [],
+                "output": null
+            }
+        ],
+        "fetchTradingFee": [
+            {
+                "description": "trading fee for one market",
+                "method": "fetchTradingFee",
+                "url": "https://ccxt.nxmarket.com/v1/trading-fees?symbol=BTCUSDT",
+                "input": [
+                    "BTC/USDT"
+                ],
+                "output": null
+            }
+        ],
+        "fetchBalance": [
+            {
+                "description": "spot balance",
+                "method": "fetchBalance",
+                "url": "https://ccxt.nxmarket.com/v1/balance",
+                "input": [],
+                "output": null
+            }
+        ],
+        "fetchAccounts": [
+            {
+                "description": "accounts",
+                "method": "fetchAccounts",
+                "url": "https://ccxt.nxmarket.com/v1/accounts",
+                "input": [],
+                "output": null
+            }
+        ],
+        "createOrder": [
+            {
+                "description": "limit buy",
+                "method": "createOrder",
+                "url": "https://ccxt.nxmarket.com/v1/orders",
+                "input": [
+                    "BTC/USDT",
+                    "limit",
+                    "buy",
+                    0.001,
+                    50000
+                ],
+                "output": {
+                    "symbol": "BTCUSDT",
+                    "type": "limit",
+                    "side": "buy",
+                    "amount": "0.001",
+                    "price": "50000"
+                }
+            },
+            {
+                "description": "market sell sends no price",
+                "method": "createOrder",
+                "url": "https://ccxt.nxmarket.com/v1/orders",
+                "input": [
+                    "BTC/USDT",
+                    "market",
+                    "sell",
+                    0.001
+                ],
+                "output": {
+                    "symbol": "BTCUSDT",
+                    "type": "market",
+                    "side": "sell",
+                    "amount": "0.001"
+                }
+            },
+            {
+                "description": "account param is nested under params",
+                "method": "createOrder",
+                "url": "https://ccxt.nxmarket.com/v1/orders",
+                "input": [
+                    "ETH/USDT",
+                    "limit",
+                    "sell",
+                    0.5,
+                    4000,
+                    {
+                        "account": "LAUNCHPAD_WALLET"
+                    }
+                ],
+                "output": {
+                    "symbol": "ETHUSDT",
+                    "type": "limit",
+                    "side": "sell",
+                    "amount": "0.5",
+                    "price": "4000",
+                    "params": {
+                        "account": "LAUNCHPAD_WALLET"
+                    }
+                }
+            }
+        ],
+        "editOrder": [
+            {
+                "description": "edit amount and price",
+                "method": "editOrder",
+                "url": "https://ccxt.nxmarket.com/v1/orders/123",
+                "input": [
+                    "123",
+                    "BTC/USDT",
+                    "limit",
+                    "buy",
+                    0.002,
+                    51000
+                ],
+                "output": {
+                    "symbol": "BTCUSDT",
+                    "type": "limit",
+                    "side": "buy",
+                    "amount": "0.002",
+                    "price": "51000"
+                }
+            }
+        ],
+        "cancelOrder": [
+            {
+                "description": "cancel by id",
+                "method": "cancelOrder",
+                "url": "https://ccxt.nxmarket.com/v1/orders/123",
+                "input": [
+                    "123",
+                    "BTC/USDT"
+                ],
+                "output": null
+            }
+        ],
+        "fetchOrder": [
+            {
+                "description": "order by id",
+                "method": "fetchOrder",
+                "url": "https://ccxt.nxmarket.com/v1/orders/123",
+                "input": [
+                    "123"
+                ],
+                "output": null
+            }
+        ],
+        "fetchOrders": [
+            {
+                "description": "orders with symbol, since and limit",
+                "method": "fetchOrders",
+                "url": "https://ccxt.nxmarket.com/v1/orders?symbol=BTCUSDT&since=1731400000000&limit=10",
+                "input": [
+                    "BTC/USDT",
+                    1731400000000,
+                    10
+                ],
+                "output": null
+            }
+        ],
+        "fetchOpenOrders": [
+            {
+                "description": "open orders",
+                "method": "fetchOpenOrders",
+                "url": "https://ccxt.nxmarket.com/v1/orders?symbol=BTCUSDT&status=open",
+                "input": [
+                    "BTC/USDT"
+                ],
+                "output": null
+            }
+        ],
+        "fetchClosedOrders": [
+            {
+                "description": "closed orders",
+                "method": "fetchClosedOrders",
+                "url": "https://ccxt.nxmarket.com/v1/orders?status=closed",
+                "input": [],
+                "output": null
+            }
+        ],
+        "fetchMyTrades": [
+            {
+                "description": "my trades with limit",
+                "method": "fetchMyTrades",
+                "url": "https://ccxt.nxmarket.com/v1/my-trades?symbol=BTCUSDT&limit=20",
+                "input": [
+                    "BTC/USDT",
+                    null,
+                    20
+                ],
+                "output": null
+            }
+        ],
+        "fetchDepositAddress": [
+            {
+                "description": "deposit address",
+                "method": "fetchDepositAddress",
+                "url": "https://ccxt.nxmarket.com/v1/deposit-address?code=USDT",
+                "input": [
+                    "USDT"
+                ],
+                "output": null
+            }
+        ],
+        "fetchDeposits": [
+            {
+                "description": "deposits for a currency",
+                "method": "fetchDeposits",
+                "url": "https://ccxt.nxmarket.com/v1/deposits?code=USDT&since=1731400000000&limit=10",
+                "input": [
+                    "USDT",
+                    1731400000000,
+                    10
+                ],
+                "output": null
+            }
+        ],
+        "fetchWithdrawals": [
+            {
+                "description": "all withdrawals",
+                "method": "fetchWithdrawals",
+                "url": "https://ccxt.nxmarket.com/v1/withdrawals",
+                "input": [],
+                "output": null
+            }
+        ],
+        "fetchDepositsWithdrawals": [
+            {
+                "description": "deposits and withdrawals",
+                "method": "fetchDepositsWithdrawals",
+                "url": "https://ccxt.nxmarket.com/v1/transactions?code=USDT",
+                "input": [
+                    "USDT"
+                ],
+                "output": null
+            }
+        ],
+        "fetchLedger": [
+            {
+                "description": "ledger for a currency",
+                "method": "fetchLedger",
+                "url": "https://ccxt.nxmarket.com/v1/ledger?code=BTC&since=1731400000000&limit=50",
+                "input": [
+                    "BTC",
+                    1731400000000,
+                    50
+                ],
+                "output": null
+            }
+        ],
+        "withdraw": [
+            {
+                "description": "withdraw without tag",
+                "method": "withdraw",
+                "url": "https://ccxt.nxmarket.com/v1/withdraw",
+                "input": [
+                    "USDT",
+                    20,
+                    "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE"
+                ],
+                "output": {
+                    "code": "USDT",
+                    "amount": "20",
+                    "address": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE"
+                }
+            },
+            {
+                "description": "withdraw tag goes to the top-level tag field",
+                "method": "withdraw",
+                "url": "https://ccxt.nxmarket.com/v1/withdraw",
+                "input": [
+                    "USDT",
+                    20,
+                    "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                    {
+                        "tag": "memo-1"
+                    }
+                ],
+                "output": {
+                    "code": "USDT",
+                    "amount": "20",
+                    "address": "TQn9Y2khEsLJW1ChVWFMSMeRDow5KcbLSE",
+                    "tag": "memo-1"
+                }
+            }
+        ],
+        "transfer": [
+            {
+                "description": "internal transfer with idempotent id",
+                "method": "transfer",
+                "url": "https://ccxt.nxmarket.com/v1/transfer",
+                "input": [
+                    "USDT",
+                    10,
+                    "SPOT_WALLET",
+                    "LAUNCHPAD_WALLET",
+                    {
+                        "idempotentId": "abc-1"
+                    }
+                ],
+                "output": {
+                    "code": "USDT",
+                    "amount": "10",
+                    "fromAccount": "SPOT_WALLET",
+                    "toAccount": "LAUNCHPAD_WALLET",
+                    "idempotentId": "abc-1"
+                }
+            }
+        ]
+    }
+}
