@@ -2,7 +2,7 @@
 
 import { sha256 } from '@noble/hashes/sha2.js';
 import Exchange from './abstract/nxmarket.js';
-import { AuthenticationError, BadRequest, BadSymbol, ExchangeError, InvalidNonce, OrderNotFound, PermissionDenied, RateLimitExceeded } from './base/errors.js';
+import { AccountNotEnabled, AuthenticationError, BadRequest, BadSymbol, ExchangeError, ExchangeNotAvailable, InsufficientFunds, InvalidAddress, InvalidNonce, InvalidOrder, OrderNotFound, PermissionDenied, RateLimitExceeded } from './base/errors.js';
 import { TICK_SIZE } from './base/functions/number.js';
 import type { Account, Balances, Currencies, Currency, DepositAddress, Dict, Endpoint, Int, LedgerEntry, List, Market, Num, OHLCV, Order, OrderBook, OrderSide, OrderType, Str, Strings, Ticker, Tickers, Trade, TradingFeeInterface, TradingFees, Transaction, TransferEntry, int } from './base/types.js';
 
@@ -206,6 +206,27 @@ export default class nxmarket extends Exchange {
             },
             'exceptions': {
                 'exact': {
+                    // error codes, the `code` of every /v1 error body (ec-api#506)
+                    'BAD_REQUEST': BadRequest,
+                    'NOT_FOUND': BadRequest,
+                    'AUTHENTICATION_REQUIRED': AuthenticationError,
+                    'INVALID_API_KEY': AuthenticationError,
+                    'INVALID_SIGNATURE': AuthenticationError,
+                    'INVALID_TIMESTAMP': InvalidNonce,
+                    'TIMESTAMP_EXPIRED': InvalidNonce,
+                    'NONCE_TOO_LOW': InvalidNonce,
+                    'IP_NOT_ALLOWED': PermissionDenied,
+                    'PERMISSION_DENIED': PermissionDenied,
+                    'ACCOUNT_NOT_ENABLED': AccountNotEnabled,
+                    'BAD_SYMBOL': BadSymbol,
+                    'INVALID_ORDER': InvalidOrder,
+                    'INSUFFICIENT_FUNDS': InsufficientFunds,
+                    'ORDER_NOT_FOUND': OrderNotFound,
+                    'INVALID_ADDRESS': InvalidAddress,
+                    'RATE_LIMITED': RateLimitExceeded,
+                    'EXCHANGE_UNAVAILABLE': ExchangeNotAvailable,
+                    'INTERNAL_ERROR': ExchangeError,
+                    // messages, for a server older than the error codes
                     'Unauthorized': AuthenticationError,
                     'Invalid signature': AuthenticationError,
                     'Forbidden': PermissionDenied,
@@ -1451,10 +1472,14 @@ export default class nxmarket extends Exchange {
             return undefined;
         }
         //
-        //     { "message": "Invalid signature" }
+        //     { "code": "INVALID_SIGNATURE", "message": "Invalid signature" }
         //
+        const code = this.safeString (response, 'code');
         const message = this.safeString (response, 'message');
         const feedback = this.id + ' ' + body;
+        if (code !== undefined) {
+            this.throwExactlyMatchedException (this.exceptions['exact'], code, feedback);
+        }
         if (message !== undefined) {
             this.throwExactlyMatchedException (this.exceptions['exact'], message, feedback);
             this.throwBroadlyMatchedException (this.exceptions['broad'], message, feedback);
