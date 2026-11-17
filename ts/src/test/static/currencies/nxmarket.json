@@ -24,7 +24,7 @@
                 }
             },
             "networks": {
-                "bitcoin_mainnet": {
+                "bitcoin|mainnet": {
                     "id": "native::btc",
                     "network": "mainnet",
                     "name": "Bitcoin",
@@ -55,7 +55,7 @@
                         "withdrawable": false
                     }
                 },
-                "bitcoin_testnet": {
+                "bitcoin|testnet": {
                     "id": "native::btc",
                     "network": "testnet",
                     "name": "Bitcoin",
@@ -86,7 +86,7 @@
                         "withdrawable": false
                     }
                 },
-                "bitcoin_testnet4": {
+                "bitcoin|testnet4": {
                     "id": "native::btc",
                     "network": "testnet4",
                     "name": "Bitcoin",
@@ -139,9 +139,9 @@
         "fee": 0.00004,
         "fees": {},
         "networks": {
-            "bitcoin_mainnet": {
-                "id": "bitcoin_mainnet",
-                "network": "bitcoin_mainnet",
+            "bitcoin|mainnet": {
+                "id": "bitcoin|mainnet",
+                "network": "bitcoin|mainnet",
                 "active": true,
                 "deposit": false,
                 "withdraw": false,
@@ -189,9 +189,9 @@
                     }
                 }
             },
-            "bitcoin_testnet": {
-                "id": "bitcoin_testnet",
-                "network": "bitcoin_testnet",
+            "bitcoin|testnet": {
+                "id": "bitcoin|testnet",
+                "network": "bitcoin|testnet",
                 "active": true,
                 "deposit": false,
                 "withdraw": false,
@@ -239,9 +239,9 @@
                     }
                 }
             },
-            "bitcoin_testnet4": {
-                "id": "bitcoin_testnet4",
-                "network": "bitcoin_testnet4",
+            "bitcoin|testnet4": {
+                "id": "bitcoin|testnet4",
+                "network": "bitcoin|testnet4",
                 "active": true,
                 "deposit": false,
                 "withdraw": false,
@@ -326,7 +326,7 @@
                 }
             },
             "networks": {
-                "binance_smart_chain_testnet": {
+                "binance_smart_chain|testnet": {
                     "id": "0x337610d27c682e347c9cd60bd4b3b107c9d34ddd",
                     "network": "testnet",
                     "name": "Tether USDt",
@@ -357,7 +357,7 @@
                         "withdrawable": true
                     }
                 },
-                "tron_mainnet": {
+                "tron|mainnet": {
                     "id": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t",
                     "network": "mainnet",
                     "name": "Tether USDt",
@@ -388,7 +388,7 @@
                         "withdrawable": true
                     }
                 },
-                "ethereum_mainnet": {
+                "ethereum|mainnet": {
                     "id": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
                     "network": "mainnet",
                     "name": "Tether USDt",
@@ -419,7 +419,7 @@
                         "withdrawable": true
                     }
                 },
-                "ethereum_sepolia": {
+                "ethereum|sepolia": {
                     "id": "0x30fA2FbE15c1EaDfbEF28C188b7B8dbd3c1Ff2eB",
                     "network": "sepolia",
                     "name": "Tether USDt",
@@ -450,7 +450,7 @@
                         "withdrawable": true
                     }
                 },
-                "solana_mainnet": {
+                "solana|mainnet": {
                     "id": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
                     "network": "mainnet",
                     "name": "Tether USDt",
@@ -481,7 +481,7 @@
                         "withdrawable": true
                     }
                 },
-                "binance_smart_chain_mainnet": {
+                "binance_smart_chain|mainnet": {
                     "id": "0x55d398326f99059fF775485246999027B3197955",
                     "network": "mainnet",
                     "name": "Tether USDt",
@@ -565,9 +565,9 @@
         "fee": 1,
         "fees": {},
         "networks": {
-            "binance_smart_chain_testnet": {
-                "id": "binance_smart_chain_testnet",
-                "network": "binance_smart_chain_testnet",
+            "binance_smart_chain|testnet": {
+                "id": "binance_smart_chain|testnet",
+                "network": "binance_smart_chain|testnet",
                 "active": true,
                 "deposit": false,
                 "withdraw": true,
@@ -615,9 +615,9 @@
                     }
                 }
             },
-            "tron_mainnet": {
-                "id": "tron_mainnet",
-                "network": "tron_mainnet",
+            "tron|mainnet": {
+                "id": "tron|mainnet",
+                "network": "tron|mainnet",
                 "active": true,
                 "deposit": false,
                 "withdraw": true,
@@ -665,9 +665,9 @@
                     }
                 }
             },
-            "ethereum_mainnet": {
-                "id": "ethereum_mainnet",
-                "network": "ethereum_mainnet",
+            "ethereum|mainnet": {
+                "id": "ethereum|mainnet",
+                "network": "ethereum|mainnet",
                 "active": true,
                 "deposit": false,
                 "withdraw": true,
@@ -715,9 +715,9 @@
                     }
                 }
             },
-            "ethereum_sepolia": {
-                "id": "ethereum_sepolia",
-                "network": "ethereum_sepolia",
+            "ethereum|sepolia": {
+                "id": "ethereum|sepolia",
+                "network": "ethereum|sepolia",
                 "active": true,
                 "deposit": false,
                 "withdraw": true,
@@ -765,9 +765,9 @@
                     }
                 }
             },
-            "solana_mainnet": {
-                "id": "solana_mainnet",
-                "network": "solana_mainnet",
+            "solana|mainnet": {
+                "id": "solana|mainnet",
+                "network": "solana|mainnet",
                 "active": true,
                 "deposit": false,
                 "withdraw": true,
@@ -815,9 +815,9 @@
                     }
                 }
             },
-            "binance_smart_chain_mainnet": {
-                "id": "binance_smart_chain_mainnet",
-                "network": "binance_smart_chain_mainnet",
+            "binance_smart_chain|mainnet": {
+                "id": "binance_smart_chain|mainnet",
+                "network": "binance_smart_chain|mainnet",
                 "active": true,
                 "deposit": false,
                 "withdraw": true,
@@ -952,7 +952,7 @@
                 }
             },
             "networks": {
-                "ethereum_mainnet": {
+                "ethereum|mainnet": {
                     "id": "native::eth",
                     "network": "mainnet",
                     "name": "Ethereum",
@@ -983,7 +983,7 @@
                         "withdrawable": false
                     }
                 },
-                "ethereum_sepolia": {
+                "ethereum|sepolia": {
                     "id": "native::eth",
                     "network": "sepolia",
                     "name": "Ethereum",
@@ -1036,9 +1036,9 @@
         "fee": 0.00004,
         "fees": {},
         "networks": {
-            "ethereum_mainnet": {
-                "id": "ethereum_mainnet",
-                "network": "ethereum_mainnet",
+            "ethereum|mainnet": {
+                "id": "ethereum|mainnet",
+                "network": "ethereum|mainnet",
                 "active": true,
                 "deposit": false,
                 "withdraw": false,
@@ -1086,9 +1086,9 @@
                     }
                 }
             },
-            "ethereum_sepolia": {
-                "id": "ethereum_sepolia",
-                "network": "ethereum_sepolia",
+            "ethereum|sepolia": {
+                "id": "ethereum|sepolia",
+                "network": "ethereum|sepolia",
                 "active": true,
                 "deposit": false,
                 "withdraw": false,

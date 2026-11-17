@@ -362,7 +362,7 @@ export default class nxmarket extends Exchange {
         //             "fee": 1,
         //             "precision": 6,
         //             "limits": { "deposit": { "min": 1, "max": null }, "withdraw": { "min": 10, "max": null } },
-        //             "networks": { "TRC20": { "id": "TRC20", "network": "TRC20", ... } }
+        //             "networks": { "tron|mainnet": { "id": "TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t", "network": "mainnet", ... } }
         //         }
         //     ]
         //
@@ -1086,7 +1086,7 @@ export default class nxmarket extends Exchange {
         }
         const response = await this.privateGetDepositAddress (this.extend (request, query));
         //
-        //     { "currency": "USDT", "address": "T...", "tag": null, "network": "TRC20", "info": {} }
+        //     { "currency": "USDT", "address": "T...", "tag": null, "network": "tron|mainnet", "info": {} }
         //
         return this.parseDepositAddress (response, currency);
     }
@@ -1201,7 +1201,7 @@ export default class nxmarket extends Exchange {
         //         "txid": "0xabc",
         //         "timestamp": 1731400000000,
         //         "datetime": "2026-11-12T08:26:40.000Z",
-        //         "network": "TRC20",
+        //         "network": "tron|mainnet",
         //         "address": "T...",
         //         "addressTo": "T...",
         //         "addressFrom": null,
