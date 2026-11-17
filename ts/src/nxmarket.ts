@@ -1379,7 +1379,7 @@ export default class nxmarket extends Exchange {
      * @param {string} fromAccount account to transfer from
      * @param {string} toAccount account to transfer to
      * @param {object} [params] extra parameters specific to the exchange API endpoint
-     * @param {string} [params.idempotentId] a client-chosen id that makes retries of the same transfer safe
+     * @param {string} [params.idempotentId] a client-chosen id that makes retries of the same transfer safe, a new uuid when not set
      * @param {string} [params.note] a free-text note stored with the transfer
      * @returns {object} a [transfer structure]{@link https://docs.ccxt.com/?id=transfer-structure}
      */
@@ -1394,7 +1394,13 @@ export default class nxmarket extends Exchange {
             'fromAccount': fromAccount,
             'toAccount': toAccount,
         };
-        const response = await this.privatePostTransfer (this.extend (request, params));
+        // the server requires an idempotent id; a retry with the same id is applied once
+        let idempotentId = this.safeString (params, 'idempotentId');
+        if (idempotentId === undefined) {
+            idempotentId = this.uuid ();
+        }
+        request['idempotentId'] = idempotentId;
+        const response = await this.privatePostTransfer (this.extend (request, this.omit (params, 'idempotentId')));
         return this.parseTransfer (response, currency);
     }
 

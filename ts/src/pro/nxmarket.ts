@@ -14,8 +14,8 @@ import Client from '../base/ws/Client.js';
  * @augments nxmarketRest
  * @description the ccxt WebSocket API pushes polled snapshots: the order book (top 20) every 500 ms,
  * tickers and best bid/ask every second, the latest public trades every 2 seconds, candles every
- * 5 seconds, and for an authenticated connection the balance and every open order every 2 seconds
- * and new own trades every 3 seconds. Symbols on this connection are unified symbols (BTC/USDT).
+ * 5 seconds, and for an authenticated connection the balance every 2 seconds, changed orders every
+ * 2 seconds and new own trades every 3 seconds. Symbols on this connection are unified symbols (BTC/USDT).
  */
 export default class nxmarket extends nxmarketRest {
     override describe (): any {
@@ -649,7 +649,7 @@ export default class nxmarket extends nxmarketRest {
     /**
      * @method
      * @name nxmarket#watchOrders
-     * @description watches the open orders of the account; the server pushes every open order every 2 seconds and only an order that changed is returned as an update
+     * @description watches the open orders of the account; the server checks every 2 seconds and pushes each order that changed, including its final closed or canceled state
      * @param {string} [symbol] unified market symbol, all markets when not set
      * @param {int} [since] the earliest time in ms to fetch orders for
      * @param {int} [limit] the maximum number of order structures to retrieve
@@ -698,7 +698,7 @@ export default class nxmarket extends nxmarketRest {
         const orderId = this.safeString (order, 'id');
         const ordersBySymbol = this.safeDict (cachedOrders.hashmap, symbol, {});
         const previous = this.safeDict (ordersBySymbol, orderId);
-        // every push repeats each open order: an unchanged order is not an update
+        // an unchanged order is not an update (older servers repeated every open order on each push)
         if ((previous !== undefined) && this.isSameOrderState (previous, order)) {
             return;
         }
